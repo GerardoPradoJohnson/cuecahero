@@ -4,7 +4,6 @@ const $ = id => document.getElementById(id);
 const colors = ['#c292ff','#75d0b1','#f0bd70','#e88e9c'];
 let live=null, shown=null, geometry=null, frameImage=null, frameSerial=0, history=[], lastHistory=-1, lastEvent='', online=false;
 let recording=null, playback=false, replayIndex=0, replayStart=0, replayOffset=0, sound=false, audio=null, lastPulse=-1;
-let dopamineRewardPulse=0.0;
 const gameCtx=$('game').getContext('2d'), brainCtx=$('brain').getContext('2d');
 let stage=null;try{stage=new FlyStage($('fly-stage'));}catch(e){$('fly-stage').closest('.game-wrap').classList.add('stage-failed');console.warn('3D unavailable; displaying original game.',e);}
 for(const view of ['room','tv'])$('view-'+view).onclick=()=>{stage?.setView(view);for(const v of ['room','tv']){$('view-'+v).classList.toggle('selected',v===view);$('view-'+v).setAttribute('aria-pressed',String(v===view));}};
@@ -15,7 +14,7 @@ async function control(command){try{const r=await fetch('/api/control',{method:'
 function setFrame(encoded){const serial=++frameSerial;const image=new Image();image.onload=()=>{if(serial===frameSerial){frameImage=image;if(shown)stage?.update(shown,image);}};image.src=`data:image/png;base64,${encoded}`;}
 function display(s){
   if(s.mode!=='running'||s.driver!=='manual'){if(keyboardLanes.size||pointerLanes.size)releaseKeys();}
-  shown=s;setFrame(s.frame);$('stage-feed').textContent=recording?'PARTIDA EVALUADA / REPLAY':'LIVE / FLY ROOM';
+  shown=s;setFrame(s.frame);$('stage-feed').textContent=recording?'EVALUACIÓN GRABADA':s.mode==='running'?'EN CURSO':'EN PAUSA';
   $('score').textContent=String(s.game.score).padStart(4,'0');$('combo').innerHTML=`${s.game.combo}<span>×</span>`;
   $('accuracy').textContent=s.game.accuracy===null?'—':`${Math.round(s.game.accuracy)}%`;
   $('time').textContent=`${clock(s.game.time)} / ${clock(s.game.duration)}`;$('progress').style.width=`${100*s.game.time/s.game.duration}%`;
@@ -30,7 +29,7 @@ function display(s){
   $('active').textContent=format(s.telemetry.active_neurons);$('neural-time').innerHTML=`${format(s.neural.time_ms)} <small>ms</small>`;
   $('compute').innerHTML=`${s.telemetry.step_wall_ms.toFixed(1)} <small>ms</small>`;$('spikes').textContent=format(s.telemetry.total_spikes);
   $('brain-note').textContent=s.driver==='manual'?'En modo manual, el cerebro está en reposo. Activa MaleCNS para cerrar el ciclo sensorial.':'Píxeles → encoder visual → conectoma → 4 salidas. Baseline fijo, sin aprendizaje ni acceso a notas futuras.';
-  $('instruction').textContent=s.driver==='manual'?'Pulsa D · F · J · K al cruzar la línea.':'MaleCNS controla los cuatro carriles.';
+  $('instruction').textContent=s.driver==='manual'?'Pulsa D · F · J · K al cruzar la línea.':s.mode==='running'?'MaleCNS controla los cuatro carriles.':'MaleCNS listo para iniciar.';
   if(s.mode==='running'&&songTime(s)<0)$('instruction').textContent=`Prepárate · la música empieza en ${Math.ceil(-songTime(s))}…`;
   $('brain-mode-notice').hidden=s.driver!=='manual';
   $('activate-brain').disabled=!!recording;
@@ -48,7 +47,7 @@ function display(s){
   });
   for(let i=0;i<4;i++)$('rate-'+i).style.width=`${Math.min(100,s.neural.readout_rates[i]*(s.neural.readout_kind==='calibrated'?100:.25))}%`;
   document.querySelectorAll('.readout-grid small').forEach((label,i)=>{label.textContent=(s.neural.readout_labels||['DNa02 · L','DNpe017 · L','DNpe017 · R','DNa02 · R'])[i];});
-  if(s.driver==='neural'&&s.neural.readout_kind==='calibrated')$('brain-note').textContent=recording?'Partida del checkpoint congelado, evaluada con el cerebro completo y reproducida a velocidad normal.':'Lector externo de spikes; simulacion neuronal en vivo.';
+  if(s.driver==='neural'&&s.neural.readout_kind==='calibrated')$('brain-note').textContent=recording?'Evaluación grabada del checkpoint congelado.':'Las acciones se calculan desde la actividad neuronal con un lector externo congelado.';
   const l=s.learning;
   if(l&&l.enabled){
     $('plasticity-badge').innerHTML='<span class="dot" style="background:#75d0b1"></span> Plasticidad activa';
@@ -80,6 +79,7 @@ function display(s){
   if(s.game.time===0){lastPulse=-1;history=[];}
   const lt = s.live_training;
   if (lt && $('live-gen-badge')) {
+    $('live-training-box').hidden=!(lt.enabled||(lt.history||[]).length);
     const gen = lt.generation || 0;
     const hist = lt.history || [];
     const supervisedReadout = String(lt.method || '').startsWith('Supervised');
@@ -102,7 +102,7 @@ function display(s){
   }
   if (s.game?.song) {
     if ($('track-title')) $('track-title').innerHTML = `${s.game.song.title}<small id="track-subtitle">${s.game.song.subtitle}</small>`;
-    if ($('track-bpm')) $('track-bpm').textContent = `${s.game.bpm} BPM`;
+    if ($('track-meter')) $('track-meter').innerHTML = `${s.game.song.meter || '6/8'}<br><b id="track-bpm">${s.game.bpm} BPM</b>`;
     if ($('song-select') && $('song-select').value !== s.game.song.id) {
       $('song-select').value = s.game.song.id;
     }
@@ -170,7 +170,6 @@ $('song-select')?.addEventListener('change', e => {
 });
 async function poll(){try{const r=await fetch('/api/state');if(!r.ok)throw Error('Servidor no disponible');const s=await r.json();const reconnected=!online;online=true;live=s;$('connection').textContent='Laboratorio local conectado';$('connection-dot').style.background='#75d0b1';if(!recording&&(!shown||reconnected||s.revision!==shown.revision))display(s);}catch(e){online=false;$('connection').textContent='Sin conexión al servidor';$('connection-dot').style.background='#e88e9c';$('start').disabled=true;}setTimeout(poll,65);}
 $('start').onclick=()=>{
-  if(live?.driver==='neural'&&live?.mode!=='running'&&$('checkpoint-select')?.value&&!recording){watchCheckpoint();return;}
   if (sound && live?.mode !== 'running') {
     const songUrl = live?.game?.song?.audio_url || currentSongUrl || '/audio/la_consentida.wav';
     if (!songAudio || currentSongUrl !== songUrl) {
@@ -279,9 +278,7 @@ $('brain').addEventListener('keydown',e=>{if(e.key.startsWith('Arrow')){e.preven
 function drawBrain(now){
   const dt=lastBrainFrame===null?0:Math.min((now-lastBrainFrame)/1000,.1);
   lastBrainFrame=now;
-  if(!drag&&!recording&&shown?.mode==='running'&&shown?.driver==='neural'&&shown?.live_training?.enabled&&shown?.live_training?.is_training){
-    yaw=(yaw+dt*.09)%(Math.PI*2);
-  }
+  if(!drag&&!matchMedia('(prefers-reduced-motion: reduce)').matches)yaw=(yaw+dt*.055)%(Math.PI*2);
   const canvas=$('brain'),ratio=Math.min(devicePixelRatio,2),w=canvas.clientWidth,h=canvas.clientHeight;
   if(canvas.width!==Math.round(w*ratio)||canvas.height!==Math.round(h*ratio)){
     canvas.width=Math.round(w*ratio);
@@ -293,12 +290,7 @@ function drawBrain(now){
 
   const cy=Math.cos(yaw),sy=Math.sin(yaw),cp=Math.cos(pitch),sp=Math.sin(pitch),scale=Math.min(w*.45,h*.57);
   const counts=shown?.neural.sample_counts||[];
-  const roles=geometry.roles||[];
   const nPoints=geometry.points.length;
-
-  const dopamineActive=roles.some((role,i)=>role==='dopamine'&&counts[i]>0);
-  dopamineRewardPulse=Math.max(dopamineActive?1:0,dopamineRewardPulse-dt*2.5);
-  $('legend-dopamine')?.classList.toggle('reward-glow',dopamineRewardPulse>.15);
 
   // 1. Project all 3D soma coordinates
   const proj=new Array(nPoints);
@@ -313,7 +305,6 @@ function drawBrain(now){
       y:h*.48+y1*scale*perspective,
       z:z2,
       i,
-      role:roles[i]||'intrinsic',
       p:perspective
     };
     proj[i]=item;
@@ -321,66 +312,15 @@ function drawBrain(now){
   }
   points.sort((a,b)=>b.z-a.z);
 
-  // 2. Draw Biological Synaptic Network (Edges & Action Potential Pulses)
-  const edges=geometry.edges||[];
-  if(edges.length>0){
-    brainCtx.save();
-
-    // Baseline inactive synapses (batched single path for extreme performance)
-    brainCtx.beginPath();
-    brainCtx.strokeStyle='rgba(110, 88, 142, 0.16)';
-    brainCtx.lineWidth=0.65;
-    for(let e=0;e<edges.length;e++){
-      const edge=edges[e];
-      const p1=proj[edge[0]], p2=proj[edge[1]];
-      if(!p1||!p2)continue;
-      if(counts[edge[0]]>0||counts[edge[1]]>0)continue;
-      brainCtx.moveTo(p1.x,p1.y);
-      brainCtx.lineTo(p2.x,p2.y);
-    }
-    brainCtx.stroke();
-
-    // Active synapsing circuits with travelling action potential pulses
-    for(let e=0;e<edges.length;e++){
-      const edge=edges[e];
-      const pre=edge[0], post=edge[1];
-      const cPre=counts[pre]>0, cPost=counts[post]>0;
-      if(!cPre&&!cPost)continue;
-
-      const p1=proj[pre], p2=proj[post];
-      if(!p1||!p2)continue;
-
-      brainCtx.beginPath();
-      brainCtx.strokeStyle='rgba(197, 164, 238, 0.55)';
-      brainCtx.lineWidth=1.15*Math.min(p1.p,p2.p);
-      brainCtx.moveTo(p1.x,p1.y);
-      brainCtx.lineTo(p2.x,p2.y);
-      brainCtx.stroke();
-
-      // Traveling action potential spike particle
-      const tPulse=((now*0.0035)+(pre*0.13))%1.0;
-      const px=p1.x+(p2.x-p1.x)*tPulse;
-      const py=p1.y+(p2.y-p1.y)*tPulse;
-      brainCtx.beginPath();
-      brainCtx.fillStyle='#c5a4ee';
-      brainCtx.arc(px,py,1.3*p1.p,0,Math.PI*2);
-      brainCtx.fill();
-    }
-    brainCtx.restore();
-  }
-
-  // One hue for the entire network; only dopamine activity gets a halo.
+  // Soma activation is shown only through restrained white intensity and size.
   for(const p of points){
     const active=counts[p.i]>0;
     brainCtx.save();
-    brainCtx.fillStyle='#c5a4ee';
-    brainCtx.globalAlpha=active?.9:Math.max(.22,.60-p.z*.18);
-    if(p.role==='dopamine'&&active){
-      brainCtx.shadowColor='#c5a4ee';
-      brainCtx.shadowBlur=5*p.p;
-    }
+    brainCtx.fillStyle='#ffffff';
+    brainCtx.globalAlpha=active?.92:Math.max(.08,.20-p.z*.035);
+    if(active){brainCtx.shadowColor='#ffffff';brainCtx.shadowBlur=2.5*p.p;}
     brainCtx.beginPath();
-    brainCtx.arc(p.x,p.y,Math.max(.4,(active?1.7:1.1)*p.p),0,Math.PI*2);
+    brainCtx.arc(p.x,p.y,Math.max(.25,(active?.82:.42)*p.p),0,Math.PI*2);
     brainCtx.fill();
     brainCtx.restore();
   }
@@ -388,7 +328,11 @@ function drawBrain(now){
 
 function drawSpark(){const c=$('spark'),ctx=c.getContext('2d');ctx.clearRect(0,0,c.width,c.height);ctx.strokeStyle='#c5a4ee';ctx.lineWidth=1.4;ctx.beginPath();const max=Math.max(1,...history);for(let i=0;i<history.length;i++){const x=i/(Math.max(2,history.length)-1)*c.width,y=c.height-3-history[i]/max*(c.height-7);i?ctx.lineTo(x,y):ctx.moveTo(x,y);}ctx.stroke();}
 function render(now){if(recording&&playback){const fallback=recording.frames[0].game.time+replayOffset+(now-replayStart)/1000;const target=sound&&songAudio&&!songAudio.paused&&!songAudio.ended?songAudio.currentTime+(shown?.game?.song?.audio_offset||0):fallback;let next=replayIndex;while(next<recording.frames.length-1&&recording.frames[next+1].game.time<=target)next++;if(next!==replayIndex){replayIndex=next;display(recording.frames[next]);$('scrub').value=next;}if(next===recording.frames.length-1){playback=false;$('replay-play').textContent='Repetir';}}if(frameImage)gameCtx.drawImage(frameImage,0,0,320,400);stage?.render(now);drawBrain(now);drawSpark();requestAnimationFrame(render);}
-fetch('/api/brain').then(r=>{if(!r.ok)throw Error('No se pudo cargar la anatomía');return r.json();}).then(g=>{geometry=g;const rc=g.role_counts||{};$('sample-label').textContent=`${format(g.sample_size)} SOMAS · ${format(g.edge_count||g.edges?.length||0)} CONEXIONES (Audio: ${rc.auditory||0} · Dopamina: ${rc.dopamine||0} · Motor: ${rc.motor||0} · Visual: ${rc.stimulus||0})`}).catch(e=>error(e.message));
+fetch('/api/brain').then(r=>{if(!r.ok)throw Error('No se pudo cargar la anatomía');return r.json();}).then(g=>{geometry=g;$('sample-label').textContent=`${format(g.sample_size)} SOMAS MOSTRADOS`}).catch(e=>error(e.message));
+$('legend-dopamine')?.remove();
+const brainHeading=document.querySelector('.brain-heading h3');if(brainHeading)brainHeading.textContent='Actividad de la muestra';
+const telemetryTitle=document.querySelector('.telemetry-title h2');if(telemetryTitle)telemetryTitle.textContent='Rendimiento';
+const telemetryNote=document.querySelector('.telemetry-title div>span');if(telemetryNote)telemetryNote.textContent='Mediciones de esta sesión.';
 loadSongsCatalog();
 poll();requestAnimationFrame(render);
 

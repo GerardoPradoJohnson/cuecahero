@@ -47,6 +47,7 @@ def test_catalog_song_files_exist_and_valid():
     song_ids = [f.stem for f in catalog]
     assert 'la_consentida' in song_ids, "La Consentida must be in catalog"
     assert 'primer_panuelo' in song_ids, "Primer PaÃ±uelo must be in catalog"
+    assert 'through_the_fire_and_flames' in song_ids
     
     for f in catalog:
         data = json.loads(f.read_text())
@@ -178,3 +179,22 @@ def test_mp3_range_requests_preserve_original_bytes(song_server):
         assert response.status==206
         assert response.headers['Content-Type']=='audio/mpeg'
         assert response.read()==(ROOT/'frontend/audio/consentida.mp3').read_bytes()[2048:4096]
+
+
+def test_dragonforce_chart_matches_supplied_edit_and_keyboard_timing():
+    import hashlib
+    sf = pytest.importorskip('soundfile')
+    song = json.loads((ROOT/'config/songs/through_the_fire_and_flames.json').read_text())
+    audio = ROOT/'frontend/audio/dragonforce.mp3'
+    assert song['meter'] == '4/4'
+    assert song['chart_source']['audio_sha256'] == hashlib.sha256(audio.read_bytes()).hexdigest()
+    assert song['duration'] == pytest.approx(sf.info(audio).duration + song['audio_offset'], abs=1e-5)
+    assert len(song['notes']) > 2000
+    for lane in range(4):
+        notes = [note for note in song['notes'] if note['lane'] == lane]
+        for note, following in zip(notes, notes[1:]):
+            assert following['at'] - note['at'] >= .075 - 1e-6
+            assert note['at'] + note.get('sustain', 0) <= following['at'] - .059
+    env = CuecaHeroEnvironment(); env.load_song(song)
+    assert env.get_state()['song']['id'] == 'through_the_fire_and_flames'
+    assert env.get_state()['song']['meter'] == '4/4'

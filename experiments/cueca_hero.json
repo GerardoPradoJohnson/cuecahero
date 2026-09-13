@@ -46,6 +46,6 @@
   },
   "visualization": {
     "brain": true,
-    "sample_size": 3200
+    "sample_size": 6400
   }
 }

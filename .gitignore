@@ -1,6 +1,7 @@
 # Python environments and tools
 .venv*/
 .tools/
+.chart-source/
 __pycache__/
 *.py[cod]
 *$py.class

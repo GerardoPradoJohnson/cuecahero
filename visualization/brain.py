@@ -4,7 +4,7 @@ import json
 import numpy as np
 from core.paths import DATA, ROOT
 
-def load_geometry(sample_size=3200, max_edges=4500):
+def load_geometry(sample_size=6400, max_edges=0):
     import pyarrow.feather as feather
     source = DATA / 'connectome_data/malecns_v1/annotations.feather'
     expected = json.loads((ROOT / 'config/malecns.lock.json').read_text())['annotations.feather']
@@ -65,21 +65,19 @@ def load_geometry(sample_size=3200, max_edges=4500):
         else:
             roles.append('intrinsic')
 
-    # Extract real biological synapses from GRAPH connecting the selected somas
-    from core.paths import GRAPH
-    g = np.load(GRAPH)
-    ptr, post, weight = g['ptr'], g['post'], g['weight']
-    sample_set = set(selected_indices)
-    idx_map = {idx: i for i, idx in enumerate(selected_indices)}
-
     raw_edges = []
-    for pre_local, pre in enumerate(selected_indices):
-        p_start, p_end = ptr[pre], ptr[pre+1]
-        targets = post[p_start:p_end]
-        w = weight[p_start:p_end]
-        for target, wt in zip(targets, w):
-            if target in sample_set:
-                raw_edges.append((pre_local, idx_map[target], float(wt)))
+    if max_edges:
+        from core.paths import GRAPH
+        g = np.load(GRAPH)
+        ptr, post, weight = g['ptr'], g['post'], g['weight']
+        sample_set = set(selected_indices)
+        idx_map = {idx: i for i, idx in enumerate(selected_indices)}
+        for pre_local, pre in enumerate(selected_indices):
+            targets = post[ptr[pre]:ptr[pre + 1]]
+            weights = weight[ptr[pre]:ptr[pre + 1]]
+            for target, value in zip(targets, weights):
+                if target in sample_set:
+                    raw_edges.append((pre_local, idx_map[target], float(value)))
 
     raw_edges.sort(key=lambda e: abs(e[2]), reverse=True)
     selected_edges = [[e[0], e[1], round(e[2], 2)] for e in raw_edges[:max_edges]]
@@ -103,7 +101,7 @@ def load_geometry(sample_size=3200, max_edges=4500):
         'edge_count': len(selected_edges),
         'total_neurons': len(nodes),
         'neurons_with_soma': len(valid),
-        'source': 'MaleCNS v1.0 · somaLocation & synapses',
+        'source': 'MaleCNS v1.0 · somaLocation',
         'coordinate_units': 'source coordinates, uniformly normalized for display',
-        'anatomy': 'Measured soma locations and biological synapses from MaleCNS v1.0'
+        'anatomy': 'Measured soma locations from MaleCNS v1.0'
     }

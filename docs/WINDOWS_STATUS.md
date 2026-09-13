@@ -1,10 +1,14 @@
 # Rama Windows: estado reproducible
 
-Esta rama corrige la identidad de calibración entre Windows y Unix, usa la grabación
-`frontend/audio/consentida.mp3`, admite pulsaciones sostenidas y ofrece un checkpoint
+Esta rama corrige la identidad de calibración entre Windows y Unix, usa las grabaciones
+aportadas en `frontend/audio/`, admite pulsaciones sostenidas y ofrece un checkpoint
 de 200 épocas en el selector del simulador. El cerebro del panel derecho usa un solo
-color base, añade un resplandor breve con dopamina y gira lentamente solo durante el
-entrenamiento.
+blanco, muestra 6.400 somas pequeños sin dibujar conexiones y gira lentamente.
+
+El catálogo también incluye “Through the Fire and Flames”. Su chart Expert público se
+alineó por correlación con la edición de cinco minutos, se redujo de cinco a cuatro
+carriles y se ajustaron las repeticiones a la frecuencia de control del juego. Al
+seleccionarlo, la escena oculta la bandera chilena y la chupalla de la mosca.
 
 ## Modelo que se muestra
 

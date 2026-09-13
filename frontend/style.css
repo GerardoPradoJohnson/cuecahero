@@ -6,6 +6,30 @@
 @media(max-width:1050px){.workspace{grid-template-columns:minmax(0,1.15fr) minmax(0,1fr)}.game-wrap #fly-stage,.brain-stage{height:390px}.stage-controls>span{display:none}}
 @media(max-width:720px){.workspace{grid-template-columns:1fr}.game-wrap #fly-stage,.brain-stage{height:360px}.stage-controls>span{display:inline}}
 @media(max-width:390px){.stage-controls>span{font-size:7px}.game-wrap #fly-stage,.brain-stage{height:320px}}
+
+/* Quiet anatomy view: only sampled somas and their activation are rendered. */
+.brain-stage{background:radial-gradient(ellipse at center,#222127 0%,#17171b 72%)}
+.stage-controls>span,#legend-dopamine{display:none!important}
+.brand-sub,.version,.experiment-tag{display:none!important}
+.dot-neuron{background:#fff!important;opacity:.72}
+.live-training-box[hidden]{display:none!important}
+
+@media(max-width:720px){
+  .game-panel .panel-heading,.game-panel .scoreboard,.game-panel .stage-controls,
+  .game-panel .live-training-box,.game-panel .track-progress,.game-panel .game-bottom{display:none}
+  .game-panel{border-bottom-left-radius:0;border-bottom-right-radius:0}
+  .brain-panel{display:flex;flex-direction:column;border-top-left-radius:0;border-top-right-radius:0}
+  .brain-panel .brain-stage{order:-1}
+  .brain-panel .panel-heading{order:0}
+  .brain-panel .brain-stats{order:1}
+  .brain-panel .readouts{order:2}
+  .brain-panel .brain-legend{order:3}
+  .brain-panel .brain-heading{order:4}
+  .brain-panel .plasticity-box{order:5}
+  .brain-panel .brain-note{order:6}
+  .workspace{gap:0}
+  .track-info{margin-bottom:10px}
+}
 .brain-mode-notice{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:13px 20px;background:#38303d;color:#e4c99f;font-size:11px;border-bottom:1px solid #594955}.brain-mode-notice[hidden]{display:none}.brain-mode-notice button{border:1px solid #9375ab;background:#50405f;color:#f4ddff;padding:7px 10px;font-size:10px}.brain-stage .brain-mode-notice{position:absolute;top:12px;left:16px;right:16px;z-index:5;background:rgba(35,29,44,0.88);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border:1px solid rgba(161,128,196,0.35);border-radius:8px;padding:9px 15px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 4px 20px rgba(0,0,0,0.4);border-bottom:none}.brain-stage .brain-mode-notice[hidden]{display:none!important}.keys button.observing:disabled{opacity:1;cursor:default}.keys button .lane-result{font-size:8px;letter-spacing:.35px;color:#c9bed5;min-height:10px}.keys button .lane-count{font:9px ui-monospace,monospace;color:#b2a5bd;letter-spacing:0;margin-top:7px}.keys button.hit,.keys button.hit:disabled{opacity:1;background:#345947;box-shadow:inset 0 0 0 1px #94dfba,0 0 12px #75d0b130}.keys button.hit .lane-result{color:#c4ffe1}.keys button.miss,.keys button.miss:disabled{opacity:1;background:#4c303c;box-shadow:inset 0 0 0 1px #c77f91}.keys button.miss .lane-result{color:#ffc6d4}.keys button.pressed:disabled{opacity:1}
 .topbar-left{display:flex;align-items:center;gap:26px}
 .view-nav{display:flex;background:#18161f;border:1px solid var(--border);border-radius:8px;padding:3px;gap:3px}

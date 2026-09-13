@@ -1,7 +1,7 @@
 # FlyLab · Cueca Hero
 
 MVP local de una plataforma experimental que conecta MaleCNS a entornos interactivos.
-Cueca Hero es el primer entorno: La Consentida con cuatro carriles y notas sostenidas.
+Cueca Hero es el primer entorno: un catálogo de canciones con cuatro carriles y notas sostenidas.
 
 ## Abrir el juego en este equipo
 
@@ -24,6 +24,7 @@ Si el puerto ya está ocupado, usar `--port 8767` y abrir la dirección que impr
 - **MaleCNS / Neuronal:** carga el grafo completo; iniciar para que las cuatro lecturas neuronales controlen la pista.
 - **Pausa / Reiniciar:** pausa los relojes o reinicia entorno, filtros, decoder y estado neuronal. Cambiar de controlador inicia una sesión nueva.
 - **Sonido:** reproduce `frontend/audio/consentida.mp3`. En partidas evaluadas, el audio es el reloj maestro para mantener sincronizadas música y animación.
+- **DragonForce:** “Through the Fire and Flames” usa un chart Expert público adaptado a cuatro teclas y alineado con la edición de cinco minutos aportada.
 - **Checkpoint entrenado:** el selector permite ver una evaluación completa congelada a velocidad normal. El cálculo neuronal se hizo antes; la reproducción no se presenta como simulación en vivo.
 - **Visor:** arrastrar para rotar; con foco, usar las flechas. Son coordenadas oficiales de somas, con actividad de la muestra visible.
 - **Repetición:** reproduce la última sesión, permite pausar y buscar un instante. **Exportar** descarga observaciones, acciones y métricas en JSON.

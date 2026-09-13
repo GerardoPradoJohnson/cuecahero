@@ -24,6 +24,7 @@ class CuecaHeroEnvironment:
             'artist': self.custom_song.get('artist', 'Laboratorio FlyLab') if self.custom_song else 'Laboratorio FlyLab',
             'audio_url': self.custom_song.get('audio_url', '/audio/primer_panuelo.wav') if self.custom_song else '/audio/primer_panuelo.wav',
             'audio_offset': float(self.custom_song.get('audio_offset', 0)) if self.custom_song else 0.,
+            'meter': self.custom_song.get('meter', '6/8') if self.custom_song else '6/8',
         }
 
     def load_song(self, song_data):

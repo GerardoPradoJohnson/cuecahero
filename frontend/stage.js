@@ -114,12 +114,13 @@ export class FlyStage {
       }
     }
 
-    // Bandera chilena (ubicada en la pared izquierda, completamente visible sin tapar la TV)
+    // Bandera chilena, oculta para canciones que no usan la escena de cueca.
+    this.flagDecor=new T.Group();this.scene.add(this.flagDecor);
     const flagTex=this.createChileanFlagTexture();
-    this.mesh(new T.PlaneGeometry(1.9,1.26),new T.MeshStandardMaterial({map:flagTex,roughness:.65}),this.scene,[-2.05,2.35,-2.86]);
-    this.rod([-3.05,3.02,-2.84],[-1.05,3.02,-2.84],.022,'#3d2312');
-    this.ellipsoid([.04,.04,.04],this.material('#dfb152',{metalness:.6,roughness:.3}),this.scene,[-3.08,3.02,-2.84],0);
-    this.ellipsoid([.04,.04,.04],this.material('#dfb152',{metalness:.6,roughness:.3}),this.scene,[-1.02,3.02,-2.84],0);
+    this.mesh(new T.PlaneGeometry(1.9,1.26),new T.MeshStandardMaterial({map:flagTex,roughness:.65}),this.flagDecor,[-2.05,2.35,-2.86]);
+    this.rod([-3.05,3.02,-2.84],[-1.05,3.02,-2.84],.022,'#3d2312',this.flagDecor);
+    this.ellipsoid([.04,.04,.04],this.material('#dfb152',{metalness:.6,roughness:.3}),this.flagDecor,[-3.08,3.02,-2.84],0);
+    this.ellipsoid([.04,.04,.04],this.material('#dfb152',{metalness:.6,roughness:.3}),this.flagDecor,[-1.02,3.02,-2.84],0);
 
     // Warm ambient fonda light near the barrel
     const fondaWarmLight=new T.PointLight('#ffaa44',3.5,4.5,1.8);
@@ -215,7 +216,7 @@ export class FlyStage {
     }
 
     // Chupalla de huaso en la cabeza de la mosca
-    const chupalla=new T.Group();chupalla.position.set(.54,.45,0);chupalla.rotation.set(.06,0,-.16);this.body.add(chupalla);
+    const chupalla=this.chupalla=new T.Group();chupalla.position.set(.54,.45,0);chupalla.rotation.set(.06,0,-.16);this.body.add(chupalla);
     this.mesh(new T.CylinderGeometry(.35,.35,.016,18),this.material('#dfc28d',{roughness:.8}),chupalla,[0,0,0]);
     this.mesh(new T.CylinderGeometry(.19,.20,.13,18),this.material('#cca66d',{roughness:.8}),chupalla,[0,.07,0]);
     this.mesh(new T.CylinderGeometry(.204,.204,.032,18),this.material('#18161b',{roughness:.5}),chupalla,[0,.024,0]);
@@ -306,6 +307,9 @@ export class FlyStage {
       else if (curCombo >= 40 && this.lastCombo < 40) this.triggerComboBanner('¡RACHA PERFECTA! ★', '#a855f7');
     }
     this.lastCombo = curCombo;
+    const cuecaTheme=state.game.song?.id!=='through_the_fire_and_flames';
+    if(this.flagDecor)this.flagDecor.visible=cuecaTheme;
+    if(this.chupalla)this.chupalla.visible=cuecaTheme;
     this.state=state;this.lastImage=image;this.paintScreen();
   }
   triggerComboBanner(text, color) {
@@ -430,7 +434,7 @@ export class FlyStage {
     const c=this.ctx,s=this.state,now=performance.now();
     const song = s?.game?.song;
     const songTitle = song?.title || 'LA CONSENTIDA';
-    const songSub = (song?.subtitle || 'CUECA TRADICIONAL CHILENA').toUpperCase() + ' · 6/8';
+    const songSub = (song?.subtitle || '').toUpperCase() + ` · ${song?.meter || '6/8'}`;
 
     // 1. Campo de frutas para la mosca de la fruta
     this.drawFruitField(c, now);
