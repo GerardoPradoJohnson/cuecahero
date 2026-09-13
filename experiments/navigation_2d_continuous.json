@@ -1,0 +1,50 @@
+{
+  "name": "Fly 2D Navigation · Continuous Analog Control",
+  "seed": 17,
+  "environment": {
+    "type": "navigation_2d",
+    "duration": 30.0,
+    "max_speed": 90.0,
+    "num_obstacles": 5
+  },
+  "brain": {
+    "dataset": "malecns_v1",
+    "backend": "auto"
+  },
+  "sensors": [
+    {
+      "type": "visual",
+      "lamina_bias": 12.0
+    }
+  ],
+  "decoder": {
+    "type": "continuous_rate",
+    "tau_ms": 30.0,
+    "min_rate_hz": 0.5,
+    "max_rate_hz": 20.0,
+    "groups": [
+      {"type": "DNa02", "side": "L"},
+      {"type": "DNpe017", "side": "L"},
+      {"type": "DNpe017", "side": "R"},
+      {"type": "DNa02", "side": "R"}
+    ]
+  },
+  "embodiment": {
+    "type": "continuous",
+    "momentum": 0.25,
+    "deadzone": 0.03
+  },
+  "plasticity": {
+    "type": "none",
+    "enabled": false
+  },
+  "clock": {
+    "game_step": 0.03333333333333333,
+    "neural_step_ms": 10.0,
+    "speed": 1.0
+  },
+  "visualization": {
+    "brain": true,
+    "sample_size": 1800
+  }
+}

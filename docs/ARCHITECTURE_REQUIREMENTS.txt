@@ -1,0 +1,337 @@
+PRINCIPIO DE ARQUITECTURA GENERAL
+
+Cueca Hero es solamente la primera aplicación del proyecto.
+
+NO diseñar el sistema específicamente alrededor de Cueca Hero.
+
+Quiero que la mayor parte del código pueda reutilizarse posteriormente para conectar MaleCNS a otros tipos de experimentos, simulaciones, videojuegos, entornos 3D y sistemas interactivos.
+
+La arquitectura debe separar claramente:
+
+1. MaleCNS / Neural Engine
+2. Sensory Encoders
+3. Neural Decoders
+4. Environment
+5. Agent / Embodiment
+6. Reward System
+7. Learning / Plasticity
+8. Telemetry
+9. Replay
+10. Visualization
+
+La lógica específica de cada experimento debe vivir fuera del motor neuronal.
+
+Idealmente debería poder crear en el futuro:
+
+new CuecaHeroEnvironment()
+new DrivingEnvironment()
+new NavigationEnvironment()
+new RhythmEnvironment()
+new MotorControlEnvironment()
+new VirtualBodyEnvironment()
+
+sin modificar el core de MaleCNS.
+
+==================================================
+ENVIRONMENT API
+==================================================
+
+Crear una interfaz genérica para los entornos.
+
+Conceptualmente:
+
+Environment.reset()
+
+Environment.step(action)
+
+Environment.get_observation()
+
+Environment.get_reward()
+
+Environment.is_done()
+
+Environment.get_state()
+
+El cerebro no debe saber qué videojuego o simulación está controlando.
+
+Sólo recibe sensory observations y genera neural outputs.
+
+==================================================
+SENSORY SYSTEM
+==================================================
+
+Los inputs sensoriales deben ser modulares.
+
+Ejemplos futuros:
+
+VisualEncoder
+AudioEncoder
+MotionEncoder
+TouchEncoder
+ProprioceptionEncoder
+CustomSensorEncoder
+
+Cada encoder transforma información del entorno en estimulación de grupos neuronales MaleCNS.
+
+No hardcodear la retina directamente dentro de Cueca Hero.
+
+Crear una interfaz común tipo:
+
+SensorEncoder.encode(environment_state)
+    ↓
+NeuralStimulus
+
+==================================================
+MOTOR / ACTION SYSTEM
+==================================================
+
+El mismo principio para los outputs.
+
+Crear NeuralDecoder como sistema modular.
+
+Ejemplos:
+
+BinaryDecoder
+DirectionalDecoder
+ContinuousMotorDecoder
+MultiActionDecoder
+BodyMotorDecoder
+
+Esto permitirá en el futuro controlar cosas más complejas que botones discretos.
+
+Por ejemplo:
+
+steering = -0.34
+forward = 0.82
+rotation = 0.17
+
+o múltiples partes de un cuerpo virtual.
+
+El decoder debe transformar:
+
+neural activity
+→ abstract actions
+
+Después cada Environment interpreta esas acciones.
+
+==================================================
+EMBODIMENT
+==================================================
+
+Separar explícitamente:
+
+BRAIN
+de
+BODY
+
+MaleCNS representa el sistema neuronal.
+
+Un Embodiment representa el cuerpo o agente virtual que ese cerebro controla.
+
+Ejemplos futuros:
+
+FlyBody
+GameController
+Vehicle
+VirtualCharacter
+Robot
+CustomAvatar
+
+El cerebro NO debe estar acoplado directamente a un vehículo, una mosca 3D o un juego.
+
+Arquitectura:
+
+MaleCNS
+   ↓
+Motor Decoder
+   ↓
+Embodiment
+   ↓
+Environment
+
+Y:
+
+Environment
+   ↓
+Sensors
+   ↓
+Sensory Encoder
+   ↓
+MaleCNS
+
+Esto crea un loop genérico:
+
+ENVIRONMENT
+      ↓
+SENSORS
+      ↓
+ENCODER
+      ↓
+MALECNS
+      ↓
+DECODER
+      ↓
+BODY / AGENT
+      ↓
+ENVIRONMENT
+
+==================================================
+LEARNING SYSTEM
+==================================================
+
+Diseñar Reward y Plasticity como módulos independientes.
+
+No conectar directamente:
+
+game score → dopamine
+
+en código específico de Cueca Hero.
+
+Crear algo equivalente a:
+
+RewardSignal
+
+que pueda representar:
+
+positive reward
+negative reward
+neutral
+reward magnitude
+reward source
+timestamp
+
+Y después:
+
+PlasticityModel.apply(neural_state, reward)
+
+Así podremos experimentar posteriormente con distintos paradigmas de aprendizaje sin modificar los entornos.
+
+==================================================
+TIME / SIMULATION
+==================================================
+
+Separar:
+
+game time
+simulation time
+neural time
+render time
+
+No asumir que todos corren a la misma velocidad.
+
+La simulación neuronal puede funcionar:
+
+más rápido que tiempo real
+en tiempo real
+más lento que tiempo real
+
+mientras que el renderer puede continuar funcionando independientemente.
+
+Crear un SimulationClock / scheduler claro.
+
+Esto será importante para experimentos posteriores.
+
+==================================================
+3D VISUALIZATION
+==================================================
+
+La interfaz 3D tampoco debe conocer específicamente Cueca Hero.
+
+Crear un sistema de escenas modular.
+
+Ejemplo:
+
+BrainScene
+NeuralActivityLayer
+EnvironmentScene
+AgentScene
+TelemetryOverlay
+
+Cada Environment puede proporcionar su propia visualización.
+
+El cerebro y la telemetría deben poder visualizarse independientemente del experimento actual.
+
+Debe ser posible ejecutar:
+
+Cueca Hero + Brain Viewer
+
+o posteriormente:
+
+otro entorno + exactamente el mismo Brain Viewer.
+
+==================================================
+EXPERIMENT CONFIGURATION
+==================================================
+
+Los experimentos deben definirse principalmente mediante configuración y no modificando código.
+
+Ejemplo conceptual:
+
+experiment.yaml
+
+environment: cueca_hero
+
+brain:
+    dataset: MaleCNS-v1.0
+
+sensors:
+    - visual
+
+decoder:
+    type: directional
+
+plasticity:
+    enabled: false
+
+visualization:
+    brain: true
+    agent: true
+    telemetry: true
+
+Esto permitirá crear nuevas pruebas reutilizando el mismo framework.
+
+==================================================
+PLUGIN-LIKE DESIGN
+==================================================
+
+Diseñar los componentes principales como si fueran plugins.
+
+Un nuevo Environment debe poder agregarse sin modificar MaleCNSCore.
+
+Un nuevo SensorEncoder debe poder agregarse sin modificar el Environment.
+
+Un nuevo NeuralDecoder debe poder agregarse sin modificar el simulador.
+
+Una nueva visualización debe poder agregarse sin modificar la simulación.
+
+Evitar dependencias circulares.
+
+Preferir interfaces claras y componentes desacoplados.
+
+==================================================
+OBJETIVO A LARGO PLAZO
+==================================================
+
+Pensar el proyecto no como:
+
+"un juego de Cueca Hero conectado a MaleCNS"
+
+sino como:
+
+"una plataforma experimental para conectar MaleCNS a entornos virtuales interactivos".
+
+Cueca Hero será el primer Environment que demuestre la plataforma.
+
+Por lo tanto, cuando exista una decisión entre:
+
+A) solución rápida específica para Cueca Hero
+
+y
+
+B) una abstracción simple y reutilizable que permita futuros experimentos
+
+preferir B, siempre que no introduzca complejidad excesiva.
+
+NO sobrearquitectar.
+
+Primero hacer funcionar el MVP, pero mantener límites claros entre componentes para que el código pueda evolucionar.

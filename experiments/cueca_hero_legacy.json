@@ -1,0 +1,13 @@
+{
+  "name": "Cueca Hero · baseline",
+  "seed": 17,
+  "environment": {"type": "cueca_hero", "bpm": 108, "bars": 12},
+  "brain": {"dataset": "malecns_v1", "backend": "auto"},
+  "sensors": [{"type": "visual", "lamina_bias": 12.0}],
+  "decoder": {"type": "directional", "threshold_hz": 1.0, "cooldown_ms": 120.0,
+    "groups": [{"type":"DNa02", "side":"L"}, {"type":"DNpe017", "side":"L"}, {"type":"DNpe017", "side":"R"}, {"type":"DNa02", "side":"R"}]},
+  "embodiment": "game_controller",
+  "plasticity": {"type": "none", "enabled": false},
+  "clock": {"game_step": 0.03333333333333333, "neural_step_ms": 10.0, "speed": 1.0},
+  "visualization": {"brain": true, "sample_size": 1800}
+}

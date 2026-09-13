@@ -1,0 +1,10 @@
+{
+  "backend": "cpu",
+  "neurons": 166700,
+  "edges": 25582938,
+  "neural_ms": 20.0,
+  "spikes": 11751,
+  "wall_seconds": 2.277170788991498,
+  "stimulus": "Visual observation of the real Cueca Hero environment; official R1-R6 proxy, 12 mV-equivalent lamina bias",
+  "finite_state": true
+}

@@ -1,0 +1,42 @@
+{
+  "session": "20260911T204634-5949f4c0",
+  "frames": 503,
+  "driver": "neural",
+  "final": {
+    "environment": "cueca_hero",
+    "time": 16.748148,
+    "duration": 16.748148148,
+    "score": 1340,
+    "combo": 0,
+    "best_combo": 5,
+    "hits": 17,
+    "misses": 31,
+    "wrong": 59,
+    "accuracy": 35.4,
+    "total_notes": 48,
+    "events": [],
+    "action": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "done": true,
+    "bpm": 108,
+    "seed": 17,
+    "reward": 0.0
+  },
+  "telemetry": {
+    "spikes": 6008,
+    "total_spikes": 3004101,
+    "active_neurons": 5436,
+    "step_wall_ms": 54.526,
+    "game_seconds": 16.748148,
+    "neural_ms": 5030.0
+  },
+  "backend": "native-cpu",
+  "error": null,
+  "median_step_wall_ms": 41.796,
+  "max_step_wall_ms": 83.521,
+  "graph_sha256": "346b8af85a11af13b8324e18669812c1924569e7d1adcb4e6f45cc461a2c344b"
+}

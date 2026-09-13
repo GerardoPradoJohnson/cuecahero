@@ -1,0 +1,301 @@
+{
+  "id": "primer_panuelo",
+  "title": "Primer Pa\u00f1uelo",
+  "subtitle": "Pista de Prueba Cuequera",
+  "artist": "Laboratorio FlyLab",
+  "bpm": 108,
+  "bars": 12,
+  "meter": "6/8",
+  "duration": 17.1481,
+  "audio_url": "/audio/primer_panuelo.wav",
+  "notes": [
+    {
+      "id": 0,
+      "lane": 0,
+      "at": 2.4,
+      "judgement": null
+    },
+    {
+      "id": 1,
+      "lane": 3,
+      "at": 2.7704,
+      "judgement": null
+    },
+    {
+      "id": 2,
+      "lane": 1,
+      "at": 2.9556,
+      "judgement": null
+    },
+    {
+      "id": 3,
+      "lane": 2,
+      "at": 3.3259,
+      "judgement": null
+    },
+    {
+      "id": 4,
+      "lane": 0,
+      "at": 3.5111,
+      "judgement": null
+    },
+    {
+      "id": 5,
+      "lane": 3,
+      "at": 3.8815,
+      "judgement": null
+    },
+    {
+      "id": 6,
+      "lane": 1,
+      "at": 4.0667,
+      "judgement": null
+    },
+    {
+      "id": 7,
+      "lane": 2,
+      "at": 4.437,
+      "judgement": null
+    },
+    {
+      "id": 8,
+      "lane": 0,
+      "at": 4.6222,
+      "judgement": null
+    },
+    {
+      "id": 9,
+      "lane": 3,
+      "at": 4.9926,
+      "judgement": null
+    },
+    {
+      "id": 10,
+      "lane": 1,
+      "at": 5.1778,
+      "judgement": null
+    },
+    {
+      "id": 11,
+      "lane": 2,
+      "at": 5.5481,
+      "judgement": null
+    },
+    {
+      "id": 12,
+      "lane": 0,
+      "at": 5.7333,
+      "judgement": null
+    },
+    {
+      "id": 13,
+      "lane": 3,
+      "at": 6.1037,
+      "judgement": null
+    },
+    {
+      "id": 14,
+      "lane": 1,
+      "at": 6.2889,
+      "judgement": null
+    },
+    {
+      "id": 15,
+      "lane": 2,
+      "at": 6.6593,
+      "judgement": null
+    },
+    {
+      "id": 16,
+      "lane": 0,
+      "at": 6.8444,
+      "judgement": null
+    },
+    {
+      "id": 17,
+      "lane": 3,
+      "at": 7.2148,
+      "judgement": null
+    },
+    {
+      "id": 18,
+      "lane": 1,
+      "at": 7.4,
+      "judgement": null
+    },
+    {
+      "id": 19,
+      "lane": 2,
+      "at": 7.7704,
+      "judgement": null
+    },
+    {
+      "id": 20,
+      "lane": 0,
+      "at": 7.9556,
+      "judgement": null
+    },
+    {
+      "id": 21,
+      "lane": 3,
+      "at": 8.3259,
+      "judgement": null
+    },
+    {
+      "id": 22,
+      "lane": 1,
+      "at": 8.5111,
+      "judgement": null
+    },
+    {
+      "id": 23,
+      "lane": 2,
+      "at": 8.8815,
+      "judgement": null
+    },
+    {
+      "id": 24,
+      "lane": 0,
+      "at": 9.0667,
+      "judgement": null
+    },
+    {
+      "id": 25,
+      "lane": 3,
+      "at": 9.437,
+      "judgement": null
+    },
+    {
+      "id": 26,
+      "lane": 1,
+      "at": 9.6222,
+      "judgement": null
+    },
+    {
+      "id": 27,
+      "lane": 2,
+      "at": 9.9926,
+      "judgement": null
+    },
+    {
+      "id": 28,
+      "lane": 0,
+      "at": 10.1778,
+      "judgement": null
+    },
+    {
+      "id": 29,
+      "lane": 3,
+      "at": 10.5481,
+      "judgement": null
+    },
+    {
+      "id": 30,
+      "lane": 1,
+      "at": 10.7333,
+      "judgement": null
+    },
+    {
+      "id": 31,
+      "lane": 2,
+      "at": 11.1037,
+      "judgement": null
+    },
+    {
+      "id": 32,
+      "lane": 0,
+      "at": 11.2889,
+      "judgement": null
+    },
+    {
+      "id": 33,
+      "lane": 3,
+      "at": 11.6593,
+      "judgement": null
+    },
+    {
+      "id": 34,
+      "lane": 1,
+      "at": 11.8444,
+      "judgement": null
+    },
+    {
+      "id": 35,
+      "lane": 2,
+      "at": 12.2148,
+      "judgement": null
+    },
+    {
+      "id": 36,
+      "lane": 0,
+      "at": 12.4,
+      "judgement": null
+    },
+    {
+      "id": 37,
+      "lane": 3,
+      "at": 12.7704,
+      "judgement": null
+    },
+    {
+      "id": 38,
+      "lane": 1,
+      "at": 12.9556,
+      "judgement": null
+    },
+    {
+      "id": 39,
+      "lane": 2,
+      "at": 13.3259,
+      "judgement": null
+    },
+    {
+      "id": 40,
+      "lane": 0,
+      "at": 13.5111,
+      "judgement": null
+    },
+    {
+      "id": 41,
+      "lane": 3,
+      "at": 13.8815,
+      "judgement": null
+    },
+    {
+      "id": 42,
+      "lane": 1,
+      "at": 14.0667,
+      "judgement": null
+    },
+    {
+      "id": 43,
+      "lane": 2,
+      "at": 14.437,
+      "judgement": null
+    },
+    {
+      "id": 44,
+      "lane": 0,
+      "at": 14.6222,
+      "judgement": null
+    },
+    {
+      "id": 45,
+      "lane": 3,
+      "at": 14.9926,
+      "judgement": null
+    },
+    {
+      "id": 46,
+      "lane": 1,
+      "at": 15.1778,
+      "judgement": null
+    },
+    {
+      "id": 47,
+      "lane": 2,
+      "at": 15.5481,
+      "judgement": null
+    }
+  ]
+}

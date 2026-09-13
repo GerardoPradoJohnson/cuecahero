@@ -1,0 +1,10 @@
+{
+  "name": "three",
+  "version": "0.160.0",
+  "upstream_tag": "r160",
+  "source": "https://raw.githubusercontent.com/mrdoob/three.js/r160/build/three.module.js",
+  "license": "MIT",
+  "license_file": "THREE-LICENSE.txt",
+  "bytes": 1272972,
+  "sha256": "76dea8151bc9352aef3528b4262e249b2604f62543828328db978d060d61a495"
+}

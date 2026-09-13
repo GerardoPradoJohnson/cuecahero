@@ -1,0 +1,180 @@
+{
+  "resumed_statistics_bitwise_equal": true,
+  "resumed_model_equal": true,
+  "max_weight_difference_from_batch_calibration": 4.8090871562767035e-15,
+  "episodes": [
+    {
+      "name": "training-211.npz",
+      "sha256": "fdc73363595c3a52dc2f6b60c62a3422ddddafcacc47d6291a156413a8e3fe72",
+      "frames": 503,
+      "mse_before": 0.09542743538767395,
+      "mse_after": 0.02636031757116067
+    },
+    {
+      "name": "training-307.npz",
+      "sha256": "a5ea678bd12e621435d892b360f9547700b0b24a1e03e0c43d28d2dd5a79b3de",
+      "frames": 503,
+      "mse_before": 0.06895840643531263,
+      "mse_after": 0.0355846870263016
+    },
+    {
+      "name": "training-401.npz",
+      "sha256": "461947ea61eed2c178eca68b79d5fb6f3ddbc81d104849c54279587e7f7b5d03",
+      "frames": 503,
+      "mse_before": 0.06361061879643488,
+      "mse_after": 0.04107564897839058
+    },
+    {
+      "name": "training-503.npz",
+      "sha256": "01710639df8e8c3ecfe51078e0d985dfc97aa3c0fd1f50e5c0b8bcc816532cc6",
+      "frames": 503,
+      "mse_before": 0.05668261642984848,
+      "mse_after": 0.04095992152421801
+    },
+    {
+      "name": "training-601.npz",
+      "sha256": "ab3f0f20a3c140acd38c8c49550b7414fe392e31f0a9ecae5c01a3f1490f9fdb",
+      "frames": 503,
+      "mse_before": 0.05518449810493028,
+      "mse_after": 0.03476006891995027
+    },
+    {
+      "name": "training-701.npz",
+      "sha256": "78340660b9d49a572babb92f9e9b12f623b5bfe7ba3e9b218ae6a42173598296",
+      "frames": 503,
+      "mse_before": 0.049928032822410276,
+      "mse_after": 0.03792438802975147
+    }
+  ],
+  "limits": "External supervised learner. Normalization fixed from the training split. No biological plasticity or mid-episode brain restoration.",
+  "restored_gameplay_evaluation": {
+    "model_sha256": "6ba70061a3270b85043bc793f2f2f59666426dc2f28c41d00458f90e49d912af",
+    "graph_sha256": "346b8af85a11af13b8324e18669812c1924569e7d1adcb4e6f45cc461a2c344b",
+    "results": [
+      {
+        "mode": "pixels",
+        "seed": 1201,
+        "state": {
+          "environment": "cueca_hero",
+          "time": 16.748148,
+          "duration": 16.748148148,
+          "score": 1840,
+          "combo": 0,
+          "best_combo": 6,
+          "hits": 30,
+          "misses": 18,
+          "wrong": 4,
+          "accuracy": 62.5,
+          "total_notes": 48,
+          "events": [],
+          "action": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "done": true,
+          "bpm": 108,
+          "seed": 1201,
+          "reward": 0.0
+        },
+        "presses_by_lane": [
+          6,
+          6,
+          13,
+          9
+        ],
+        "hits_by_lane": [
+          5,
+          5,
+          12,
+          8
+        ]
+      },
+      {
+        "mode": "black",
+        "seed": 1201,
+        "state": {
+          "environment": "cueca_hero",
+          "time": 16.748148,
+          "duration": 16.748148148,
+          "score": 0,
+          "combo": 0,
+          "best_combo": 0,
+          "hits": 0,
+          "misses": 48,
+          "wrong": 0,
+          "accuracy": 0.0,
+          "total_notes": 48,
+          "events": [],
+          "action": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "done": true,
+          "bpm": 108,
+          "seed": 1201,
+          "reward": 0.0
+        },
+        "presses_by_lane": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "hits_by_lane": [
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "mode": "empty_board",
+        "seed": 1201,
+        "state": {
+          "environment": "cueca_hero",
+          "time": 16.748148,
+          "duration": 16.748148148,
+          "score": 0,
+          "combo": 0,
+          "best_combo": 0,
+          "hits": 0,
+          "misses": 0,
+          "wrong": 0,
+          "accuracy": null,
+          "total_notes": 0,
+          "events": [],
+          "action": [
+            0,
+            0,
+            0,
+            0
+          ],
+          "done": true,
+          "bpm": 108,
+          "seed": 1201,
+          "reward": 0.0
+        },
+        "presses_by_lane": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "hits_by_lane": [
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    ],
+    "wall_seconds": 86.38825201499276,
+    "limits": "Frozen external decoder; no MaleCNS plasticity or biological learning.",
+    "activation_criteria": "Every chart: at least 24/48 hits, all four lanes hit, at most 10 false presses. Both controls: zero presses.",
+    "activation_passed": true
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "Cueca Hero \u00b7 lector externo calibrado",
+  "seed": 17,
+  "environment": {
+    "type": "cueca_hero",
+    "bpm": 108,
+    "bars": 12
+  },
+  "brain": {
+    "dataset": "malecns_v1",
+    "backend": "auto"
+  },
+  "sensors": [
+    {
+      "type": "contrast_visual",
+      "viewport": [
+        0.08,
+        0.1,
+        0.92,
+        0.3
+      ],
+      "black_level": 0.15,
+      "white_level": 0.8,
+      "gain": 120.0,
+      "lamina_bias": 12.0,
+      "pooling": [
+        0.04,
+        0.0125
+      ],
+      "tau_ms": 10.0
+    }
+  ],
+  "decoder": {
+    "type": "calibrated",
+    "model": "config/perception-readout.json"
+  },
+  "embodiment": "game_controller",
+  "plasticity": {
+    "type": "none",
+    "enabled": false
+  },
+  "clock": {
+    "game_step": 0.03333333333333333,
+    "neural_step_ms": 10.0,
+    "speed": 1.0
+  },
+  "visualization": {
+    "brain": true,
+    "sample_size": 3200
+  }
+}

@@ -1,0 +1,41 @@
+# Python environments and tools
+.venv*/
+.tools/
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.coverage
+htmlcov/
+
+# External repositories and downloaded datasets (DOOMFLY, MaleCNS)
+external/
+data/
+connectome_data/
+*.feather
+*.parquet
+
+# Training outputs, checkpoints, sessions and evaluations
+outputs/
+checkpoints/
+*.npz
+*.ckpt
+*.pt
+*.pth
+
+# Compiled native binaries
+build/
+*.dylib
+*.so
+*.dll
+*.o
+*.a
+
+# Operating System & IDE files
+.DS_Store
+**/.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*~

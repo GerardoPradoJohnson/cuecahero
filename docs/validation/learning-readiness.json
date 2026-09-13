@@ -1,0 +1,204 @@
+{
+  "assay": "cold-start static visual readout diagnostic",
+  "backend": "native-cpu",
+  "neurons": 166700,
+  "edges": 25582938,
+  "config": {
+    "name": "Cueca Hero \u00b7 baseline",
+    "seed": 17,
+    "environment": {
+      "type": "cueca_hero",
+      "bpm": 108,
+      "bars": 12
+    },
+    "brain": {
+      "dataset": "malecns_v1",
+      "backend": "auto"
+    },
+    "sensors": [
+      {
+        "type": "visual",
+        "lamina_bias": 12.0
+      }
+    ],
+    "decoder": {
+      "type": "directional",
+      "threshold_hz": 1.0,
+      "cooldown_ms": 120.0,
+      "groups": [
+        {
+          "type": "DNa02",
+          "side": "L"
+        },
+        {
+          "type": "DNpe017",
+          "side": "L"
+        },
+        {
+          "type": "DNpe017",
+          "side": "R"
+        },
+        {
+          "type": "DNa02",
+          "side": "R"
+        }
+      ]
+    },
+    "embodiment": "game_controller",
+    "plasticity": {
+      "type": "none",
+      "enabled": false
+    },
+    "clock": {
+      "game_step": 0.03333333333333333,
+      "neural_step_ms": 10.0,
+      "speed": 1.0
+    },
+    "visualization": {
+      "brain": true,
+      "sample_size": 1800
+    }
+  },
+  "source_hashes": {
+    "annotations.feather": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-annotations-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 14483314,
+      "sha256": "2177e246113e4cfbf1e7772ec37c6da1955ff22e8063d0b1f833101f99a9a3b2"
+    },
+    "neurotransmitters.feather": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/body-neurotransmitters-male-cns-v1.0.feather",
+      "bytes": 43282834,
+      "sha256": "95c9289220663abeb3409f3ad9e5a7f8a53f8093f5139d15502cd08da8879621"
+    },
+    "edges.feather": {
+      "url": "https://storage.googleapis.com/flyem-male-cns/v1.0/connectome-data/flat-connectome/connectome-weights-male-cns-v1.0-minconf-0.5.feather",
+      "bytes": 1051241946,
+      "sha256": "e35da783d1c686b2b58b3b87cd6a403ae43bfcfba8bff28e08ef752c1a56afc1"
+    }
+  },
+  "wall_seconds": 42.84790106699802,
+  "limits": [
+    "Same exact full graph; independent reset for each stimulus.",
+    "Black image retains the declared tonic lamina current; not zero injected current.",
+    "Static artificial calibration images, not recorded gameplay.",
+    "Sensitivity differences do not establish useful perception or learning.",
+    "No change to decoder, weights, or current live session."
+  ],
+  "graph_sha256": "346b8af85a11af13b8324e18669812c1924569e7d1adcb4e6f45cc461a2c344b",
+  "conditions": [
+    {
+      "stimulus": "empty_board",
+      "neural_ms": 1000,
+      "total_spikes": 593246,
+      "spiking_neurons": 9999,
+      "readout_spikes_DFJK": [
+        0,
+        29,
+        29,
+        0
+      ],
+      "presses_DFJK": [
+        0,
+        8,
+        8,
+        0
+      ],
+      "readout_trace_matches_empty_board": true
+    },
+    {
+      "stimulus": "isolated_note_D",
+      "neural_ms": 1000,
+      "total_spikes": 593246,
+      "spiking_neurons": 9999,
+      "readout_spikes_DFJK": [
+        0,
+        29,
+        29,
+        0
+      ],
+      "presses_DFJK": [
+        0,
+        8,
+        8,
+        0
+      ],
+      "readout_trace_matches_empty_board": true
+    },
+    {
+      "stimulus": "isolated_note_F",
+      "neural_ms": 1000,
+      "total_spikes": 593159,
+      "spiking_neurons": 10001,
+      "readout_spikes_DFJK": [
+        0,
+        28,
+        28,
+        0
+      ],
+      "presses_DFJK": [
+        0,
+        7,
+        8,
+        0
+      ],
+      "readout_trace_matches_empty_board": false
+    },
+    {
+      "stimulus": "isolated_note_J",
+      "neural_ms": 1000,
+      "total_spikes": 593246,
+      "spiking_neurons": 9999,
+      "readout_spikes_DFJK": [
+        0,
+        29,
+        29,
+        0
+      ],
+      "presses_DFJK": [
+        0,
+        8,
+        8,
+        0
+      ],
+      "readout_trace_matches_empty_board": true
+    },
+    {
+      "stimulus": "isolated_note_K",
+      "neural_ms": 1000,
+      "total_spikes": 594318,
+      "spiking_neurons": 9997,
+      "readout_spikes_DFJK": [
+        0,
+        28,
+        28,
+        0
+      ],
+      "presses_DFJK": [
+        0,
+        7,
+        8,
+        0
+      ],
+      "readout_trace_matches_empty_board": false
+    },
+    {
+      "stimulus": "black_image",
+      "neural_ms": 1000,
+      "total_spikes": 268935,
+      "spiking_neurons": 8651,
+      "readout_spikes_DFJK": [
+        0,
+        11,
+        11,
+        0
+      ],
+      "presses_DFJK": [
+        0,
+        6,
+        6,
+        0
+      ],
+      "readout_trace_matches_empty_board": false
+    }
+  ]
+}

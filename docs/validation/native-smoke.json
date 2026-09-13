@@ -1,0 +1,10 @@
+{
+  "backend": "native-cpu",
+  "neurons": 166700,
+  "edges": 25582938,
+  "neural_ms": 1.0,
+  "wall_seconds": 0.003549888002453372,
+  "spikes": 0,
+  "stimulus": "zero current; no environment",
+  "note": "First CPU call includes JIT compilation. Not biological validation."
+}

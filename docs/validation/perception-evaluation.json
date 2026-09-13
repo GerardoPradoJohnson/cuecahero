@@ -1,0 +1,210 @@
+{
+  "model_sha256": "0cfcf3c5fbdafe2bdae5049a933d35bf6185b9d84434e3660973139ddf370bd7",
+  "graph_sha256": "346b8af85a11af13b8324e18669812c1924569e7d1adcb4e6f45cc461a2c344b",
+  "results": [
+    {
+      "mode": "pixels",
+      "seed": 857,
+      "state": {
+        "environment": "cueca_hero",
+        "time": 16.748148,
+        "duration": 16.748148148,
+        "score": 1980,
+        "combo": 1,
+        "best_combo": 11,
+        "hits": 30,
+        "misses": 18,
+        "wrong": 7,
+        "accuracy": 62.5,
+        "total_notes": 48,
+        "events": [],
+        "action": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "done": true,
+        "bpm": 108,
+        "seed": 857,
+        "reward": 0.0
+      },
+      "presses_by_lane": [
+        10,
+        7,
+        11,
+        9
+      ],
+      "hits_by_lane": [
+        9,
+        5,
+        8,
+        8
+      ]
+    },
+    {
+      "mode": "pixels",
+      "seed": 953,
+      "state": {
+        "environment": "cueca_hero",
+        "time": 16.748148,
+        "duration": 16.748148148,
+        "score": 1560,
+        "combo": 0,
+        "best_combo": 10,
+        "hits": 24,
+        "misses": 24,
+        "wrong": 6,
+        "accuracy": 50.0,
+        "total_notes": 48,
+        "events": [],
+        "action": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "done": true,
+        "bpm": 108,
+        "seed": 953,
+        "reward": 0.0
+      },
+      "presses_by_lane": [
+        7,
+        8,
+        9,
+        6
+      ],
+      "hits_by_lane": [
+        7,
+        6,
+        7,
+        4
+      ]
+    },
+    {
+      "mode": "pixels",
+      "seed": 1061,
+      "state": {
+        "environment": "cueca_hero",
+        "time": 16.748148,
+        "duration": 16.748148148,
+        "score": 1740,
+        "combo": 1,
+        "best_combo": 5,
+        "hits": 27,
+        "misses": 21,
+        "wrong": 8,
+        "accuracy": 56.2,
+        "total_notes": 48,
+        "events": [],
+        "action": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "done": true,
+        "bpm": 108,
+        "seed": 1061,
+        "reward": 0.0
+      },
+      "presses_by_lane": [
+        9,
+        10,
+        12,
+        4
+      ],
+      "hits_by_lane": [
+        7,
+        8,
+        8,
+        4
+      ]
+    },
+    {
+      "mode": "black",
+      "seed": 857,
+      "state": {
+        "environment": "cueca_hero",
+        "time": 16.748148,
+        "duration": 16.748148148,
+        "score": 0,
+        "combo": 0,
+        "best_combo": 0,
+        "hits": 0,
+        "misses": 48,
+        "wrong": 0,
+        "accuracy": 0.0,
+        "total_notes": 48,
+        "events": [],
+        "action": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "done": true,
+        "bpm": 108,
+        "seed": 857,
+        "reward": 0.0
+      },
+      "presses_by_lane": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hits_by_lane": [
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "mode": "empty_board",
+      "seed": 857,
+      "state": {
+        "environment": "cueca_hero",
+        "time": 16.748148,
+        "duration": 16.748148148,
+        "score": 0,
+        "combo": 0,
+        "best_combo": 0,
+        "hits": 0,
+        "misses": 0,
+        "wrong": 0,
+        "accuracy": null,
+        "total_notes": 0,
+        "events": [],
+        "action": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "done": true,
+        "bpm": 108,
+        "seed": 857,
+        "reward": 0.0
+      },
+      "presses_by_lane": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "hits_by_lane": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "wall_seconds": 309.23758154999814,
+  "limits": "Frozen external decoder; no MaleCNS plasticity or biological learning.",
+  "activation_criteria": "Every chart: at least 24/48 hits, all four lanes hit, at most 10 false presses. Both controls: zero presses.",
+  "activation_passed": true
+}
