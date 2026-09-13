@@ -166,7 +166,10 @@ async function loadSongsCatalog() {
   }
 }
 $('song-select')?.addEventListener('change', e => {
-  control({type: 'select_song', song_id: e.target.value});
+  if(recording)closeRecording(false);
+  if(songAudio){songAudio.pause();songAudio.currentTime=0;}
+  history=[];
+  control({type:'select_song',song_id:e.target.value});
 });
 async function poll(){try{const r=await fetch('/api/state');if(!r.ok)throw Error('Servidor no disponible');const s=await r.json();const reconnected=!online;online=true;live=s;$('connection').textContent='Laboratorio local conectado';$('connection-dot').style.background='#75d0b1';if(!recording&&(!shown||reconnected||s.revision!==shown.revision))display(s);}catch(e){online=false;$('connection').textContent='Sin conexión al servidor';$('connection-dot').style.background='#e88e9c';$('start').disabled=true;}setTimeout(poll,65);}
 $('start').onclick=()=>{
@@ -266,7 +269,8 @@ $('sound').onclick=async()=>{
 };
 async function getReplay(){const id=live?.session;if(!id)throw Error('Todavía no hay una sesión grabada.');const response=await fetch('/api/replay?id='+encodeURIComponent(id));if(!response.ok)throw Error((await response.json()).error);return response.json();}
 $('replay').onclick=async()=>{try{await control({type:'pause'});const data=await getReplay();if(!data.frames.length)throw Error('La sesión todavía no tiene pasos registrados.');recording=data;replayIndex=0;replayOffset=0;replayStart=performance.now();playback=true;history=[];$('replay-bar').hidden=false;$('scrub').max=data.frames.length-1;$('replay-play').textContent='Pausar';display(data.frames[0]);}catch(e){error(e.message);}};
-$('replay-close').onclick=()=>{recording=null;playback=false;$('replay-bar').hidden=true;history=[];if(live)display(live);};
+function closeRecording(showLive=true){recording=null;playback=false;$('replay-bar').hidden=true;history=[];if(songAudio){songAudio.pause();songAudio.currentTime=0;}if(showLive&&live)display(live);}
+$('replay-close').onclick=()=>closeRecording();
 $('replay-play').onclick=()=>{if(replayIndex===recording.frames.length-1){replayIndex=0;if(songAudio)songAudio.currentTime=0;display(recording.frames[0]);$('scrub').value=0;}playback=!playback;replayOffset=recording.frames[replayIndex].game.time-recording.frames[0].game.time;replayStart=performance.now();$('replay-play').textContent=playback?'Pausar':'Continuar';if(shown)syncSongAudio(shown);};
 $('scrub').oninput=e=>{replayIndex=Number(e.target.value);if(songAudio)songAudio.currentTime=Math.max(0,songTime(recording.frames[replayIndex]));replayOffset=recording.frames[replayIndex].game.time-recording.frames[0].game.time;replayStart=performance.now();history=[];display(recording.frames[replayIndex]);};
 $('export').onclick=async()=>{try{const data=recording||await getReplay();const url=URL.createObjectURL(new Blob([JSON.stringify(data)],{type:'application/json'}));const a=document.createElement('a');a.href=url;a.download=`cueca-hero-${data.header.id}.json`;a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);}catch(e){error(e.message);}};
