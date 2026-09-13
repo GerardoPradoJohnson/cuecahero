@@ -595,10 +595,11 @@ export class FlyStage {
     this.texture.needsUpdate = true;
   }
   render(now){
-    if(now-this.lastRender<1000/30)return;this.lastRender=now;
+    if(now-this.lastRender<1000/30)return;const dt=Number.isFinite(this.lastRender)?Math.min((now-this.lastRender)/1000,.1):0;this.lastRender=now;
+    this.animationTime=(this.animationTime||0)+(this.state?.mode==='running'?dt:0);
     const canvas=this.renderer.domElement,w=canvas.clientWidth,h=canvas.clientHeight;if(!w||!h)return;
     if(w!==this.w||h!==this.h){this.w=w;this.h=h;this.renderer.setSize(w,h,false);this.camera.aspect=w/h;this.camera.updateProjectionMatrix();}
-    const s=this.state,t=s?.game.time??0,playing=s?.mode==='running',action=s?.game.action.some(Boolean),motion=!this.reduced.matches;
+    const s=this.state,t=this.animationTime||0,playing=s?.mode==='running',action=s?.game.action.some(Boolean),motion=!this.reduced.matches;
     this.body.position.y=1.05+(motion&&playing?Math.sin(t*8)*.024:0);
     this.panuelo.rotation.z=motion&&playing?Math.sin(t*12)*.45:0;
     this.panuelo.rotation.y=motion&&playing?Math.cos(t*10)*.35:0;

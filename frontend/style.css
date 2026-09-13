@@ -71,3 +71,9 @@
 .brain-legend-item.auditory-glow .dot-auditory{transform:scale(1.18);background:#34d399;box-shadow:0 0 8px rgba(52,211,153,.8)}
 #live-fail-badge{border-color:#5c3543;color:#e88e9c}
 
+
+.dot-neuron{background:#c5a4ee}
+.brain-legend-item.reward-glow .dot-neuron{box-shadow:0 0 6px #c5a4ee}
+
+.checkpoint-controls{display:flex;flex-wrap:wrap;align-items:center;gap:14px;margin:18px 0;padding:18px 22px;border:1px solid #39313f;border-radius:14px;background:#211c29}
+.checkpoint-controls>div{flex:1;min-width:230px}.checkpoint-controls label{display:block;font-size:10px;letter-spacing:.14em;color:#c5a4ee;margin-bottom:8px}.checkpoint-controls select{width:100%;padding:10px;color:#eee;background:#17131e;border:1px solid #4b3e5b;border-radius:7px}.checkpoint-controls p,.checkpoint-controls small{flex-basis:100%;margin:0;color:#bab0c6}.checkpoint-controls small{font-size:11px}

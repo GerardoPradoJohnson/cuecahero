@@ -1,1413 +1,3274 @@
 {
   "id": "la_consentida",
   "title": "La Consentida",
-  "subtitle": "Cueca Tradicional Chilena",
-  "artist": "Jaime Atria / Tradicional",
-  "bpm": 112,
-  "bars": 24,
+  "subtitle": "Grabaci\u00f3n aportada \u00b7 mapa adaptado al audio",
+  "artist": "Jaime Atria (composici\u00f3n) \u00b7 int\u00e9rprete no identificado",
+  "bpm": 115,
+  "bars": 110,
   "meter": "6/8",
-  "duration": 29.5357,
-  "audio_url": "/audio/la_consentida.wav",
+  "duration": 129.157732,
+  "audio_url": "/audio/consentida.mp3",
+  "audio_offset": 2.4,
+  "beat_times": [
+    4.9078,
+    5.465,
+    5.9527,
+    6.4519,
+    6.9859,
+    7.4968,
+    8.0076,
+    8.5533,
+    9.0525,
+    9.5517,
+    10.0858,
+    10.5734,
+    11.0727,
+    11.6299,
+    12.164,
+    12.64,
+    13.1741,
+    13.6617,
+    14.1609,
+    14.7066,
+    15.2406,
+    15.7399,
+    16.2507,
+    16.7499,
+    17.2492,
+    17.7948,
+    18.3173,
+    18.8165,
+    19.3506,
+    19.8614,
+    20.3839,
+    20.9063,
+    21.4171,
+    21.928,
+    22.4737,
+    22.9961,
+    23.4721,
+    24.0294,
+    24.5634,
+    25.0395,
+    25.5967,
+    26.1076,
+    26.6184,
+    27.1641,
+    27.6517,
+    28.1509,
+    28.7082,
+    29.219,
+    29.7067,
+    30.2756,
+    30.8096,
+    31.2856,
+    31.8661,
+    32.3654,
+    32.8762,
+    33.4219,
+    33.9443,
+    34.4319,
+    34.9892,
+    35.5117,
+    35.9993,
+    36.5566,
+    37.079,
+    37.5782,
+    38.1239,
+    38.6463,
+    39.1456,
+    39.7029,
+    40.2137,
+    40.7361,
+    41.2818,
+    41.781,
+    42.3267,
+    42.8724,
+    43.3832,
+    43.9057,
+    44.4629,
+    44.9854,
+    45.5195,
+    46.0651,
+    46.5644,
+    47.0868,
+    47.6557,
+    48.1781,
+    48.689,
+    49.2463,
+    49.7687,
+    50.2795,
+    50.8368,
+    51.3593,
+    51.8701,
+    52.4274,
+    52.9382,
+    53.4491,
+    53.9947,
+    54.5172,
+    55.0164,
+    55.5737,
+    56.0961,
+    56.6186,
+    57.1643,
+    57.7099,
+    58.2092,
+    58.7432,
+    59.2773,
+    59.7881,
+    60.3454,
+    60.8678,
+    61.3787,
+    61.936,
+    62.47,
+    62.946,
+    63.5381,
+    64.0722,
+    64.583,
+    65.1519,
+    65.6628,
+    66.1736,
+    66.7541,
+    67.2649,
+    67.7874,
+    68.3447,
+    68.8555,
+    69.378,
+    69.8888,
+    70.4693,
+    70.9685,
+    71.5142,
+    72.0134,
+    72.5243,
+    73.0932,
+    73.6156,
+    74.1264,
+    74.6837,
+    75.2062,
+    75.7286,
+    76.2395,
+    76.7851,
+    77.3076,
+    77.8649,
+    78.3989,
+    78.9214,
+    79.467,
+    79.9663,
+    80.5003,
+    81.0344,
+    81.5336,
+    82.0561,
+    82.6366,
+    83.2171,
+    83.7163,
+    84.2736,
+    84.796,
+    85.3185,
+    85.8641,
+    86.375,
+    86.8858,
+    87.4315,
+    87.9655,
+    88.4648,
+    89.0104,
+    89.5445,
+    90.0669,
+    90.6126,
+    91.1351,
+    91.6343,
+    92.2264,
+    92.7488,
+    93.2597,
+    93.8286,
+    94.3394,
+    94.8735,
+    95.4307,
+    95.9532,
+    96.464,
+    97.0213,
+    97.5554,
+    98.0546,
+    98.6119,
+    99.1227,
+    99.6568,
+    100.2141,
+    100.7481,
+    101.2473,
+    101.8046,
+    102.3387,
+    102.8611,
+    103.43,
+    103.9409,
+    104.4517,
+    105.0206,
+    105.5082,
+    106.0423,
+    106.6112,
+    107.1336,
+    107.6561,
+    108.2133,
+    108.7358,
+    109.2466,
+    109.8039,
+    110.3263,
+    110.8488,
+    111.4061,
+    111.9053,
+    112.4394,
+    112.9966,
+    113.5191,
+    114.0415,
+    114.622,
+    115.1329,
+    115.6553,
+    116.2358,
+    116.7583,
+    117.2691,
+    117.8264,
+    118.3605,
+    118.8945,
+    119.4286,
+    119.9626
+  ],
   "notes": [
     {
       "id": 0,
-      "lane": 0,
-      "at": 2.4,
+      "lane": 2,
+      "at": 3.2243,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 0.8243,
+      "pitch_midi": 75.98
     },
     {
       "id": 1,
-      "lane": 2,
-      "at": 2.4,
+      "lane": 3,
+      "at": 4.8961,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 2.4961,
+      "pitch_midi": 80.04
     },
     {
       "id": 2,
       "lane": 1,
-      "at": 2.5786,
+      "at": 5.4534,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 3.0534,
+      "pitch_midi": 69.0
     },
     {
       "id": 3,
-      "lane": 3,
-      "at": 2.7571,
+      "lane": 0,
+      "at": 6.1965,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 3.7965,
+      "pitch_midi": 51.9
     },
     {
       "id": 4,
       "lane": 0,
-      "at": 2.9357,
+      "at": 6.4403,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 4.0403,
+      "pitch_midi": 63.99
     },
     {
       "id": 5,
-      "lane": 2,
-      "at": 2.9357,
+      "lane": 0,
+      "at": 6.7189,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 4.3189,
+      "pitch_midi": 53.9
     },
     {
       "id": 6,
-      "lane": 1,
-      "at": 3.1143,
+      "lane": 0,
+      "at": 6.9743,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 4.5743,
+      "pitch_midi": 65.95
     },
     {
       "id": 7,
-      "lane": 3,
-      "at": 3.2929,
+      "lane": 1,
+      "at": 7.4852,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 5.0852,
+      "pitch_midi": 69.0
     },
     {
       "id": 8,
-      "lane": 0,
-      "at": 3.4714,
+      "lane": 1,
+      "at": 7.7522,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 5.3522,
+      "pitch_midi": 69.03
     },
     {
       "id": 9,
-      "lane": 2,
-      "at": 3.4714,
+      "lane": 1,
+      "at": 7.996,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 5.596,
+      "pitch_midi": 69.03
     },
     {
       "id": 10,
-      "lane": 1,
-      "at": 3.65,
+      "lane": 2,
+      "at": 8.5417,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 6.1417,
+      "pitch_midi": 75.97
     },
     {
       "id": 11,
       "lane": 3,
-      "at": 3.8286,
+      "at": 8.9132,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 6.5132,
+      "pitch_midi": 81.04
     },
     {
       "id": 12,
-      "lane": 0,
-      "at": 4.0071,
+      "lane": 1,
+      "at": 9.1686,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 6.7686,
+      "pitch_midi": 69.0
     },
     {
       "id": 13,
-      "lane": 2,
-      "at": 4.0071,
-      "sustain": 0.4,
-      "judgement": null
+      "lane": 1,
+      "at": 9.7027,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 7.3027,
+      "pitch_midi": 69.03
     },
     {
       "id": 14,
-      "lane": 1,
-      "at": 4.1857,
+      "lane": 3,
+      "at": 9.9465,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 7.5465,
+      "pitch_midi": 81.05
     },
     {
       "id": 15,
-      "lane": 3,
-      "at": 4.3643,
+      "lane": 1,
+      "at": 10.5618,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 8.1618,
+      "pitch_midi": 69.0
     },
     {
       "id": 16,
-      "lane": 0,
-      "at": 4.5429,
+      "lane": 3,
+      "at": 11.061,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 8.661,
+      "pitch_midi": 80.02
     },
     {
       "id": 17,
-      "lane": 2,
-      "at": 4.5429,
+      "lane": 1,
+      "at": 11.6183,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 9.2183,
+      "pitch_midi": 69.0
     },
     {
       "id": 18,
       "lane": 1,
-      "at": 4.7214,
+      "at": 11.8621,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 9.4621,
+      "pitch_midi": 74.03
     },
     {
       "id": 19,
-      "lane": 3,
-      "at": 4.9,
+      "lane": 1,
+      "at": 12.3962,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 9.9962,
+      "pitch_midi": 69.0
     },
     {
       "id": 20,
-      "lane": 0,
-      "at": 5.0786,
+      "lane": 1,
+      "at": 12.6284,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 10.2284,
+      "pitch_midi": 70.99
     },
     {
       "id": 21,
-      "lane": 2,
-      "at": 5.0786,
+      "lane": 0,
+      "at": 13.1624,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 10.7624,
+      "pitch_midi": 54.04
     },
     {
       "id": 22,
       "lane": 1,
-      "at": 5.2571,
+      "at": 13.4063,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 11.0063,
+      "pitch_midi": 68.04
     },
     {
       "id": 23,
-      "lane": 3,
-      "at": 5.4357,
+      "lane": 1,
+      "at": 13.7894,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 11.3894,
+      "pitch_midi": 69.1
     },
     {
       "id": 24,
-      "lane": 0,
-      "at": 5.6143,
+      "lane": 3,
+      "at": 14.1493,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 11.7493,
+      "pitch_midi": 81.04
     },
     {
       "id": 25,
-      "lane": 2,
-      "at": 5.6143,
+      "lane": 3,
+      "at": 14.695,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 12.295,
+      "pitch_midi": 81.06
     },
     {
       "id": 26,
-      "lane": 1,
-      "at": 5.7929,
+      "lane": 3,
+      "at": 15.1129,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 12.7129,
+      "pitch_midi": 80.96
     },
     {
       "id": 27,
       "lane": 3,
-      "at": 5.9714,
+      "at": 15.3683,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 12.9683,
+      "pitch_midi": 80.95
     },
     {
       "id": 28,
-      "lane": 0,
-      "at": 6.15,
+      "lane": 3,
+      "at": 16.2391,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 13.8391,
+      "pitch_midi": 78.86
     },
     {
       "id": 29,
-      "lane": 2,
-      "at": 6.15,
-      "sustain": 0.6,
-      "judgement": null
+      "lane": 1,
+      "at": 16.5642,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 14.1642,
+      "pitch_midi": 68.93
     },
     {
       "id": 30,
       "lane": 1,
-      "at": 6.3286,
+      "at": 16.9705,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 14.5705,
+      "pitch_midi": 71.03
     },
     {
       "id": 31,
-      "lane": 3,
-      "at": 6.5071,
+      "lane": 0,
+      "at": 17.5394,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 15.1394,
+      "pitch_midi": 57.75
     },
     {
       "id": 32,
-      "lane": 0,
-      "at": 6.6857,
+      "lane": 3,
+      "at": 17.7948,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 15.3948,
+      "pitch_midi": 80.11
     },
     {
       "id": 33,
-      "lane": 2,
-      "at": 6.6857,
+      "lane": 0,
+      "at": 18.3173,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 15.9173,
+      "pitch_midi": 63.05
     },
     {
       "id": 34,
       "lane": 1,
-      "at": 6.8643,
+      "at": 18.8049,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 16.4049,
+      "pitch_midi": 67.47
     },
     {
       "id": 35,
-      "lane": 2,
-      "at": 7.0429,
+      "lane": 3,
+      "at": 19.0951,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 16.6951,
+      "pitch_midi": 76.98
     },
     {
       "id": 36,
-      "lane": 3,
-      "at": 7.0429,
+      "lane": 2,
+      "at": 19.339,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 16.939,
+      "pitch_midi": 74.96
     },
     {
       "id": 37,
-      "lane": 0,
-      "at": 7.2214,
+      "lane": 2,
+      "at": 19.5828,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 17.1828,
+      "pitch_midi": 74.32
     },
     {
       "id": 38,
-      "lane": 1,
-      "at": 7.4,
+      "lane": 0,
+      "at": 20.0356,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 17.6356,
+      "pitch_midi": 59.33
     },
     {
       "id": 39,
-      "lane": 2,
-      "at": 7.4,
+      "lane": 0,
+      "at": 20.6161,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 18.2161,
+      "pitch_midi": 63.61
     },
     {
       "id": 40,
-      "lane": 3,
-      "at": 7.5786,
+      "lane": 1,
+      "at": 20.9063,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 18.5063,
+      "pitch_midi": 72.11
     },
     {
       "id": 41,
-      "lane": 0,
-      "at": 7.7571,
+      "lane": 1,
+      "at": 21.1269,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 18.7269,
+      "pitch_midi": 72.14
     },
     {
       "id": 42,
-      "lane": 2,
-      "at": 7.7571,
+      "lane": 0,
+      "at": 21.4055,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 19.0055,
+      "pitch_midi": 52.35
     },
     {
       "id": 43,
-      "lane": 1,
-      "at": 7.9357,
+      "lane": 0,
+      "at": 21.9164,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 19.5164,
+      "pitch_midi": 54.57
     },
     {
       "id": 44,
-      "lane": 2,
-      "at": 8.1143,
+      "lane": 1,
+      "at": 22.462,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 20.062,
+      "pitch_midi": 74.04
     },
     {
       "id": 45,
-      "lane": 3,
-      "at": 8.1143,
+      "lane": 1,
+      "at": 22.7059,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 20.3059,
+      "pitch_midi": 72.14
     },
     {
       "id": 46,
-      "lane": 0,
-      "at": 8.2929,
+      "lane": 1,
+      "at": 23.147,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 20.747,
+      "pitch_midi": 71.28
     },
     {
       "id": 47,
-      "lane": 1,
-      "at": 8.4714,
+      "lane": 0,
+      "at": 23.4489,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 21.0489,
+      "pitch_midi": 65.62
     },
     {
       "id": 48,
       "lane": 2,
-      "at": 8.4714,
+      "at": 24.0294,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 21.6294,
+      "pitch_midi": 75.31
     },
     {
       "id": 49,
-      "lane": 3,
-      "at": 8.65,
+      "lane": 0,
+      "at": 24.2616,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 21.8616,
+      "pitch_midi": 61.81
     },
     {
       "id": 50,
       "lane": 0,
-      "at": 8.8286,
+      "at": 24.5518,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 22.1518,
+      "pitch_midi": 63.93
     },
     {
       "id": 51,
-      "lane": 2,
-      "at": 8.8286,
+      "lane": 0,
+      "at": 25.0162,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 22.6162,
+      "pitch_midi": 56.09
     },
     {
       "id": 52,
-      "lane": 1,
-      "at": 9.0071,
+      "lane": 0,
+      "at": 25.5735,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 23.1735,
+      "pitch_midi": 64.15
     },
     {
       "id": 53,
-      "lane": 3,
-      "at": 9.1857,
+      "lane": 1,
+      "at": 25.8289,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 23.4289,
+      "pitch_midi": 68.04
     },
     {
       "id": 54,
       "lane": 0,
-      "at": 9.3643,
+      "at": 26.096,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 23.696,
+      "pitch_midi": 56.18
     },
     {
       "id": 55,
-      "lane": 2,
-      "at": 9.3643,
+      "lane": 0,
+      "at": 26.363,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 23.963,
+      "pitch_midi": 64.81
     },
     {
       "id": 56,
       "lane": 1,
-      "at": 9.5429,
+      "at": 26.6068,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 24.2068,
+      "pitch_midi": 72.03
     },
     {
       "id": 57,
       "lane": 3,
-      "at": 9.7214,
+      "at": 27.1409,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 24.7409,
+      "pitch_midi": 76.35
     },
     {
       "id": 58,
-      "lane": 0,
-      "at": 9.9,
+      "lane": 1,
+      "at": 27.3847,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 24.9847,
+      "pitch_midi": 72.16
     },
     {
       "id": 59,
-      "lane": 2,
-      "at": 9.9,
+      "lane": 1,
+      "at": 27.6981,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 25.2981,
+      "pitch_midi": 70.23
     },
     {
       "id": 60,
       "lane": 1,
-      "at": 10.0786,
+      "at": 28.1393,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 25.7393,
+      "pitch_midi": 68.83
     },
     {
       "id": 61,
-      "lane": 2,
-      "at": 10.2571,
-      "sustain": 0.85,
-      "judgement": null
+      "lane": 1,
+      "at": 28.6966,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 26.2966,
+      "pitch_midi": 74.2
     },
     {
       "id": 62,
-      "lane": 3,
-      "at": 10.2571,
+      "lane": 1,
+      "at": 28.9404,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 26.5404,
+      "pitch_midi": 72.1
     },
     {
       "id": 63,
       "lane": 0,
-      "at": 10.4357,
+      "at": 29.2074,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 26.8074,
+      "pitch_midi": 60.74
     },
     {
       "id": 64,
-      "lane": 1,
-      "at": 10.6143,
+      "lane": 0,
+      "at": 29.4861,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 27.0861,
+      "pitch_midi": 55.22
     },
     {
       "id": 65,
-      "lane": 3,
-      "at": 10.7929,
+      "lane": 2,
+      "at": 30.2639,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 27.8639,
+      "pitch_midi": 75.94
     },
     {
       "id": 66,
       "lane": 0,
-      "at": 10.9714,
+      "at": 30.5078,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 28.1078,
+      "pitch_midi": 56.07
     },
     {
       "id": 67,
-      "lane": 2,
-      "at": 10.9714,
+      "lane": 1,
+      "at": 30.798,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 28.398,
+      "pitch_midi": 71.24
     },
     {
       "id": 68,
       "lane": 1,
-      "at": 11.15,
+      "at": 31.0534,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 28.6534,
+      "pitch_midi": 71.05
     },
     {
       "id": 69,
-      "lane": 2,
-      "at": 11.3286,
+      "lane": 0,
+      "at": 31.4366,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 29.0366,
+      "pitch_midi": 64.05
     },
     {
       "id": 70,
-      "lane": 3,
-      "at": 11.3286,
+      "lane": 2,
+      "at": 31.8545,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 29.4545,
+      "pitch_midi": 75.94
     },
     {
       "id": 71,
-      "lane": 0,
-      "at": 11.5071,
+      "lane": 2,
+      "at": 32.0983,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 29.6983,
+      "pitch_midi": 74.2
     },
     {
       "id": 72,
-      "lane": 1,
-      "at": 11.6857,
+      "lane": 2,
+      "at": 32.3421,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 29.9421,
+      "pitch_midi": 75.93
     },
     {
       "id": 73,
-      "lane": 2,
-      "at": 11.6857,
+      "lane": 1,
+      "at": 32.6324,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 30.2324,
+      "pitch_midi": 69.0
     },
     {
       "id": 74,
-      "lane": 3,
-      "at": 11.8643,
+      "lane": 1,
+      "at": 32.8762,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 30.4762,
+      "pitch_midi": 72.07
     },
     {
       "id": 75,
-      "lane": 0,
-      "at": 12.0429,
+      "lane": 3,
+      "at": 33.4102,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 31.0102,
+      "pitch_midi": 80.99
     },
     {
       "id": 76,
-      "lane": 2,
-      "at": 12.0429,
+      "lane": 1,
+      "at": 33.6541,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 31.2541,
+      "pitch_midi": 72.11
     },
     {
       "id": 77,
-      "lane": 1,
-      "at": 12.2214,
+      "lane": 2,
+      "at": 33.9327,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 31.5327,
+      "pitch_midi": 75.92
     },
     {
       "id": 78,
-      "lane": 2,
-      "at": 12.4,
+      "lane": 0,
+      "at": 34.1997,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 31.7997,
+      "pitch_midi": 56.8
     },
     {
       "id": 79,
-      "lane": 3,
-      "at": 12.4,
+      "lane": 2,
+      "at": 34.4319,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 32.0319,
+      "pitch_midi": 75.94
     },
     {
       "id": 80,
-      "lane": 0,
-      "at": 12.5786,
+      "lane": 3,
+      "at": 34.9776,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 32.5776,
+      "pitch_midi": 77.02
     },
     {
       "id": 81,
-      "lane": 1,
-      "at": 12.7571,
+      "lane": 3,
+      "at": 35.2214,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 32.8214,
+      "pitch_midi": 76.8
     },
     {
       "id": 82,
-      "lane": 2,
-      "at": 12.7571,
+      "lane": 3,
+      "at": 35.5,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 33.1,
+      "pitch_midi": 77.08
     },
     {
       "id": 83,
-      "lane": 3,
-      "at": 12.9357,
+      "lane": 2,
+      "at": 36.0109,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 33.6109,
+      "pitch_midi": 76.13
     },
     {
       "id": 84,
       "lane": 0,
-      "at": 13.1143,
+      "at": 36.2895,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 33.8895,
+      "pitch_midi": 51.84
     },
     {
       "id": 85,
       "lane": 2,
-      "at": 13.1143,
+      "at": 36.5449,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 34.1449,
+      "pitch_midi": 76.11
     },
     {
       "id": 86,
-      "lane": 1,
-      "at": 13.2929,
+      "lane": 0,
+      "at": 36.8004,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 34.4004,
+      "pitch_midi": 56.1
     },
     {
       "id": 87,
-      "lane": 3,
-      "at": 13.4714,
+      "lane": 2,
+      "at": 37.0674,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 34.6674,
+      "pitch_midi": 76.16
     },
     {
       "id": 88,
       "lane": 0,
-      "at": 13.65,
+      "at": 37.346,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 34.946,
+      "pitch_midi": 59.06
     },
     {
       "id": 89,
       "lane": 2,
-      "at": 13.65,
+      "at": 37.5666,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 35.1666,
+      "pitch_midi": 76.09
     },
     {
       "id": 90,
-      "lane": 1,
-      "at": 13.8286,
+      "lane": 0,
+      "at": 37.8569,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 35.4569,
+      "pitch_midi": 65.96
     },
     {
       "id": 91,
-      "lane": 3,
-      "at": 14.0071,
+      "lane": 2,
+      "at": 38.1123,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 35.7123,
+      "pitch_midi": 76.06
     },
     {
       "id": 92,
-      "lane": 0,
-      "at": 14.1857,
+      "lane": 2,
+      "at": 38.3677,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 35.9677,
+      "pitch_midi": 76.02
     },
     {
       "id": 93,
       "lane": 2,
-      "at": 14.1857,
+      "at": 38.6347,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 36.2347,
+      "pitch_midi": 75.98
     },
     {
       "id": 94,
       "lane": 1,
-      "at": 14.3643,
+      "at": 38.9018,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 36.5018,
+      "pitch_midi": 69.0
     },
     {
       "id": 95,
-      "lane": 2,
-      "at": 14.5429,
-      "sustain": 0.85,
-      "judgement": null
+      "lane": 1,
+      "at": 39.1456,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 36.7456,
+      "pitch_midi": 70.62
     },
     {
       "id": 96,
-      "lane": 3,
-      "at": 14.5429,
+      "lane": 2,
+      "at": 39.4358,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 37.0358,
+      "pitch_midi": 75.94
     },
     {
       "id": 97,
-      "lane": 0,
-      "at": 14.7214,
+      "lane": 1,
+      "at": 39.6796,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 37.2796,
+      "pitch_midi": 72.14
     },
     {
       "id": 98,
-      "lane": 1,
-      "at": 14.9,
+      "lane": 2,
+      "at": 39.9351,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 37.5351,
+      "pitch_midi": 76.08
     },
     {
       "id": 99,
-      "lane": 3,
-      "at": 15.0786,
+      "lane": 0,
+      "at": 40.2021,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 37.8021,
+      "pitch_midi": 51.67
     },
     {
       "id": 100,
       "lane": 0,
-      "at": 15.2571,
+      "at": 40.4807,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 38.0807,
+      "pitch_midi": 56.78
     },
     {
       "id": 101,
       "lane": 2,
-      "at": 15.2571,
+      "at": 40.7361,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 38.3361,
+      "pitch_midi": 75.97
     },
     {
       "id": 102,
-      "lane": 1,
-      "at": 15.4357,
+      "lane": 0,
+      "at": 41.2702,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 38.8702,
+      "pitch_midi": 63.84
     },
     {
       "id": 103,
-      "lane": 2,
-      "at": 15.6143,
+      "lane": 1,
+      "at": 41.5372,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 39.1372,
+      "pitch_midi": 73.93
     },
     {
       "id": 104,
-      "lane": 3,
-      "at": 15.6143,
+      "lane": 0,
+      "at": 41.781,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 39.381,
+      "pitch_midi": 64.09
     },
     {
       "id": 105,
       "lane": 0,
-      "at": 15.7929,
+      "at": 42.3151,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 39.9151,
+      "pitch_midi": 64.42
     },
     {
       "id": 106,
-      "lane": 1,
-      "at": 15.9714,
+      "lane": 3,
+      "at": 42.8608,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 40.4608,
+      "pitch_midi": 77.05
     },
     {
       "id": 107,
-      "lane": 2,
-      "at": 15.9714,
+      "lane": 3,
+      "at": 43.1046,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 40.7046,
+      "pitch_midi": 77.03
     },
     {
       "id": 108,
-      "lane": 3,
-      "at": 16.15,
+      "lane": 2,
+      "at": 43.3716,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 40.9716,
+      "pitch_midi": 74.5
     },
     {
       "id": 109,
       "lane": 0,
-      "at": 16.3286,
+      "at": 43.6502,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 41.2502,
+      "pitch_midi": 54.66
     },
     {
       "id": 110,
-      "lane": 2,
-      "at": 16.3286,
+      "lane": 1,
+      "at": 43.8941,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 41.4941,
+      "pitch_midi": 67.25
     },
     {
       "id": 111,
-      "lane": 1,
-      "at": 16.5071,
+      "lane": 3,
+      "at": 44.4397,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 42.0397,
+      "pitch_midi": 76.9
     },
     {
       "id": 112,
-      "lane": 3,
-      "at": 16.6857,
+      "lane": 0,
+      "at": 44.7068,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 42.3068,
+      "pitch_midi": 58.73
     },
     {
       "id": 113,
-      "lane": 0,
-      "at": 16.8643,
+      "lane": 3,
+      "at": 44.9738,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 42.5738,
+      "pitch_midi": 78.47
     },
     {
       "id": 114,
-      "lane": 2,
-      "at": 16.8643,
+      "lane": 1,
+      "at": 45.2524,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 42.8524,
+      "pitch_midi": 68.91
     },
     {
       "id": 115,
-      "lane": 1,
-      "at": 17.0429,
+      "lane": 2,
+      "at": 46.0535,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 43.6535,
+      "pitch_midi": 75.49
     },
     {
       "id": 116,
-      "lane": 3,
-      "at": 17.2214,
+      "lane": 1,
+      "at": 46.2857,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 43.8857,
+      "pitch_midi": 72.11
     },
     {
       "id": 117,
       "lane": 0,
-      "at": 17.4,
+      "at": 46.5527,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 44.1527,
+      "pitch_midi": 51.96
     },
     {
       "id": 118,
       "lane": 2,
-      "at": 17.4,
+      "at": 46.843,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 44.443,
+      "pitch_midi": 76.02
     },
     {
       "id": 119,
-      "lane": 1,
-      "at": 17.5786,
+      "lane": 2,
+      "at": 47.6441,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 45.2441,
+      "pitch_midi": 75.44
     },
     {
       "id": 120,
-      "lane": 2,
-      "at": 17.7571,
+      "lane": 1,
+      "at": 47.8995,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 45.4995,
+      "pitch_midi": 73.98
     },
     {
       "id": 121,
       "lane": 3,
-      "at": 17.7571,
+      "at": 48.2942,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 45.8942,
+      "pitch_midi": 77.03
     },
     {
       "id": 122,
-      "lane": 0,
-      "at": 17.9357,
+      "lane": 2,
+      "at": 48.689,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 46.289,
+      "pitch_midi": 75.98
     },
     {
       "id": 123,
-      "lane": 1,
-      "at": 18.1143,
+      "lane": 0,
+      "at": 49.2346,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 46.8346,
+      "pitch_midi": 64.01
     },
     {
       "id": 124,
-      "lane": 2,
-      "at": 18.1143,
-      "sustain": 0.75,
-      "judgement": null
+      "lane": 0,
+      "at": 49.4901,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 47.0901,
+      "pitch_midi": 51.62
     },
     {
       "id": 125,
-      "lane": 3,
-      "at": 18.2929,
+      "lane": 2,
+      "at": 49.7571,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 47.3571,
+      "pitch_midi": 75.68
     },
     {
       "id": 126,
-      "lane": 0,
-      "at": 18.4714,
+      "lane": 2,
+      "at": 50.2215,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 47.8215,
+      "pitch_midi": 76.06
     },
     {
       "id": 127,
-      "lane": 2,
-      "at": 18.4714,
+      "lane": 3,
+      "at": 50.8252,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 48.4252,
+      "pitch_midi": 77.03
     },
     {
       "id": 128,
-      "lane": 1,
-      "at": 18.65,
+      "lane": 0,
+      "at": 51.0806,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 48.6806,
+      "pitch_midi": 59.18
     },
     {
       "id": 129,
-      "lane": 2,
-      "at": 18.8286,
+      "lane": 0,
+      "at": 51.3825,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 48.9825,
+      "pitch_midi": 64.17
     },
     {
       "id": 130,
-      "lane": 3,
-      "at": 18.8286,
+      "lane": 1,
+      "at": 51.6147,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 49.2147,
+      "pitch_midi": 72.76
     },
     {
       "id": 131,
-      "lane": 0,
-      "at": 19.0071,
+      "lane": 2,
+      "at": 51.8701,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 49.4701,
+      "pitch_midi": 76.15
     },
     {
       "id": 132,
-      "lane": 1,
-      "at": 19.1857,
+      "lane": 3,
+      "at": 52.1488,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 49.7488,
+      "pitch_midi": 78.07
     },
     {
       "id": 133,
       "lane": 2,
-      "at": 19.1857,
-      "sustain": 0.8,
-      "judgement": null
+      "at": 52.4158,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 50.0158,
+      "pitch_midi": 76.12
     },
     {
       "id": 134,
-      "lane": 3,
-      "at": 19.3643,
+      "lane": 2,
+      "at": 52.648,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 50.248,
+      "pitch_midi": 76.11
     },
     {
       "id": 135,
-      "lane": 0,
-      "at": 19.5429,
+      "lane": 2,
+      "at": 52.915,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 50.515,
+      "pitch_midi": 76.09
     },
     {
       "id": 136,
       "lane": 2,
-      "at": 19.5429,
+      "at": 53.2053,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 50.8053,
+      "pitch_midi": 75.9
     },
     {
       "id": 137,
-      "lane": 1,
-      "at": 19.7214,
+      "lane": 3,
+      "at": 53.4491,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 51.0491,
+      "pitch_midi": 80.01
     },
     {
       "id": 138,
-      "lane": 3,
-      "at": 19.9,
+      "lane": 2,
+      "at": 53.9831,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 51.5831,
+      "pitch_midi": 75.9
     },
     {
       "id": 139,
-      "lane": 0,
-      "at": 20.0786,
+      "lane": 2,
+      "at": 54.2269,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 51.8269,
+      "pitch_midi": 75.97
     },
     {
       "id": 140,
-      "lane": 2,
-      "at": 20.0786,
+      "lane": 1,
+      "at": 54.5056,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 52.1056,
+      "pitch_midi": 71.93
     },
     {
       "id": 141,
       "lane": 1,
-      "at": 20.2571,
+      "at": 54.7726,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 52.3726,
+      "pitch_midi": 67.78
     },
     {
       "id": 142,
-      "lane": 3,
-      "at": 20.4357,
+      "lane": 2,
+      "at": 55.0164,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 52.6164,
+      "pitch_midi": 75.95
     },
     {
       "id": 143,
       "lane": 0,
-      "at": 20.6143,
+      "at": 55.5621,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 53.1621,
+      "pitch_midi": 64.03
     },
     {
       "id": 144,
       "lane": 2,
-      "at": 20.6143,
+      "at": 55.8175,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 53.4175,
+      "pitch_midi": 76.01
     },
     {
       "id": 145,
-      "lane": 1,
-      "at": 20.7929,
+      "lane": 2,
+      "at": 56.0845,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 53.6845,
+      "pitch_midi": 75.74
     },
     {
       "id": 146,
-      "lane": 3,
-      "at": 20.9714,
-      "sustain": 0.0,
-      "judgement": null
+      "lane": 2,
+      "at": 56.5605,
+      "sustain": 0.335,
+      "judgement": null,
+      "audio_at": 54.1605,
+      "pitch_midi": 76.1
     },
     {
       "id": 147,
       "lane": 0,
-      "at": 21.15,
+      "at": 56.8972,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 54.4972,
+      "pitch_midi": 65.92
     },
     {
       "id": 148,
       "lane": 2,
-      "at": 21.15,
+      "at": 57.1527,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 54.7527,
+      "pitch_midi": 75.95
     },
     {
       "id": 149,
-      "lane": 1,
-      "at": 21.3286,
+      "lane": 0,
+      "at": 57.4429,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 55.0429,
+      "pitch_midi": 59.0
     },
     {
       "id": 150,
-      "lane": 3,
-      "at": 21.5071,
+      "lane": 2,
+      "at": 57.6983,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 55.2983,
+      "pitch_midi": 76.1
     },
     {
       "id": 151,
-      "lane": 0,
-      "at": 21.6857,
+      "lane": 2,
+      "at": 58.1511,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 55.7511,
+      "pitch_midi": 75.79
     },
     {
       "id": 152,
-      "lane": 2,
-      "at": 21.6857,
+      "lane": 3,
+      "at": 58.7316,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 56.3316,
+      "pitch_midi": 80.95
     },
     {
       "id": 153,
-      "lane": 1,
-      "at": 21.8643,
+      "lane": 0,
+      "at": 58.987,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 56.587,
+      "pitch_midi": 51.96
     },
     {
       "id": 154,
       "lane": 3,
-      "at": 22.0429,
+      "at": 59.2657,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 56.8657,
+      "pitch_midi": 81.0
     },
     {
       "id": 155,
       "lane": 0,
-      "at": 22.2214,
+      "at": 59.5559,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 57.1559,
+      "pitch_midi": 56.64
     },
     {
       "id": 156,
-      "lane": 2,
-      "at": 22.2214,
+      "lane": 0,
+      "at": 59.7881,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 57.3881,
+      "pitch_midi": 56.76
     },
     {
       "id": 157,
       "lane": 1,
-      "at": 22.4,
+      "at": 60.3338,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 57.9338,
+      "pitch_midi": 71.5
     },
     {
       "id": 158,
       "lane": 3,
-      "at": 22.5786,
+      "at": 60.5892,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 58.1892,
+      "pitch_midi": 77.03
     },
     {
       "id": 159,
-      "lane": 0,
-      "at": 22.7571,
+      "lane": 2,
+      "at": 60.8795,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 58.4795,
+      "pitch_midi": 75.68
     },
     {
       "id": 160,
-      "lane": 2,
-      "at": 22.7571,
+      "lane": 0,
+      "at": 61.1465,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 58.7465,
+      "pitch_midi": 65.47
     },
     {
       "id": 161,
-      "lane": 1,
-      "at": 22.9357,
+      "lane": 2,
+      "at": 61.3671,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 58.9671,
+      "pitch_midi": 74.58
     },
     {
       "id": 162,
-      "lane": 3,
-      "at": 23.1143,
+      "lane": 0,
+      "at": 61.9244,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 59.5244,
+      "pitch_midi": 62.03
     },
     {
       "id": 163,
-      "lane": 0,
-      "at": 23.2929,
+      "lane": 1,
+      "at": 62.1682,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 59.7682,
+      "pitch_midi": 74.01
     },
     {
       "id": 164,
-      "lane": 2,
-      "at": 23.2929,
-      "sustain": 0.6,
-      "judgement": null
+      "lane": 3,
+      "at": 62.4584,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 60.0584,
+      "pitch_midi": 77.51
     },
     {
       "id": 165,
       "lane": 1,
-      "at": 23.4714,
+      "at": 62.9344,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 60.5344,
+      "pitch_midi": 67.24
     },
     {
       "id": 166,
-      "lane": 3,
-      "at": 23.65,
+      "lane": 1,
+      "at": 63.5265,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 61.1265,
+      "pitch_midi": 71.99
     },
     {
       "id": 167,
-      "lane": 0,
-      "at": 23.8286,
+      "lane": 3,
+      "at": 63.7936,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 61.3936,
+      "pitch_midi": 80.22
     },
     {
       "id": 168,
-      "lane": 2,
-      "at": 23.8286,
+      "lane": 3,
+      "at": 64.0606,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 61.6606,
+      "pitch_midi": 78.17
     },
     {
       "id": 169,
       "lane": 1,
-      "at": 24.0071,
+      "at": 64.3508,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 61.9508,
+      "pitch_midi": 69.85
     },
     {
       "id": 170,
-      "lane": 2,
-      "at": 24.1857,
+      "lane": 1,
+      "at": 64.5714,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 62.1714,
+      "pitch_midi": 69.62
     },
     {
       "id": 171,
-      "lane": 3,
-      "at": 24.1857,
+      "lane": 1,
+      "at": 65.1287,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 62.7287,
+      "pitch_midi": 72.11
     },
     {
       "id": 172,
-      "lane": 0,
-      "at": 24.3643,
+      "lane": 2,
+      "at": 65.3841,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 62.9841,
+      "pitch_midi": 75.99
     },
     {
       "id": 173,
-      "lane": 1,
-      "at": 24.5429,
+      "lane": 0,
+      "at": 65.6512,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 63.2512,
+      "pitch_midi": 64.13
     },
     {
       "id": 174,
-      "lane": 2,
-      "at": 24.5429,
+      "lane": 1,
+      "at": 65.9298,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 63.5298,
+      "pitch_midi": 68.3
     },
     {
       "id": 175,
-      "lane": 3,
-      "at": 24.7214,
+      "lane": 1,
+      "at": 66.1736,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 63.7736,
+      "pitch_midi": 68.81
     },
     {
       "id": 176,
-      "lane": 0,
-      "at": 24.9,
+      "lane": 1,
+      "at": 66.7309,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 64.3309,
+      "pitch_midi": 72.09
     },
     {
       "id": 177,
-      "lane": 2,
-      "at": 24.9,
+      "lane": 1,
+      "at": 66.9747,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 64.5747,
+      "pitch_midi": 70.64
     },
     {
       "id": 178,
-      "lane": 1,
-      "at": 25.0786,
+      "lane": 3,
+      "at": 67.2533,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 64.8533,
+      "pitch_midi": 81.02
     },
     {
       "id": 179,
-      "lane": 2,
-      "at": 25.2571,
+      "lane": 1,
+      "at": 67.532,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 65.132,
+      "pitch_midi": 70.9
     },
     {
       "id": 180,
-      "lane": 3,
-      "at": 25.2571,
+      "lane": 2,
+      "at": 67.7758,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 65.3758,
+      "pitch_midi": 76.02
     },
     {
       "id": 181,
       "lane": 0,
-      "at": 25.4357,
-      "sustain": 0.0,
-      "judgement": null
+      "at": 68.1937,
+      "sustain": 0.3698,
+      "judgement": null,
+      "audio_at": 65.7937,
+      "pitch_midi": 63.9
     },
     {
       "id": 182,
-      "lane": 1,
-      "at": 25.6143,
+      "lane": 3,
+      "at": 68.5769,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 66.1769,
+      "pitch_midi": 79.54
     },
     {
       "id": 183,
       "lane": 2,
-      "at": 25.6143,
+      "at": 68.8439,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 66.4439,
+      "pitch_midi": 75.59
     },
     {
       "id": 184,
-      "lane": 3,
-      "at": 25.7929,
+      "lane": 2,
+      "at": 69.3315,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 66.9315,
+      "pitch_midi": 75.9
     },
     {
       "id": 185,
-      "lane": 0,
-      "at": 25.9714,
+      "lane": 1,
+      "at": 69.6566,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 67.2566,
+      "pitch_midi": 73.38
     },
     {
       "id": 186,
-      "lane": 2,
-      "at": 25.9714,
+      "lane": 1,
+      "at": 69.8772,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 67.4772,
+      "pitch_midi": 73.92
     },
     {
       "id": 187,
       "lane": 1,
-      "at": 26.15,
+      "at": 70.179,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 67.779,
+      "pitch_midi": 67.75
     },
     {
       "id": 188,
-      "lane": 3,
-      "at": 26.3286,
+      "lane": 0,
+      "at": 70.4809,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 68.0809,
+      "pitch_midi": 62.91
     },
     {
       "id": 189,
-      "lane": 0,
-      "at": 26.5071,
+      "lane": 3,
+      "at": 70.7131,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 68.3131,
+      "pitch_midi": 79.75
     },
     {
       "id": 190,
-      "lane": 2,
-      "at": 26.5071,
+      "lane": 3,
+      "at": 71.1078,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 68.7078,
+      "pitch_midi": 80.98
     },
     {
       "id": 191,
-      "lane": 1,
-      "at": 26.6857,
+      "lane": 3,
+      "at": 71.5026,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 69.1026,
+      "pitch_midi": 78.99
     },
     {
       "id": 192,
-      "lane": 3,
-      "at": 26.8643,
+      "lane": 2,
+      "at": 71.7464,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 69.3464,
+      "pitch_midi": 75.05
     },
     {
       "id": 193,
-      "lane": 0,
-      "at": 27.0429,
+      "lane": 3,
+      "at": 72.0134,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 69.6134,
+      "pitch_midi": 77.02
     },
     {
       "id": 194,
       "lane": 2,
-      "at": 27.0429,
-      "sustain": 1.4,
-      "judgement": null
+      "at": 72.2688,
+      "sustain": 0.6136,
+      "judgement": null,
+      "audio_at": 69.8688,
+      "pitch_midi": 75.88
     },
     {
       "id": 195,
-      "lane": 1,
-      "at": 27.2214,
+      "lane": 2,
+      "at": 73.0815,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 70.6815,
+      "pitch_midi": 75.63
     },
     {
       "id": 196,
-      "lane": 3,
-      "at": 27.4,
+      "lane": 2,
+      "at": 73.5227,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 71.1227,
+      "pitch_midi": 76.03
     },
     {
       "id": 197,
-      "lane": 0,
-      "at": 27.5786,
+      "lane": 3,
+      "at": 73.8826,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 71.4826,
+      "pitch_midi": 79.45
     },
     {
       "id": 198,
-      "lane": 1,
-      "at": 27.7571,
-      "sustain": 1.4,
-      "judgement": null
+      "lane": 2,
+      "at": 74.1148,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 71.7148,
+      "pitch_midi": 75.05
     },
     {
       "id": 199,
-      "lane": 3,
-      "at": 27.9357,
+      "lane": 0,
+      "at": 74.6721,
       "sustain": 0.0,
-      "judgement": null
+      "judgement": null,
+      "audio_at": 72.2721,
+      "pitch_midi": 63.86
+    },
+    {
+      "id": 200,
+      "lane": 2,
+      "at": 74.9275,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 72.5275,
+      "pitch_midi": 75.65
+    },
+    {
+      "id": 201,
+      "lane": 3,
+      "at": 75.1946,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 72.7946,
+      "pitch_midi": 79.57
+    },
+    {
+      "id": 202,
+      "lane": 2,
+      "at": 75.7286,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 73.3286,
+      "pitch_midi": 75.73
+    },
+    {
+      "id": 203,
+      "lane": 0,
+      "at": 76.5065,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 74.1065,
+      "pitch_midi": 59.34
+    },
+    {
+      "id": 204,
+      "lane": 0,
+      "at": 76.7851,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 74.3851,
+      "pitch_midi": 62.57
+    },
+    {
+      "id": 205,
+      "lane": 3,
+      "at": 77.0522,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 74.6522,
+      "pitch_midi": 77.82
+    },
+    {
+      "id": 206,
+      "lane": 0,
+      "at": 77.296,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 74.896,
+      "pitch_midi": 57.06
+    },
+    {
+      "id": 207,
+      "lane": 3,
+      "at": 77.5862,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 75.1862,
+      "pitch_midi": 79.94
+    },
+    {
+      "id": 208,
+      "lane": 3,
+      "at": 77.8532,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 75.4532,
+      "pitch_midi": 80.27
+    },
+    {
+      "id": 209,
+      "lane": 1,
+      "at": 78.1087,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 75.7087,
+      "pitch_midi": 72.13
+    },
+    {
+      "id": 210,
+      "lane": 0,
+      "at": 78.3757,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 75.9757,
+      "pitch_midi": 54.86
+    },
+    {
+      "id": 211,
+      "lane": 1,
+      "at": 78.6543,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 76.2543,
+      "pitch_midi": 68.8
+    },
+    {
+      "id": 212,
+      "lane": 3,
+      "at": 79.4554,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 77.0554,
+      "pitch_midi": 79.18
+    },
+    {
+      "id": 213,
+      "lane": 1,
+      "at": 79.6992,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 77.2992,
+      "pitch_midi": 74.2
+    },
+    {
+      "id": 214,
+      "lane": 0,
+      "at": 79.9546,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 77.5546,
+      "pitch_midi": 63.8
+    },
+    {
+      "id": 215,
+      "lane": 0,
+      "at": 80.2333,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 77.8333,
+      "pitch_midi": 63.61
+    },
+    {
+      "id": 216,
+      "lane": 1,
+      "at": 80.5003,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 78.1003,
+      "pitch_midi": 74.19
+    },
+    {
+      "id": 217,
+      "lane": 3,
+      "at": 81.0228,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 78.6228,
+      "pitch_midi": 77.04
+    },
+    {
+      "id": 218,
+      "lane": 3,
+      "at": 81.2666,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 78.8666,
+      "pitch_midi": 77.02
+    },
+    {
+      "id": 219,
+      "lane": 3,
+      "at": 81.5336,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 79.1336,
+      "pitch_midi": 77.02
+    },
+    {
+      "id": 220,
+      "lane": 0,
+      "at": 81.8355,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 79.4355,
+      "pitch_midi": 53.3
+    },
+    {
+      "id": 221,
+      "lane": 3,
+      "at": 82.6249,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 80.2249,
+      "pitch_midi": 76.5
+    },
+    {
+      "id": 222,
+      "lane": 3,
+      "at": 82.8571,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 80.4571,
+      "pitch_midi": 80.45
+    },
+    {
+      "id": 223,
+      "lane": 3,
+      "at": 83.2054,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 80.8054,
+      "pitch_midi": 78.85
+    },
+    {
+      "id": 224,
+      "lane": 3,
+      "at": 84.2503,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 81.8503,
+      "pitch_midi": 79.05
+    },
+    {
+      "id": 225,
+      "lane": 1,
+      "at": 84.5058,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 82.1058,
+      "pitch_midi": 72.12
+    },
+    {
+      "id": 226,
+      "lane": 0,
+      "at": 84.7844,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 82.3844,
+      "pitch_midi": 55.16
+    },
+    {
+      "id": 227,
+      "lane": 1,
+      "at": 85.0514,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 82.6514,
+      "pitch_midi": 72.12
+    },
+    {
+      "id": 228,
+      "lane": 3,
+      "at": 85.3068,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 82.9068,
+      "pitch_midi": 80.47
+    },
+    {
+      "id": 229,
+      "lane": 1,
+      "at": 85.8525,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 83.4525,
+      "pitch_midi": 71.85
+    },
+    {
+      "id": 230,
+      "lane": 1,
+      "at": 86.0847,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 83.6847,
+      "pitch_midi": 67.21
+    },
+    {
+      "id": 231,
+      "lane": 2,
+      "at": 86.3634,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 83.9634,
+      "pitch_midi": 75.75
+    },
+    {
+      "id": 232,
+      "lane": 3,
+      "at": 86.642,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 84.242,
+      "pitch_midi": 79.85
+    },
+    {
+      "id": 233,
+      "lane": 3,
+      "at": 86.8742,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 84.4742,
+      "pitch_midi": 79.7
+    },
+    {
+      "id": 234,
+      "lane": 0,
+      "at": 87.4199,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 85.0199,
+      "pitch_midi": 64.04
+    },
+    {
+      "id": 235,
+      "lane": 0,
+      "at": 87.7101,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 85.3101,
+      "pitch_midi": 63.84
+    },
+    {
+      "id": 236,
+      "lane": 2,
+      "at": 87.9539,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 85.5539,
+      "pitch_midi": 75.88
+    },
+    {
+      "id": 237,
+      "lane": 3,
+      "at": 88.221,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 85.821,
+      "pitch_midi": 76.18
+    },
+    {
+      "id": 238,
+      "lane": 2,
+      "at": 88.4648,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 86.0648,
+      "pitch_midi": 76.16
+    },
+    {
+      "id": 239,
+      "lane": 2,
+      "at": 89.0104,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 86.6104,
+      "pitch_midi": 76.12
+    },
+    {
+      "id": 240,
+      "lane": 0,
+      "at": 89.2659,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 86.8659,
+      "pitch_midi": 52.0
+    },
+    {
+      "id": 241,
+      "lane": 1,
+      "at": 89.5329,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 87.1329,
+      "pitch_midi": 73.85
+    },
+    {
+      "id": 242,
+      "lane": 0,
+      "at": 89.7999,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 87.3999,
+      "pitch_midi": 63.33
+    },
+    {
+      "id": 243,
+      "lane": 3,
+      "at": 90.601,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 88.201,
+      "pitch_midi": 79.02
+    },
+    {
+      "id": 244,
+      "lane": 2,
+      "at": 90.8564,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 88.4564,
+      "pitch_midi": 76.1
+    },
+    {
+      "id": 245,
+      "lane": 2,
+      "at": 91.1931,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 88.7931,
+      "pitch_midi": 76.15
+    },
+    {
+      "id": 246,
+      "lane": 3,
+      "at": 91.4137,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 89.0137,
+      "pitch_midi": 76.47
+    },
+    {
+      "id": 247,
+      "lane": 2,
+      "at": 91.6691,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 89.2691,
+      "pitch_midi": 76.13
+    },
+    {
+      "id": 248,
+      "lane": 2,
+      "at": 92.2148,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 89.8148,
+      "pitch_midi": 76.12
+    },
+    {
+      "id": 249,
+      "lane": 2,
+      "at": 92.4702,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 90.0702,
+      "pitch_midi": 75.89
+    },
+    {
+      "id": 250,
+      "lane": 0,
+      "at": 92.7372,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 90.3372,
+      "pitch_midi": 64.08
+    },
+    {
+      "id": 251,
+      "lane": 1,
+      "at": 93.0043,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 90.6043,
+      "pitch_midi": 67.68
+    },
+    {
+      "id": 252,
+      "lane": 1,
+      "at": 93.8054,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 91.4054,
+      "pitch_midi": 70.12
+    },
+    {
+      "id": 253,
+      "lane": 1,
+      "at": 94.0608,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 91.6608,
+      "pitch_midi": 71.11
+    },
+    {
+      "id": 254,
+      "lane": 2,
+      "at": 94.3394,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 91.9394,
+      "pitch_midi": 76.15
+    },
+    {
+      "id": 255,
+      "lane": 3,
+      "at": 94.618,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 92.218,
+      "pitch_midi": 78.15
+    },
+    {
+      "id": 256,
+      "lane": 2,
+      "at": 95.1637,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 92.7637,
+      "pitch_midi": 75.69
+    },
+    {
+      "id": 257,
+      "lane": 2,
+      "at": 95.4191,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 93.0191,
+      "pitch_midi": 75.69
+    },
+    {
+      "id": 258,
+      "lane": 0,
+      "at": 95.6746,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 93.2746,
+      "pitch_midi": 62.38
+    },
+    {
+      "id": 259,
+      "lane": 3,
+      "at": 95.9416,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 93.5416,
+      "pitch_midi": 77.0
+    },
+    {
+      "id": 260,
+      "lane": 1,
+      "at": 96.2202,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 93.8202,
+      "pitch_midi": 70.44
+    },
+    {
+      "id": 261,
+      "lane": 2,
+      "at": 96.4524,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 94.0524,
+      "pitch_midi": 76.16
+    },
+    {
+      "id": 262,
+      "lane": 2,
+      "at": 96.7543,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 94.3543,
+      "pitch_midi": 76.09
+    },
+    {
+      "id": 263,
+      "lane": 2,
+      "at": 96.9981,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 94.5981,
+      "pitch_midi": 76.16
+    },
+    {
+      "id": 264,
+      "lane": 0,
+      "at": 97.2651,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 94.8651,
+      "pitch_midi": 57.26
+    },
+    {
+      "id": 265,
+      "lane": 0,
+      "at": 97.5322,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 95.1322,
+      "pitch_midi": 64.24
+    },
+    {
+      "id": 266,
+      "lane": 3,
+      "at": 98.6003,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 96.2003,
+      "pitch_midi": 78.51
+    },
+    {
+      "id": 267,
+      "lane": 1,
+      "at": 98.8441,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 96.4441,
+      "pitch_midi": 73.86
+    },
+    {
+      "id": 268,
+      "lane": 2,
+      "at": 99.1111,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 96.7111,
+      "pitch_midi": 75.39
+    },
+    {
+      "id": 269,
+      "lane": 0,
+      "at": 99.4014,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 97.0014,
+      "pitch_midi": 64.11
+    },
+    {
+      "id": 270,
+      "lane": 3,
+      "at": 100.2024,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 97.8024,
+      "pitch_midi": 77.14
+    },
+    {
+      "id": 271,
+      "lane": 0,
+      "at": 100.4579,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 98.0579,
+      "pitch_midi": 65.19
+    },
+    {
+      "id": 272,
+      "lane": 1,
+      "at": 100.7249,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 98.3249,
+      "pitch_midi": 72.02
+    },
+    {
+      "id": 273,
+      "lane": 3,
+      "at": 101.0035,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 98.6035,
+      "pitch_midi": 79.01
+    },
+    {
+      "id": 274,
+      "lane": 1,
+      "at": 101.2241,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 98.8241,
+      "pitch_midi": 67.25
+    },
+    {
+      "id": 275,
+      "lane": 3,
+      "at": 101.793,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 99.393,
+      "pitch_midi": 77.15
+    },
+    {
+      "id": 276,
+      "lane": 3,
+      "at": 102.0368,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 99.6368,
+      "pitch_midi": 77.0
+    },
+    {
+      "id": 277,
+      "lane": 2,
+      "at": 102.3271,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 99.9271,
+      "pitch_midi": 75.72
+    },
+    {
+      "id": 278,
+      "lane": 2,
+      "at": 102.8379,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 100.4379,
+      "pitch_midi": 75.94
+    },
+    {
+      "id": 279,
+      "lane": 3,
+      "at": 103.4184,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 101.0184,
+      "pitch_midi": 79.26
+    },
+    {
+      "id": 280,
+      "lane": 1,
+      "at": 103.6622,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 101.2622,
+      "pitch_midi": 72.13
+    },
+    {
+      "id": 281,
+      "lane": 0,
+      "at": 103.9293,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 101.5293,
+      "pitch_midi": 53.52
+    },
+    {
+      "id": 282,
+      "lane": 3,
+      "at": 104.2195,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 101.8195,
+      "pitch_midi": 78.01
+    },
+    {
+      "id": 283,
+      "lane": 3,
+      "at": 104.4517,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 102.0517,
+      "pitch_midi": 80.43
+    },
+    {
+      "id": 284,
+      "lane": 1,
+      "at": 105.009,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 102.609,
+      "pitch_midi": 71.99
+    },
+    {
+      "id": 285,
+      "lane": 1,
+      "at": 105.2644,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 102.8644,
+      "pitch_midi": 67.23
+    },
+    {
+      "id": 286,
+      "lane": 2,
+      "at": 105.485,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 103.085,
+      "pitch_midi": 75.67
+    },
+    {
+      "id": 287,
+      "lane": 3,
+      "at": 106.019,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 103.619,
+      "pitch_midi": 76.21
+    },
+    {
+      "id": 288,
+      "lane": 0,
+      "at": 106.5995,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 104.1995,
+      "pitch_midi": 64.05
+    },
+    {
+      "id": 289,
+      "lane": 2,
+      "at": 106.855,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 104.455,
+      "pitch_midi": 75.63
+    },
+    {
+      "id": 290,
+      "lane": 2,
+      "at": 107.122,
+      "sustain": 0.3465,
+      "judgement": null,
+      "audio_at": 104.722,
+      "pitch_midi": 75.91
+    },
+    {
+      "id": 291,
+      "lane": 1,
+      "at": 107.6444,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 105.2444,
+      "pitch_midi": 70.82
+    },
+    {
+      "id": 292,
+      "lane": 2,
+      "at": 107.9463,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 105.5463,
+      "pitch_midi": 75.92
+    },
+    {
+      "id": 293,
+      "lane": 0,
+      "at": 108.1901,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 105.7901,
+      "pitch_midi": 63.7
+    },
+    {
+      "id": 294,
+      "lane": 0,
+      "at": 108.4571,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 106.0571,
+      "pitch_midi": 58.88
+    },
+    {
+      "id": 295,
+      "lane": 0,
+      "at": 108.7242,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 106.3242,
+      "pitch_midi": 62.46
+    },
+    {
+      "id": 296,
+      "lane": 1,
+      "at": 108.9912,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 106.5912,
+      "pitch_midi": 69.16
+    },
+    {
+      "id": 297,
+      "lane": 2,
+      "at": 109.235,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 106.835,
+      "pitch_midi": 76.13
+    },
+    {
+      "id": 298,
+      "lane": 2,
+      "at": 109.8039,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 107.4039,
+      "pitch_midi": 76.14
+    },
+    {
+      "id": 299,
+      "lane": 2,
+      "at": 110.0477,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 107.6477,
+      "pitch_midi": 76.06
+    },
+    {
+      "id": 300,
+      "lane": 3,
+      "at": 110.3147,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 107.9147,
+      "pitch_midi": 79.71
+    },
+    {
+      "id": 301,
+      "lane": 1,
+      "at": 110.8372,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 108.4372,
+      "pitch_midi": 69.08
+    },
+    {
+      "id": 302,
+      "lane": 3,
+      "at": 111.3829,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 108.9829,
+      "pitch_midi": 79.03
+    },
+    {
+      "id": 303,
+      "lane": 0,
+      "at": 111.6383,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 109.2383,
+      "pitch_midi": 61.89
+    },
+    {
+      "id": 304,
+      "lane": 0,
+      "at": 111.9053,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 109.5053,
+      "pitch_midi": 63.69
+    },
+    {
+      "id": 305,
+      "lane": 0,
+      "at": 112.1839,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 109.7839,
+      "pitch_midi": 66.71
+    },
+    {
+      "id": 306,
+      "lane": 3,
+      "at": 112.4278,
+      "sustain": 0.4161,
+      "judgement": null,
+      "audio_at": 110.0278,
+      "pitch_midi": 77.06
+    },
+    {
+      "id": 307,
+      "lane": 0,
+      "at": 112.985,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 110.585,
+      "pitch_midi": 63.79
+    },
+    {
+      "id": 308,
+      "lane": 0,
+      "at": 113.2405,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 110.8405,
+      "pitch_midi": 65.04
+    },
+    {
+      "id": 309,
+      "lane": 3,
+      "at": 113.5075,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 111.1075,
+      "pitch_midi": 81.01
+    },
+    {
+      "id": 310,
+      "lane": 1,
+      "at": 113.7861,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 111.3861,
+      "pitch_midi": 74.06
+    },
+    {
+      "id": 311,
+      "lane": 0,
+      "at": 114.0299,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 111.6299,
+      "pitch_midi": 54.97
+    },
+    {
+      "id": 312,
+      "lane": 3,
+      "at": 114.3202,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 111.9202,
+      "pitch_midi": 77.6
+    },
+    {
+      "id": 313,
+      "lane": 3,
+      "at": 114.6104,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 112.2104,
+      "pitch_midi": 76.78
+    },
+    {
+      "id": 314,
+      "lane": 3,
+      "at": 114.8426,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 112.4426,
+      "pitch_midi": 80.43
+    },
+    {
+      "id": 315,
+      "lane": 2,
+      "at": 115.1097,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 112.7097,
+      "pitch_midi": 75.89
+    },
+    {
+      "id": 316,
+      "lane": 3,
+      "at": 116.2242,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 113.8242,
+      "pitch_midi": 78.78
+    },
+    {
+      "id": 317,
+      "lane": 1,
+      "at": 116.468,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 114.068,
+      "pitch_midi": 72.12
+    },
+    {
+      "id": 318,
+      "lane": 0,
+      "at": 116.886,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 114.486,
+      "pitch_midi": 64.39
+    },
+    {
+      "id": 319,
+      "lane": 3,
+      "at": 117.2575,
+      "sustain": 0.4373,
+      "judgement": null,
+      "audio_at": 114.8575,
+      "pitch_midi": 80.67
+    },
+    {
+      "id": 320,
+      "lane": 3,
+      "at": 117.8148,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 115.4148,
+      "pitch_midi": 80.66
+    },
+    {
+      "id": 321,
+      "lane": 3,
+      "at": 118.0818,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 115.6818,
+      "pitch_midi": 80.77
+    },
+    {
+      "id": 322,
+      "lane": 3,
+      "at": 118.3488,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 115.9488,
+      "pitch_midi": 80.81
+    },
+    {
+      "id": 323,
+      "lane": 3,
+      "at": 118.6275,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 116.2275,
+      "pitch_midi": 79.59
+    },
+    {
+      "id": 324,
+      "lane": 2,
+      "at": 118.8829,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 116.4829,
+      "pitch_midi": 76.11
+    },
+    {
+      "id": 325,
+      "lane": 0,
+      "at": 119.417,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 117.017,
+      "pitch_midi": 64.15
+    },
+    {
+      "id": 326,
+      "lane": 0,
+      "at": 119.7188,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 117.3188,
+      "pitch_midi": 51.79
+    },
+    {
+      "id": 327,
+      "lane": 2,
+      "at": 119.951,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 117.551,
+      "pitch_midi": 76.07
+    },
+    {
+      "id": 328,
+      "lane": 1,
+      "at": 120.2529,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 117.8529,
+      "pitch_midi": 69.13
+    },
+    {
+      "id": 329,
+      "lane": 3,
+      "at": 120.4967,
+      "sustain": 0.4974,
+      "judgement": null,
+      "audio_at": 118.0967,
+      "pitch_midi": 80.64
+    },
+    {
+      "id": 330,
+      "lane": 2,
+      "at": 121.0424,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 118.6424,
+      "pitch_midi": 76.13
+    },
+    {
+      "id": 331,
+      "lane": 3,
+      "at": 121.3326,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 118.9326,
+      "pitch_midi": 80.89
+    },
+    {
+      "id": 332,
+      "lane": 3,
+      "at": 121.6112,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 119.2112,
+      "pitch_midi": 79.43
+    },
+    {
+      "id": 333,
+      "lane": 3,
+      "at": 122.1221,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 119.7221,
+      "pitch_midi": 81.0
+    },
+    {
+      "id": 334,
+      "lane": 3,
+      "at": 122.6678,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 120.2678,
+      "pitch_midi": 80.92
+    },
+    {
+      "id": 335,
+      "lane": 0,
+      "at": 124.5021,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 122.1021,
+      "pitch_midi": 53.82
+    },
+    {
+      "id": 336,
+      "lane": 0,
+      "at": 124.7459,
+      "sustain": 0.0,
+      "judgement": null,
+      "audio_at": 122.3459,
+      "pitch_midi": 53.46
     }
-  ]
+  ],
+  "chart_source": {
+    "audio_sha256": "c37a4a099c6d3abf2dc18a9c26f1bc85d2a992e876f67e0cfcdf77f5127087ec",
+    "method": "Spectral attacks; dominant harmonic register mapped low to high D/F/J/K; stable-pitch holds; locally spaced for playability.",
+    "limitations": "Automatic playable arrangement of the polyphonic recording, not a verified vocal score.",
+    "version": 1
+  }
 }

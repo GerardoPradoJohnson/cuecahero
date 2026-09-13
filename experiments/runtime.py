@@ -11,6 +11,7 @@ from PIL import Image
 from core.clock import SimulationClock
 from core.contracts import Action, NeuralStimulus
 from core.paths import ROOT, DATA, GRAPH
+from core.graph_identity import calibration_graph_matches
 from core.registry import Registry
 from environments import CuecaHeroEnvironment, Navigation2DEnvironment
 from sensors import VisualEncoder, ContrastVisualEncoder, AuditoryEncoder, ProprioceptiveEncoder, CompositeMultimodalEncoder
@@ -73,9 +74,10 @@ class Experiment:
         self.commands = queue.Queue(maxsize=128)
         self.shutdown_event = threading.Event()
         self.pending = set()
+        self.held_keys = set()
         self.revision = 0
         self.metrics = Metrics()
-        self.live_training_enabled = True
+        self.live_training_enabled = False
         self.trainer = None
         self.generation = 0
         self.training_history = []
@@ -113,8 +115,10 @@ class Experiment:
         if decoder['type'] == 'calibrated':
             model_path = ROOT / decoder['model']
             model = json.loads(model_path.read_text())
-            if model['graph_sha256'] != digest.hexdigest() or model['sensor'] != sensor:
-                raise ValueError('Calibration does not match graph or sensor parameters')
+            if not calibration_graph_matches(GRAPH, model['graph_sha256'], digest.hexdigest()):
+                raise ValueError('Calibration does not match graph content')
+            if len(encoders) != 1 or model['sensor'] != sensor:
+                raise ValueError('Calibration does not match sensor parameters')
             if self.clock.game_step != 1/30 or self.clock.neural_step_ms != 10:
                 raise ValueError('This readout calibration requires 1/30 s game and 10 ms neural steps')
             decoder_instance = registry.create('decoder', 'calibrated', model=model)
@@ -123,7 +127,8 @@ class Experiment:
             self.provenance['decoder_sha256'] = hashlib.sha256(model_path.read_bytes()).hexdigest()
             from training.rl import ReinforcementReadoutTrainer
             self.trainer = ReinforcementReadoutTrainer(model, lr=3e-3, explore_temp=0.35)
-            self.init_trainer_from_scratch()
+            if self.live_training_enabled:
+                self.init_trainer_from_scratch()
         else:
             self.trainer = None
             specifications = decoder.pop('groups')
@@ -162,6 +167,7 @@ class Experiment:
         self.clock.reset()
         self.metrics = Metrics()
         self.pending.clear()
+        self.held_keys.clear()
         if self.brain:
             self.brain.reset()
             self.encoder.reset()
@@ -199,6 +205,7 @@ class Experiment:
             if self.mode == 'running':
                 self.mode = 'paused'
             self.pending.clear()
+            self.held_keys.clear()
         elif kind == 'reset':
             self.reset()
         elif kind == 'erase_memory':
@@ -207,6 +214,9 @@ class Experiment:
             self.plasticity.erase(self.brain)
             self.reset()
         elif kind == 'reset_training':
+            if self.trainer and self.trainer.template.get('action_mode') == 'held_sigmoid':
+                raise ValueError('This checkpoint was trained offline; select the baseline to train with RL')
+            self.live_training_enabled = True
             self.init_trainer_from_scratch()
             self.reset()
         elif kind == 'save_checkpoint':
@@ -249,19 +259,31 @@ class Experiment:
                 saved_name = f"outputs/training/live-interactive/{ckpt_name}"
             self.last_saved_checkpoint = saved_name
         elif kind == 'load_checkpoint':
-            ckpt_rel = command.get('path', '')
-            ckpt_path = ROOT / ckpt_rel
-            if ckpt_path.exists() and self.trainer is not None:
-                from training.rl import ReinforcementReadoutTrainer
-                loaded = ReinforcementReadoutTrainer.load(ckpt_path)
-                self.trainer.weights = loaded.weights.copy()
-                self.trainer.bias = loaded.bias.copy()
-                self.trainer.m = loaded.m.copy()
-                self.trainer.v = loaded.v.copy()
-                self.trainer.opt_step = loaded.opt_step
-                self.generation = len(loaded.episodes)
-                self.trainer.reset_runtime()
-                self.reset()
+            from training.checkpoints import resolve_checkpoint
+            from training.rl import ReinforcementReadoutTrainer
+            ckpt_path = resolve_checkpoint(command.get('path', ''))
+            loaded = ReinforcementReadoutTrainer.load(ckpt_path)
+            if self.brain is None:
+                self.load_brain()
+            if not calibration_graph_matches(GRAPH, loaded.template['graph_sha256'], self.provenance['graph_sha256']):
+                raise ValueError('Checkpoint graph mismatch')
+            if loaded.template.get('sensor') != self.decoder.record.get('sensor'):
+                raise ValueError('Checkpoint sensor mismatch')
+            if not (self.brain.state.ids[loaded.template['indices']].astype(str) == loaded.template['source_ids']).all():
+                raise ValueError('Checkpoint neuron IDs mismatch')
+            registry.create('decoder', 'calibrated', model=loaded.model())
+            if loaded.template.get('song_sha256'):
+                song_file = ROOT/'config/songs/la_consentida.json'
+                if hashlib.sha256(song_file.read_bytes()).hexdigest() != loaded.template['song_sha256']:
+                    raise ValueError('Checkpoint song mismatch')
+                self.environment.load_song(json.loads(song_file.read_text()))
+            self.trainer = loaded
+            self.generation = len(loaded.episodes)
+            self.training_history = []
+            self.live_training_enabled = False
+            self.driver = 'neural'
+            self.provenance['decoder_sha256'] = hashlib.sha256(ckpt_path.read_bytes()).hexdigest()
+            self.reset()
         elif kind == 'select_song':
             song_id = command.get('song_id')
             song_file = ROOT / f'config/songs/{song_id}.json'
@@ -272,6 +294,10 @@ class Experiment:
                     self.reset()
         elif kind == 'keys' and self.driver == 'manual' and self.mode == 'running':
             self.pending.update(command['lanes'])
+        elif kind == 'held_keys' and self.driver == 'manual':
+            keys = set(command['lanes']) if self.mode == 'running' else set()
+            self.pending.update(keys - self.held_keys)
+            self.held_keys = keys
         elif kind == 'speed':
             self.clock.speed = float(command['value'])
         self.publish()
@@ -305,10 +331,13 @@ class Experiment:
                 current_time_ms = self.environment.time * 1000.0
                 abstract, rec = self.trainer.step(norm_x, current_time_ms, explore=True)
                 self.current_trajectory.append(rec)
+            elif self.trainer is not None:
+                norm_x = self.trainer.extract_features(activity)
+                abstract, _ = self.trainer.step(norm_x, self.environment.time * 1000., explore=False)
             else:
                 abstract = self.decoder.decode(activity)
         else:
-            abstract = Action(tuple(float(i in self.pending) for i in range(4)))
+            abstract = Action(tuple(float(i in self.pending or i in self.held_keys) for i in range(4)))
             self.pending.clear()
 
         prev_hits = [l['hits'] for l in self.environment.lanes]
@@ -411,7 +440,8 @@ class Experiment:
                 'enabled':self.live_training_enabled,
                 'generation':self.generation,
                 'history':self.training_history,
-                'is_training':self.driver == 'neural' and self.trainer is not None
+                'is_training':self.driver == 'neural' and self.trainer is not None and self.live_training_enabled,
+                'method':self.trainer.template.get('training_method', 'RL interactivo') if self.trainer else None
             },
             'neural':{'backend':self.brain.backend if self.brain else 'not-loaded',
                       'neurons':self.brain.n if self.brain else self.geometry['total_neurons'],

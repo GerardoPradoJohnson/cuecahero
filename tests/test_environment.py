@@ -31,7 +31,7 @@ def test_timed_hit_only_same_lane_and_no_double_credit():
     env.step(Action(buttons), .02)
     assert env.hits == 1 and env.score == 100 and env.get_reward().magnitude == 1
     env.step(Action(buttons), .01)
-    assert env.hits == 1 and env.score == 100 and env.wrong == 1
+    assert env.hits == 1 and env.score == 100 and env.wrong == 0
 
 
 def test_silent_session_expires_every_note_and_finishes():
@@ -116,4 +116,32 @@ def test_sustain_note_hold_and_release():
     env.step(action_up, 0.05)
     assert 1 not in env.active_holds
     assert env.wrong == 0 and env.misses == 0
+
+
+def test_held_key_does_not_hit_following_note_without_release():
+    env = CuecaHeroEnvironment()
+    env.notes = [{'id': i, 'lane': 0, 'at': t, 'judgement': None}
+                 for i, t in enumerate((1., 1.4))]
+    advance_to(env, .98)
+    down = Action((1, 0, 0, 0))
+    env.step(down, .02)
+    for _ in range(5):
+        env.step(down, .1)
+    assert env.hits == 1 and env.wrong == 0
+    env.step(Action(), .01)
+    env.step(down, .01)
+    assert env.hits == 2
+
+
+def test_sustain_completion_does_not_add_a_second_hit_or_wrong_press():
+    env = CuecaHeroEnvironment()
+    env.notes = [{'id': 0, 'lane': 0, 'at': 1., 'sustain': .5, 'judgement': None}]
+    advance_to(env, .98)
+    down = Action((1, 0, 0, 0))
+    env.step(down, .02)
+    for _ in range(7):
+        env.step(down, .1)
+    assert not env.active_holds
+    assert env.hits == env.lanes[0]['hits'] == 1
+    assert env.wrong == env.lanes[0]['wrong'] == 0
 

@@ -35,14 +35,16 @@ def list_training_runs() -> list[dict[str, Any]]:
                 })
             elif progress_file.exists():
                 data = json.loads(progress_file.read_text())
+                completed = data.get('episodes_completed', 0) if isinstance(data, dict) else len(data)
+                kind = data.get('kind', 'rl_progress') if isinstance(data, dict) else 'rl_progress'
                 runs.append({
                     'id': f'rl/{run_id}',
                     'name': f'RL · {run_id}',
-                    'type': 'rl_progress',
+                    'type': kind,
                     'path': str(path.relative_to(ROOT)),
                     'checkpoints_count': len(checkpoints),
                     'summary': {
-                        'episodes': len(data) if isinstance(data, list) else 0,
+                        'episodes': completed,
                     },
                 })
 
@@ -108,23 +110,35 @@ def get_run_curve(run_id: str) -> dict[str, Any]:
             ep_list = []
 
         curve = []
+        supervised = isinstance(raw_progress, dict) and raw_progress.get('kind') == 'supervised_neural_readout'
+        evaluation_file = folder / 'evaluation.json'
+        evaluation = json.loads(evaluation_file.read_text()) if evaluation_file.exists() else {}
+        final_metrics = evaluation.get('metrics', {})
         for i, p in enumerate(ep_list):
+            is_final_evaluation = supervised and i == len(ep_list) - 1 and bool(final_metrics)
             curve.append({
                 'generation': p.get('index', p.get('episode', i + 1)),
                 'checkpoint': f"{p.get('name', f'episode-{i+1:04d}')}.npz",
-                'mean_score': p.get('score', p.get('reward', 0)),
-                'mean_hits': p.get('hits', 0),
-                'mean_wrong': p.get('wrong', 0),
-                'mean_misses': p.get('misses', 0),
-                'mean_accuracy': p.get('accuracy', 0.0),
+                'mean_score': final_metrics.get('score') if is_final_evaluation else p.get('score', p.get('reward')),
+                'mean_hits': final_metrics.get('hits') if is_final_evaluation else p.get('hits'),
+                'mean_wrong': final_metrics.get('wrong') if is_final_evaluation else p.get('wrong'),
+                'mean_misses': final_metrics.get('misses') if is_final_evaluation else p.get('misses'),
+                'mean_accuracy': final_metrics.get('accuracy') if is_final_evaluation else p.get('accuracy'),
+                'loss': p.get('loss'),
                 'changed_edges': p.get('changed_edges', 0),
             })
+            checkpoint_path = folder / curve[-1]['checkpoint']
+            if checkpoint_path.exists():
+                curve[-1]['file_size_kb'] = round(checkpoint_path.stat().st_size / 1024, 1)
+            elif supervised:
+                curve[-1]['checkpoint'] = None
         return {
-            'kind': 'progress_curve',
+            'kind': raw_progress.get('kind', 'progress_curve') if isinstance(raw_progress, dict) else 'progress_curve',
             'run_dir': str(folder.relative_to(ROOT)),
             'summary': {
                 'total_steps': len(curve),
-                'final_score': curve[-1]['mean_score'] if curve else 0,
+                'final_score': final_metrics.get('score'),
+                'final_accuracy': final_metrics.get('accuracy'),
             },
             'curve': curve,
         }

@@ -12,6 +12,29 @@ from core.malecns import MaleCNSCore
 from environments.cueca_hero import CuecaHeroEnvironment
 from experiments.runtime import Experiment
 from scripts.serve import make_handler
+from core.contracts import Action
+
+
+@pytest.mark.parametrize("step", [1/30, 1/60])
+def test_la_consentida_chart_can_be_played_with_real_key_holds(step):
+    song = json.loads((ROOT / 'config/songs/la_consentida.json').read_text())
+    for lane in range(4):
+        notes = sorted((n for n in song['notes'] if n['lane'] == lane), key=lambda n: n['at'])
+        for note, following in zip(notes, notes[1:]):
+            assert note['at'] + note.get('sustain', 0) < following['at'] - .05
+    env = CuecaHeroEnvironment()
+    env.load_song(song)
+    while not env.is_done():
+        controls = [0.] * 4
+        for note in env.notes:
+            starts = env.time < note['at'] <= env.time + step + 1e-9
+            holding = note['judgement'] in ('good', 'perfect') and env.time < note['at'] + note.get('sustain', 0)
+            if starts or holding:
+                controls[note['lane']] = 1.
+        env.step(Action(tuple(controls)), step)
+    assert env.hits == len(song['notes'])
+    assert env.misses == env.wrong == 0
+    assert sum(lane['hits'] for lane in env.lanes) == env.hits
 
 
 def test_catalog_song_files_exist_and_valid():
@@ -23,7 +46,7 @@ def test_catalog_song_files_exist_and_valid():
     
     song_ids = [f.stem for f in catalog]
     assert 'la_consentida' in song_ids, "La Consentida must be in catalog"
-    assert 'primer_panuelo' in song_ids, "Primer Pañuelo must be in catalog"
+    assert 'primer_panuelo' in song_ids, "Primer PaÃ±uelo must be in catalog"
     
     for f in catalog:
         data = json.loads(f.read_text())
@@ -50,13 +73,13 @@ def test_cueca_hero_environment_load_song():
     
     assert env.song['id'] == 'la_consentida'
     assert env.song['title'] == 'La Consentida'
-    assert env.bpm in (112, 114)
+    assert env.bpm == la_consentida_data['bpm']
     assert len(env.notes) >= 64
     assert env.duration > 20.0
     
     state = env.get_state()
     assert state['song']['id'] == 'la_consentida'
-    assert state['bpm'] in (112, 114)
+    assert state['bpm'] == la_consentida_data['bpm']
 
 
 @pytest.fixture
@@ -89,17 +112,17 @@ def test_api_songs_and_audio_streaming(song_server):
         
         la_cons = next(s for s in songs if s['id'] == 'la_consentida')
         assert la_cons['title'] == 'La Consentida'
-        assert la_cons['bpm'] in (112, 114)
+        assert 100 <= la_cons['bpm'] <= 130
         assert la_cons['notes_count'] >= 64
-        assert la_cons['audio_url'] == '/audio/la_consentida.wav'
+        assert la_cons['audio_url'] == '/audio/consentida.mp3'
     
-    # Check /audio/la_consentida.wav streaming
-    req_audio = Request(f'{base_url}/audio/la_consentida.wav')
+    # Check the supplied MP3, including byte ranges used by browser seeking.
+    req_audio = Request(f'{base_url}/audio/consentida.mp3')
     with urlopen(req_audio, timeout=5) as res:
         assert res.status == 200
-        assert res.headers.get('Content-Type') == 'audio/wav'
+        assert res.headers.get('Content-Type') == 'audio/mpeg'
         audio_data = res.read()
-        assert len(audio_data) > 1_000_000, "WAV audio must contain valid waveform data"
+        assert len(audio_data) > 1_000_000, "The original MP3 must be served in full"
 
 
 def test_select_song_control_command(song_server):
@@ -120,7 +143,7 @@ def test_select_song_control_command(song_server):
     
     snap = experiment.snapshot
     assert snap['game']['song']['id'] == 'la_consentida'
-    assert snap['game']['bpm'] in (112, 114)
+    assert snap['game']['bpm'] == json.loads((ROOT/'config/songs/la_consentida.json').read_text())['bpm']
     assert snap['game']['time'] == 0.0
 
 
@@ -130,3 +153,28 @@ def test_male_cns_core_untouched():
     assert hasattr(core, 'advance')
     assert hasattr(core, 'reset')
     assert core.n > 0
+
+
+def test_mp3_chart_matches_recording_and_count_in():
+    import hashlib
+    sf = pytest.importorskip('soundfile')
+    song = json.loads((ROOT/'config/songs/la_consentida.json').read_text())
+    audio = ROOT/'frontend/audio/consentida.mp3'
+    assert song['chart_source']['audio_sha256'] == hashlib.sha256(audio.read_bytes()).hexdigest()
+    assert song['duration'] == pytest.approx(sf.info(audio).duration + song['audio_offset'], abs=1e-5)
+    assert song['audio_offset'] >= 2.4
+    for note in song['notes']:
+        assert note['at'] - song['audio_offset'] == pytest.approx(note['audio_at'], abs=1e-4)
+        assert 0 <= note['audio_at'] < sf.info(audio).duration
+        assert note['at'] + note['sustain'] < song['duration']
+    env=CuecaHeroEnvironment();env.load_song(song)
+    assert env.get_state()['song']['audio_offset'] == song['audio_offset']
+
+
+def test_mp3_range_requests_preserve_original_bytes(song_server):
+    _, url = song_server
+    req=Request(url+'/audio/consentida.mp3',headers={'Range':'bytes=2048-4095'})
+    with urlopen(req,timeout=3) as response:
+        assert response.status==206
+        assert response.headers['Content-Type']=='audio/mpeg'
+        assert response.read()==(ROOT/'frontend/audio/consentida.mp3').read_bytes()[2048:4096]

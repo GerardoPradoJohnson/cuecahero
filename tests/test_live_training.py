@@ -5,18 +5,21 @@ from core.paths import ROOT
 from experiments.runtime import Experiment
 
 
-def test_live_training_starts_from_scratch(tmp_path):
+def test_evaluation_is_default_and_training_requires_explicit_reset(tmp_path):
     config = json.loads((ROOT / "experiments/cueca_hero.json").read_text())
     config['environment']['bars'] = 1  # Short episode for fast test
     experiment = Experiment(config, {'total_neurons': 0, 'indices': []}, sessions_dir=tmp_path)
     
-    assert experiment.live_training_enabled is True
+    assert experiment.live_training_enabled is False
     assert experiment.generation == 0
     assert experiment.training_history == []
     
     # Load brain to initialize trainer
     experiment.load_brain()
     assert experiment.trainer is not None
+    assert not np.all(experiment.trainer.weights == 0)
+    experiment.control({'type': 'reset_training'})
+    assert experiment.live_training_enabled is True
     
     # Verify weights start zeroed out ("sabiendo nada")
     assert np.all(experiment.trainer.weights == 0)
@@ -30,6 +33,7 @@ def test_live_training_advances_generation_without_stopping(tmp_path):
     config['environment']['bars'] = 1  # 4 notes total
     experiment = Experiment(config, {'total_neurons': 0, 'indices': []}, sessions_dir=tmp_path)
     experiment.load_brain()
+    experiment.control({'type': 'reset_training'})
     experiment.driver = 'neural'
     experiment.mode = 'running'
     

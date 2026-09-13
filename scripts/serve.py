@@ -14,6 +14,7 @@ from experiments.runtime import Experiment
 from visualization.brain import load_geometry
 from replay import read_session
 from training.history import list_training_runs, get_run_curve
+from training.checkpoints import catalogue, recording_path
 
 def make_handler(experiment, geometry, port):
     class Handler(BaseHTTPRequestHandler):
@@ -21,12 +22,14 @@ def make_handler(experiment, geometry, port):
             if args and str(args[1]) not in ('200', '202'):
                 super().log_message(format, *args)
 
-        def reply(self, status, data, content_type='application/json; charset=utf-8'):
+        def reply(self, status, data, content_type='application/json; charset=utf-8', content_encoding=None):
             if not isinstance(data, bytes):
                 data = json.dumps(data, allow_nan=False).encode()
             self.send_response(status)
             self.send_header('Content-Type', content_type)
             self.send_header('Content-Length', str(len(data)))
+            if content_encoding:
+                self.send_header('Content-Encoding', content_encoding)
             self.send_header('Cache-Control', 'no-store')
             self.send_header('X-Content-Type-Options', 'nosniff')
             self.send_header('Content-Security-Policy', "default-src 'self'; img-src 'self' data:; media-src 'self' data: blob:; script-src 'self'; style-src 'self' 'unsafe-inline'; connect-src 'self'; object-src 'none'; frame-ancestors 'self'")
@@ -46,6 +49,15 @@ def make_handler(experiment, geometry, port):
             parsed = urlparse(self.path)
             if parsed.path == '/api/state':
                 return self.reply(200, experiment.snapshot)
+            if parsed.path == '/api/checkpoints':
+                return self.reply(200, catalogue())
+            if parsed.path == '/api/checkpoint-playback':
+                try:
+                    path = recording_path(parse_qs(parsed.query).get('path', [''])[0])
+                    encoding = 'gzip' if path.suffix == '.gz' else None
+                    return self.reply(200, path.read_bytes(), content_encoding=encoding)
+                except (ValueError, FileNotFoundError, KeyError):
+                    return self.reply(404, {'error': 'Partida evaluada no disponible o desactualizada'})
             if parsed.path == '/api/brain':
                 return self.reply(200, geometry)
             if parsed.path == '/api/replay':
@@ -106,7 +118,7 @@ def make_handler(experiment, geometry, port):
                             self.send_header('Content-Range', f'bytes {start}-{end}/{file_size}')
                             self.send_header('Content-Length', str(len(chunk)))
                             self.send_header('Accept-Ranges', 'bytes')
-                            self.send_header('Cache-Control', 'public, max-age=3600')
+                            self.send_header('Cache-Control', 'no-cache')
                             self.send_header('X-Content-Type-Options', 'nosniff')
                             self.end_headers()
                             self.wfile.write(chunk)
@@ -117,7 +129,7 @@ def make_handler(experiment, geometry, port):
                     self.send_header('Content-Type', ctype)
                     self.send_header('Content-Length', str(file_size))
                     self.send_header('Accept-Ranges', 'bytes')
-                    self.send_header('Cache-Control', 'public, max-age=3600')
+                    self.send_header('Cache-Control', 'no-cache')
                     self.send_header('X-Content-Type-Options', 'nosniff')
                     self.end_headers()
                     try:
@@ -145,13 +157,13 @@ def make_handler(experiment, geometry, port):
                 if not isinstance(command, dict):
                     raise ValueError('Command must be an object')
                 kind = command.get('type')
-                if kind not in ('start','pause','reset','erase_memory','driver','keys','speed','reset_training','select_song','save_checkpoint','load_checkpoint'):
+                if kind not in ('start','pause','reset','erase_memory','driver','keys','held_keys','speed','reset_training','select_song','save_checkpoint','load_checkpoint'):
                     raise ValueError('Unknown control')
                 if kind == 'driver' and command.get('value') not in ('manual','neural'):
                     raise ValueError('Unknown driver')
                 if kind == 'speed' and command.get('value') not in (.5, 1, 2, 4):
                     raise ValueError('Unsupported speed')
-                if kind == 'keys' and (not isinstance(command.get('lanes'), list) or len(command['lanes']) > 4 or any(type(v) is not int or v not in range(4) for v in command['lanes'])):
+                if kind in ('keys', 'held_keys') and (not isinstance(command.get('lanes'), list) or len(command['lanes']) > 4 or any(type(v) is not int or v not in range(4) for v in command['lanes'])):
                     raise ValueError('Invalid lanes')
                 experiment.enqueue(command)
                 self.reply(202, {'accepted':True})

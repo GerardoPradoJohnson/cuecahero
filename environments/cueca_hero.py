@@ -23,6 +23,7 @@ class CuecaHeroEnvironment:
             'subtitle': self.custom_song.get('subtitle', 'PISTA ORIGINAL DE PRUEBA') if self.custom_song else 'PISTA ORIGINAL DE PRUEBA',
             'artist': self.custom_song.get('artist', 'Laboratorio FlyLab') if self.custom_song else 'Laboratorio FlyLab',
             'audio_url': self.custom_song.get('audio_url', '/audio/primer_panuelo.wav') if self.custom_song else '/audio/primer_panuelo.wav',
+            'audio_offset': float(self.custom_song.get('audio_offset', 0)) if self.custom_song else 0.,
         }
 
     def load_song(self, song_data):
@@ -71,6 +72,7 @@ class CuecaHeroEnvironment:
         self.time = min(self.time + dt, self.duration)
         self.events = []
         reward = 0.
+        previous_action = self.last_action
         self.last_action = [int(x > .5) for x in action.values]
 
         # 1. Process active sustain holds
@@ -84,7 +86,7 @@ class CuecaHeroEnvironment:
                 reward += 0.04
                 hold['ticks'] += 1
                 if self.time >= hold['end_at']:
-                    self.events.append({'kind':'good', 'lane':lane, 'note':hold['note_id'], 'hold_complete':True})
+                    self.events.append({'kind':'hold_complete', 'lane':lane, 'note':hold['note_id'], 'hold_complete':True})
                     del self.active_holds[lane]
             else:
                 # Released early
@@ -92,7 +94,7 @@ class CuecaHeroEnvironment:
 
         # 2. Process new keypresses
         for lane, pressed in enumerate(self.last_action):
-            if not pressed or lane in self.active_holds:
+            if not pressed or previous_action[lane] or lane in self.active_holds:
                 continue
             candidates = [n for n in self.notes if n['lane'] == lane and n['judgement'] is None and abs(n['at'] - self.time) <= self.hit_window + 1e-9]
             if candidates:
@@ -128,6 +130,8 @@ class CuecaHeroEnvironment:
                 self.events.append({'kind':'miss', 'lane':note['lane'], 'note':note['id']})
         for event in self.events:
             lane = self.lanes[event['lane']]
+            if event['kind'] == 'hold_complete':
+                continue
             lane['hits' if event['kind'] in ('perfect', 'good') else 'misses' if event['kind'] == 'miss' else 'wrong'] += 1
             lane['last_event'] = dict(event, time=self.time)
         self.reward = RewardSignal(reward, 'cueca_hero', self.time)
@@ -150,8 +154,10 @@ class CuecaHeroEnvironment:
             draw.text((x + 36, target - 6), key_name, fill='#ffffff' if (self.last_action[lane] or is_holding) else '#8a8398')
         pulse = 60 / self.bpm / 3
         first = math.floor((self.time - 2.4) / pulse)
-        for p in range(first, first + math.ceil(self.lookahead / pulse) + 2):
-            at = 2.4 + p * pulse
+        measured_beats = self.custom_song.get('beat_times', []) if self.custom_song else []
+        grid = [(i * 3, at) for i, at in enumerate(measured_beats)] if measured_beats else [
+            (p, 2.4 + p * pulse) for p in range(first, first + math.ceil(self.lookahead / pulse) + 2)]
+        for p, at in grid:
             y = target - (at - self.time) / self.lookahead * target
             if 0 <= y <= h:
                 draw.line((0, int(y), w, int(y)), fill='#343140' if p % 3 == 0 else '#202230')
@@ -194,13 +200,7 @@ class CuecaHeroEnvironment:
 
     def get_state(self):
         judged = self.hits + self.misses
-        song_info = {
-            'id': self.custom_song.get('id', 'primer_panuelo') if self.custom_song else 'primer_panuelo',
-            'title': self.custom_song.get('title', 'Primer pañuelo') if self.custom_song else 'Primer pañuelo',
-            'subtitle': self.custom_song.get('subtitle', 'PISTA ORIGINAL DE PRUEBA') if self.custom_song else 'PISTA ORIGINAL DE PRUEBA',
-            'artist': self.custom_song.get('artist', 'Laboratorio FlyLab') if self.custom_song else 'Laboratorio FlyLab',
-            'audio_url': self.custom_song.get('audio_url', '/audio/primer_panuelo.wav') if self.custom_song else '/audio/primer_panuelo.wav',
-        }
+        song_info = self.song
         return {'environment':'cueca_hero', 'time':round(self.time, 6), 'duration':self.duration,
                 'score':self.score, 'combo':self.combo, 'best_combo':self.best_combo,
                 'hits':self.hits, 'misses':self.misses, 'wrong':self.wrong,

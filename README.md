@@ -1,7 +1,7 @@
 # FlyLab · Cueca Hero
 
 MVP local de una plataforma experimental que conecta MaleCNS a entornos interactivos.
-Cueca Hero es el primer entorno: una pista original de prueba en 6/8 con cuatro carriles.
+Cueca Hero es el primer entorno: La Consentida con cuatro carriles y notas sostenidas.
 
 ## Abrir el juego en este equipo
 
@@ -23,7 +23,8 @@ Si el puerto ya está ocupado, usar `--port 8767` y abrir la dirección que impr
 - **Tú / Manual:** iniciar y pulsar **D F J K**, o los botones de carril, cuando las notas crucen la línea.
 - **MaleCNS / Neuronal:** carga el grafo completo; iniciar para que las cuatro lecturas neuronales controlen la pista.
 - **Pausa / Reiniciar:** pausa los relojes o reinicia entorno, filtros, decoder y estado neuronal. Cambiar de controlador inicia una sesión nueva.
-- **Sonido:** audio original sintetizado en el navegador, opcional. Sigue el tiempo del juego.
+- **Sonido:** reproduce `frontend/audio/consentida.mp3`. En partidas evaluadas, el audio es el reloj maestro para mantener sincronizadas música y animación.
+- **Checkpoint entrenado:** el selector permite ver una evaluación completa congelada a velocidad normal. El cálculo neuronal se hizo antes; la reproducción no se presenta como simulación en vivo.
 - **Visor:** arrastrar para rotar; con foco, usar las flechas. Son coordenadas oficiales de somas, con actividad de la muestra visible.
 - **Repetición:** reproduce la última sesión, permite pausar y buscar un instante. **Exportar** descarga observaciones, acciones y métricas en JSON.
 
@@ -59,7 +60,7 @@ powershell -ExecutionPolicy Bypass -File scripts/setup_windows.ps1
 ```
 
 CPU/Numba es el baseline. El kernel C++ acelera CPU cuando está compilado y verificado.
-No requiere CUDA ni NVIDIA. Para C++ en macOS, Command Line Tools; en Windows,
+Esta rama no implementa CUDA ni otro backend GPU. Para C++ en macOS, Command Line Tools; en Windows,
 Developer PowerShell con MSVC C++. Si falta el compilador, permanece disponible Numba.
 Windows y Apple Silicon tienen scripts, pero aún necesitan validación en esos equipos.
 
@@ -97,11 +98,16 @@ El ciclo es **píxeles → encoder → MaleCNS → decoder → cuerpo → entorn
 no conoce el calendario de notas. La simulación conserva 166.700 neuronas y
 25.582.938 conexiones. Solo se muestrea el visor, no la simulación.
 
-Los pesos están fijos. No hay aprendizaje ni se demuestra comprensión del ritmo.
+MaleCNS mantiene fijas sus conexiones. El checkpoint de La Consentida ajusta durante
+200 épocas supervisadas un lector externo de actividad neuronal, usando una pasada
+silenciosa y otra con etiquetas de profesor. Después se evalúa una canción completa
+sin que el lector vea el calendario de notas. Esto no demuestra comprensión del ritmo
+ni plasticidad dentro del cerebro de la mosca.
 La dinámica LIF, la retina y el mapeo de salidas son aproximaciones experimentales.
-El ritmo sintetizado es una prueba original, no una grabación de cueca tradicional.
-La velocidad solicitada es un máximo: con carga neuronal, el juego puede avanzar más
-lento mientras el render continúa independiente. El reloj neuronal tiene su propia escala.
+El mapa de teclas se extrajo del MP3 y es una aproximación automática, no una
+transcripción musical certificada. La simulación neuronal completa todavía calcula
+más lento que tiempo real en este equipo; por eso las evaluaciones guardadas se
+reproducen después con el reloj del audio. El reloj neuronal tiene su propia escala.
 
 DOOMFLY se mantiene sin cambios en `external/doomfly`, fijado a un commit. Datos,
 compilados, sesiones y entorno virtual están excluidos de Git. No se instala ViZDoom.
@@ -110,6 +116,7 @@ compilados, sesiones y entorno virtual están excluidos de Git. No se instala Vi
 - [Fuentes, tamaños, licencias y hashes](docs/DATA_SOURCES.md)
 - [Validación del setup](docs/VALIDATION.md)
 - [Validación del MVP](docs/MVP_VALIDATION.md)
+- [Estado y limitaciones de la rama Windows](docs/WINDOWS_STATUS.md)
 
 ## Siguiente etapa: aprendizaje
 

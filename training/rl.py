@@ -92,6 +92,7 @@ class ReinforcementReadoutTrainer:
         self.armed = np.ones(4, dtype=bool)
         self.last_press_time_ms = np.full(4, -1e12, dtype=np.float64)
         self.last_rates = np.zeros(4, dtype=np.float64)
+        self.held_actions = np.zeros(4, dtype=bool)
 
     def extract_features(self, activity):
         """Update causal exponential filter and return normalized lagged features."""
@@ -114,6 +115,13 @@ class ReinforcementReadoutTrainer:
             rng = np.random.default_rng()
             
         logits = norm_x @ self.weights + self.bias  # shape (4,)
+        if self.template.get('action_mode') == 'held_sigmoid':
+            if explore:
+                raise ValueError('This supervised checkpoint is for frozen evaluation; retrain offline.')
+            rates = 1. / (1. + np.exp(-np.clip(logits, -30, 30)))
+            self.held_actions = (rates >= self.threshold) | (self.held_actions & (rates >= self.release))
+            self.last_rates = rates.copy()
+            return Action(tuple(float(v) for v in self.held_actions)), {}
         rates = np.clip(logits, 0.0, 1.0)
         self.last_rates = rates.copy()
         
@@ -230,13 +238,21 @@ class ReinforcementReadoutTrainer:
     def model(self):
         """Export trained policy parameters formatted as a verified CalibratedDecoder model."""
         result = copy.deepcopy(self.template)
+        if result.get('action_mode') == 'held_sigmoid':
+            training = result.get(
+                'training_method',
+                f'Supervised external neural readout; {len(self.episodes)} offline epochs. '
+                'No MaleCNS synaptic plasticity.'
+            )
+        else:
+            training = f'Closed-loop RL trained readout; {len(self.episodes)} episodes. No MaleCNS plasticity.'
         result.update(
             weights=self.weights.tolist(),
             bias=self.bias.tolist(),
             threshold=self.threshold,
             release=self.release,
             cooldown_ms=self.cooldown_ms,
-            training=f'Closed-loop RL trained readout; {len(self.episodes)} episodes. No MaleCNS plasticity.'
+            training=training
         )
         result['rl_episodes_sha256'] = {e['name']: e.get('sha256', '') for e in self.episodes}
         result.pop('threshold_selection', None)

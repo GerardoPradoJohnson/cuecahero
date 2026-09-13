@@ -75,3 +75,24 @@ def test_invalid_commands_and_foreign_origin_leave_session_unchanged(application
         urlopen(url+'/api/replay?id=../../README')
     assert missing.value.code==404
     assert experiment.snapshot['mode']=='paused'
+
+
+def test_held_keys_persist_until_release_and_pause_clears_them(application):
+    experiment, url, _ = application
+    post(url, {'type': 'start'})
+    wait_for(lambda: experiment.snapshot['mode'] == 'running')
+    post(url, {'type': 'held_keys', 'lanes': [1]})
+    wait_for(lambda: experiment.snapshot['game']['action'] == [0, 1, 0, 0])
+    time.sleep(.15)
+    assert experiment.snapshot['game']['action'] == [0, 1, 0, 0]
+    assert experiment.snapshot['game']['wrong'] == 1
+    post(url, {'type': 'held_keys', 'lanes': []})
+    wait_for(lambda: experiment.snapshot['game']['action'] == [0, 0, 0, 0])
+    post(url, {'type': 'held_keys', 'lanes': [2]})
+    wait_for(lambda: experiment.held_keys == {2})
+    post(url, {'type': 'pause'})
+    wait_for(lambda: experiment.snapshot['mode'] == 'paused')
+    assert not experiment.held_keys
+    with pytest.raises(HTTPError) as invalid:
+        post(url, {'type': 'held_keys', 'lanes': [4]})
+    assert invalid.value.code == 400
