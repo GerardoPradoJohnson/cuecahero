@@ -133,7 +133,7 @@ function syncSongAudio(s) {
   if(targetTime<0){songAudio.pause();if(songAudio.currentTime!==0)songAudio.currentTime=0;return;}
   songAudio.playbackRate = s.speed || 1.0;
   if (s.mode === 'running' && (!recording || playback)) {
-    if ((!recording||songAudio.paused) && Math.abs(songAudio.currentTime - targetTime) > 0.15) {
+    if (songAudio.paused && Math.abs(songAudio.currentTime - targetTime) > 0.15) {
       songAudio.currentTime = Math.max(0, targetTime);
     }
     if (songAudio.paused) {
@@ -816,31 +816,31 @@ async function loadCheckpointCatalogue(){
     const data=await response.json();checkpointRows=data.checkpoints;
     const select=$('checkpoint-select'),previous=select.value;
     select.replaceChildren();
-    for(const row of checkpointRows){const option=document.createElement('option');option.value=row.path;option.textContent=`${row.name} · ${row.metrics.hits}/${row.metrics.total_notes} aciertos`;select.appendChild(option);}
+    for(const row of checkpointRows){
+      const option=document.createElement('option');option.value=row.path;
+      const accuracy=row.metrics.exact_frame_accuracy??row.metrics.lane_accuracy??row.metrics.accuracy;
+      option.textContent=`${row.name}${accuracy!==undefined?` · ${Math.round(accuracy)}% validación`:''}`;
+      select.appendChild(option);
+    }
     if(checkpointRows.some(r=>r.path===previous))select.value=previous;
     if(!checkpointRows.length){const option=document.createElement('option');option.value='';option.textContent='Entrenamiento en curso';select.appendChild(option);}
     $('watch-checkpoint').disabled=!select.value;
     const job=data.jobs.at(-1);
-    const stages={initializing:'Preparando el cerebro',collect_silent:'Registrando actividad neuronal',collect_teacher:'Recogiendo ejemplos de golpes y sostenidas',training:'Entrenando el lector',evaluating:'Evaluando el checkpoint con MaleCNS completo',complete:'Checkpoint listo'};
-    $('checkpoint-status').textContent=job?`${stages[job.stage]||job.stage}${job.completed!==undefined?` · ${job.completed}/200 epocas`:''}${job.seconds!==undefined?` · ${job.seconds.toFixed(0)} s de la cancion`:''}`:'No hay checkpoints evaluados todavia.';
+    const stages={initializing:'Preparando el cerebro',collecting:'Generando situaciones musicales aleatorias',training:'Entrenando el lector',evaluating:'Validando con situaciones nuevas',complete:'Modelos listos'};
+    $('checkpoint-status').textContent=job?`${stages[job.stage]||job.stage}${job.completed!==undefined?` · ${job.completed}/${job.target||1000} épocas`:''}${job.samples!==undefined?` · ${job.samples} escenas`:''}`:'No hay checkpoints evaluados todavía.';
   }catch(e){$('checkpoint-status').textContent=e.message;}
   setTimeout(loadCheckpointCatalogue,15000);
 }
 async function watchCheckpoint(){
   const path=$('checkpoint-select').value;if(!path)return;
-  const button=$('watch-checkpoint');button.disabled=true;button.textContent='Cargando partida...';
+  const button=$('watch-checkpoint');button.disabled=true;button.textContent='Cargando modelo...';
   try{
     await control({type:'pause'});
     await control({type:'load_checkpoint',path});
-    const response=await fetch('/api/checkpoint-playback?path='+encodeURIComponent(path));
-    if(!response.ok)throw Error((await response.json()).error);
-    const data=await response.json();if(!data.frames.length)throw Error('La partida esta vacia');
     if(songAudio){songAudio.pause();songAudio.currentTime=0;}
-    recording=data;replayIndex=0;replayOffset=0;replayStart=performance.now();playback=true;history=[];
-    $('replay-bar').hidden=false;$('scrub').max=data.frames.length-1;$('scrub').value=0;$('replay-play').textContent='Pausar';
-    display(data.frames[0]);
-    $('checkpoint-status').textContent='Mostrando la partida evaluada. Activa el sonido para escuchar la grabacion.';
-  }catch(e){error(e.message);}finally{button.disabled=false;button.textContent='Ver jugar a velocidad normal';}
+    closeRecording(true);
+    $('checkpoint-status').textContent='Modelo cargado. Elige cualquier canción y presiona Iniciar.';
+  }catch(e){error(e.message);}finally{button.disabled=false;button.textContent='Cargar modelo';}
 }
 $('watch-checkpoint').onclick=watchCheckpoint;
 loadCheckpointCatalogue();

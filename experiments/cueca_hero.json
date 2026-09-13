@@ -8,16 +8,17 @@
   },
   "brain": {
     "dataset": "malecns_v1",
-    "backend": "auto"
+    "backend": "auto",
+    "realtime": true
   },
   "sensors": [
     {
       "type": "contrast_visual",
       "viewport": [
-        0.08,
-        0.1,
-        0.92,
-        0.3
+        0.0,
+        0.68,
+        1.0,
+        0.84
       ],
       "black_level": 0.15,
       "white_level": 0.8,

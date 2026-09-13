@@ -7,6 +7,7 @@ import json
 import queue
 import threading
 import time
+from concurrent.futures import ThreadPoolExecutor
 from PIL import Image
 from core.clock import SimulationClock
 from core.contracts import Action, NeuralStimulus
@@ -83,6 +84,13 @@ class Experiment:
         self.training_history = []
         self.current_trajectory = []
         self.current_rewards_by_lane = []
+        self.realtime_neural = bool(config['brain'].get('realtime', False))
+        self.neural_executor = ThreadPoolExecutor(max_workers=1, thread_name_prefix='flylab-neural')
+        self.neural_future = None
+        self.latest_neural_activity = None
+        self.latest_neural_action = Action()
+        self.next_neural_submit = 0.
+        self.last_realtime_wall = None
         self.environment.reset(config['seed'])
         self.snapshot = {}
         self.publish()
@@ -160,6 +168,7 @@ class Experiment:
         self.current_rewards_by_lane = []
 
     def reset(self):
+        self._drain_neural_job()
         if self.recorder:
             self.recorder.close()
             self.recorder = None
@@ -178,6 +187,83 @@ class Experiment:
             self.current_rewards_by_lane = []
         self.mode = 'paused'
         self.error = None
+
+    def _drain_neural_job(self):
+        if self.neural_future is not None:
+            try:
+                self.neural_future.result(timeout=10)
+            finally:
+                self.neural_future = None
+        self.latest_neural_activity = None
+        self.latest_neural_action = Action()
+        self.next_neural_submit = 0.
+        self.last_realtime_wall = None
+
+    def _neural_step(self, observation, acoustic_energy, game_time):
+        import numpy as np
+        stimulus = self.encoder.encode(observation, self.clock.neural_step_ms)
+        aud_local = self.geometry.get('auditory_indices', [])
+        if len(aud_local) > 0:
+            aud_indices = np.asarray(self.geometry['indices'], dtype=np.int32)[aud_local]
+            aud_currents = np.full(len(aud_indices), 18.0 * acoustic_energy + 2.0, dtype=np.float32)
+            stimulus = NeuralStimulus(
+                indices=np.concatenate([stimulus.indices, aud_indices]),
+                currents=np.concatenate([stimulus.currents, aud_currents])
+            )
+        activity = self.brain.advance(stimulus, self.clock.neural_step_ms)
+        if self.trainer is not None:
+            if self.trainer.template.get('visual_policy'):
+                return activity, None
+            features = self.trainer.extract_features(activity)
+            action, _ = self.trainer.step(features, game_time * 1000.0, explore=False)
+        else:
+            action = self.decoder.decode(activity)
+        return activity, action
+
+    def _tick_realtime_neural(self, started):
+        now = time.perf_counter()
+        elapsed = self.clock.game_step if self.last_realtime_wall is None else now - self.last_realtime_wall
+        self.last_realtime_wall = now
+        game_dt = min(.2, max(.001, elapsed * self.clock.speed))
+        activity = None
+        if self.neural_future is not None and self.neural_future.done():
+            activity, action = self.neural_future.result()
+            if action is not None:
+                self.latest_neural_action = action
+            self.latest_neural_activity = activity
+            self.neural_future = None
+
+        if self.trainer.template.get('visual_policy'):
+            self.latest_neural_action = self.trainer.visual_step(self.environment.get_observation())
+        self.environment.step(self.body.apply(self.latest_neural_action), game_dt)
+        if (self.neural_future is None and not self.environment.is_done() and
+                now >= self.next_neural_submit):
+            self.neural_future = self.neural_executor.submit(
+                self._neural_step,
+                self.environment.get_observation(),
+                self.acoustic_energy,
+                self.environment.time,
+            )
+            self.next_neural_submit = now + .25
+
+        self.clock.advance(neural=activity is not None)
+        telemetry = self.metrics.record(activity, time.perf_counter() - started,
+                                        self.environment.get_observation().timestamp)
+        if self.environment.is_done():
+            self.mode = 'finished'
+        self.publish(self.latest_neural_activity, telemetry)
+        self._record_frame()
+
+    def _record_frame(self):
+        if self.recorder:
+            self.recorder.write({'kind':'frame', 'snapshot':self.snapshot})
+            if self.mode == 'finished':
+                self.recorder.close()
+                self.recorder = None
+                if self.plasticity.enabled:
+                    path = ROOT/'outputs/memory'/(self.last_session+'.npz')
+                    self.plasticity.checkpoint(self.brain, path)
+                    self.last_memory = str(path.relative_to(ROOT))
 
     def enqueue(self, command):
         self.commands.put_nowait(command)
@@ -215,7 +301,10 @@ class Experiment:
             self.reset()
         elif kind == 'reset_training':
             if self.trainer and self.trainer.template.get('action_mode') == 'held_sigmoid':
-                raise ValueError('This checkpoint was trained offline; select the baseline to train with RL')
+                self.trainer.template.pop('action_mode', None)
+                self.trainer.template.pop('visual_policy', None)
+                self.trainer.threshold = .45
+                self.trainer.release = .2
             self.live_training_enabled = True
             self.init_trainer_from_scratch()
             self.reset()
@@ -261,6 +350,7 @@ class Experiment:
         elif kind == 'load_checkpoint':
             from training.checkpoints import resolve_checkpoint
             from training.rl import ReinforcementReadoutTrainer
+            self._drain_neural_job()
             ckpt_path = resolve_checkpoint(command.get('path', ''))
             loaded = ReinforcementReadoutTrainer.load(ckpt_path)
             if self.brain is None:
@@ -314,6 +404,12 @@ class Experiment:
         phase = (t % beat_period) / beat_period
         pulse = math.exp(-phase * 9.0) + 0.5 * math.exp(-((phase - 0.5) % 1.0) * 9.0)
         self.acoustic_energy = float(np.clip(pulse, 0.0, 1.0))
+
+        if (self.driver == 'neural' and self.realtime_neural and
+                self.trainer is not None and not self.live_training_enabled and
+                not self.plasticity.enabled):
+            self._tick_realtime_neural(started)
+            return
 
         if self.driver == 'neural':
             stimulus = self.encoder.encode(self.environment.get_observation(), self.clock.neural_step_ms)
@@ -409,15 +505,7 @@ class Experiment:
                 self.mode = 'finished'
 
         self.publish(activity, telemetry)
-        if self.recorder:
-            self.recorder.write({'kind':'frame', 'snapshot':self.snapshot})
-            if self.mode == 'finished':
-                self.recorder.close()
-                self.recorder = None
-                if self.plasticity.enabled:
-                    path = ROOT/'outputs/memory'/(self.last_session+'.npz')
-                    self.plasticity.checkpoint(self.brain, path)
-                    self.last_memory = str(path.relative_to(ROOT))
+        self._record_frame()
 
     def publish(self, activity=None, telemetry=None):
         # Rendering is independent of neural computation and shows the exact sensory frame.
@@ -428,7 +516,7 @@ class Experiment:
         self.revision += 1
         rates = [0]*4
         if self.driver == 'neural':
-            if self.trainer is not None and self.live_training_enabled and hasattr(self.trainer, 'last_rates'):
+            if self.trainer is not None and hasattr(self.trainer, 'last_rates'):
                 rates = self.trainer.last_rates.tolist()
             elif self.decoder:
                 rates = self.decoder.rates.tolist()
@@ -485,5 +573,7 @@ class Experiment:
     def close(self):
         self.shutdown_event.set()
         self.thread.join(timeout=10)
+        self._drain_neural_job()
+        self.neural_executor.shutdown(wait=True, cancel_futures=True)
         if self.recorder:
             self.recorder.close()

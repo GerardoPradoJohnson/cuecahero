@@ -1,0 +1,7006 @@
+{
+  "kind": "song_independent_supervised_curriculum",
+  "episodes_completed": 1000,
+  "episodes": [
+    {
+      "index": 1,
+      "generation": 1,
+      "name": "epoch-0001",
+      "loss": 1.6895947,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 2,
+      "generation": 2,
+      "name": "epoch-0002",
+      "loss": 1.6555027,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 3,
+      "generation": 3,
+      "name": "epoch-0003",
+      "loss": 1.6231896,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 4,
+      "generation": 4,
+      "name": "epoch-0004",
+      "loss": 1.5925702,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 5,
+      "generation": 5,
+      "name": "epoch-0005",
+      "loss": 1.5636826,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 6,
+      "generation": 6,
+      "name": "epoch-0006",
+      "loss": 1.5366232,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 7,
+      "generation": 7,
+      "name": "epoch-0007",
+      "loss": 1.511452,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 8,
+      "generation": 8,
+      "name": "epoch-0008",
+      "loss": 1.4881497,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 9,
+      "generation": 9,
+      "name": "epoch-0009",
+      "loss": 1.46661,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 10,
+      "generation": 10,
+      "name": "epoch-0010",
+      "loss": 1.4466648,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 11,
+      "generation": 11,
+      "name": "epoch-0011",
+      "loss": 1.4281303,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 12,
+      "generation": 12,
+      "name": "epoch-0012",
+      "loss": 1.4108439,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 13,
+      "generation": 13,
+      "name": "epoch-0013",
+      "loss": 1.394674,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 14,
+      "generation": 14,
+      "name": "epoch-0014",
+      "loss": 1.3795148,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 15,
+      "generation": 15,
+      "name": "epoch-0015",
+      "loss": 1.3652792,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 16,
+      "generation": 16,
+      "name": "epoch-0016",
+      "loss": 1.3518937,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 17,
+      "generation": 17,
+      "name": "epoch-0017",
+      "loss": 1.339295,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 18,
+      "generation": 18,
+      "name": "epoch-0018",
+      "loss": 1.3274253,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 19,
+      "generation": 19,
+      "name": "epoch-0019",
+      "loss": 1.3162274,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 20,
+      "generation": 20,
+      "name": "epoch-0020",
+      "loss": 1.3056428,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 21,
+      "generation": 21,
+      "name": "epoch-0021",
+      "loss": 1.2956123,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 22,
+      "generation": 22,
+      "name": "epoch-0022",
+      "loss": 1.2860802,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 23,
+      "generation": 23,
+      "name": "epoch-0023",
+      "loss": 1.2769975,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 24,
+      "generation": 24,
+      "name": "epoch-0024",
+      "loss": 1.2683234,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 25,
+      "generation": 25,
+      "name": "epoch-0025",
+      "loss": 1.2600248,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 26,
+      "generation": 26,
+      "name": "epoch-0026",
+      "loss": 1.2520739,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 27,
+      "generation": 27,
+      "name": "epoch-0027",
+      "loss": 1.2444462,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 28,
+      "generation": 28,
+      "name": "epoch-0028",
+      "loss": 1.2371178,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 29,
+      "generation": 29,
+      "name": "epoch-0029",
+      "loss": 1.2300653,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 30,
+      "generation": 30,
+      "name": "epoch-0030",
+      "loss": 1.2232649,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 31,
+      "generation": 31,
+      "name": "epoch-0031",
+      "loss": 1.2166928,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 32,
+      "generation": 32,
+      "name": "epoch-0032",
+      "loss": 1.2103259,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 33,
+      "generation": 33,
+      "name": "epoch-0033",
+      "loss": 1.2041425,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 34,
+      "generation": 34,
+      "name": "epoch-0034",
+      "loss": 1.1981229,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 35,
+      "generation": 35,
+      "name": "epoch-0035",
+      "loss": 1.1922509,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 36,
+      "generation": 36,
+      "name": "epoch-0036",
+      "loss": 1.1865142,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 37,
+      "generation": 37,
+      "name": "epoch-0037",
+      "loss": 1.1809043,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 38,
+      "generation": 38,
+      "name": "epoch-0038",
+      "loss": 1.1754158,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 39,
+      "generation": 39,
+      "name": "epoch-0039",
+      "loss": 1.1700442,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 40,
+      "generation": 40,
+      "name": "epoch-0040",
+      "loss": 1.1647846,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 41,
+      "generation": 41,
+      "name": "epoch-0041",
+      "loss": 1.1596303,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 42,
+      "generation": 42,
+      "name": "epoch-0042",
+      "loss": 1.1545726,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 43,
+      "generation": 43,
+      "name": "epoch-0043",
+      "loss": 1.1496024,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 44,
+      "generation": 44,
+      "name": "epoch-0044",
+      "loss": 1.1447106,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 45,
+      "generation": 45,
+      "name": "epoch-0045",
+      "loss": 1.1398898,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 46,
+      "generation": 46,
+      "name": "epoch-0046",
+      "loss": 1.1351343,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 47,
+      "generation": 47,
+      "name": "epoch-0047",
+      "loss": 1.1304396,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 48,
+      "generation": 48,
+      "name": "epoch-0048",
+      "loss": 1.1258027,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 49,
+      "generation": 49,
+      "name": "epoch-0049",
+      "loss": 1.1212219,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 50,
+      "generation": 50,
+      "name": "epoch-0050",
+      "loss": 1.1166967,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 51,
+      "generation": 51,
+      "name": "epoch-0051",
+      "loss": 1.1122274,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 52,
+      "generation": 52,
+      "name": "epoch-0052",
+      "loss": 1.1078145,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 53,
+      "generation": 53,
+      "name": "epoch-0053",
+      "loss": 1.1034577,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 54,
+      "generation": 54,
+      "name": "epoch-0054",
+      "loss": 1.0991562,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 55,
+      "generation": 55,
+      "name": "epoch-0055",
+      "loss": 1.0949082,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 56,
+      "generation": 56,
+      "name": "epoch-0056",
+      "loss": 1.0907121,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 57,
+      "generation": 57,
+      "name": "epoch-0057",
+      "loss": 1.0865668,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 58,
+      "generation": 58,
+      "name": "epoch-0058",
+      "loss": 1.0824713,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 59,
+      "generation": 59,
+      "name": "epoch-0059",
+      "loss": 1.078425,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 60,
+      "generation": 60,
+      "name": "epoch-0060",
+      "loss": 1.0744269,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 61,
+      "generation": 61,
+      "name": "epoch-0061",
+      "loss": 1.0704766,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 62,
+      "generation": 62,
+      "name": "epoch-0062",
+      "loss": 1.0665731,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 63,
+      "generation": 63,
+      "name": "epoch-0063",
+      "loss": 1.0627157,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 64,
+      "generation": 64,
+      "name": "epoch-0064",
+      "loss": 1.0589036,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 65,
+      "generation": 65,
+      "name": "epoch-0065",
+      "loss": 1.0551359,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 66,
+      "generation": 66,
+      "name": "epoch-0066",
+      "loss": 1.0514117,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 67,
+      "generation": 67,
+      "name": "epoch-0067",
+      "loss": 1.0477305,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 68,
+      "generation": 68,
+      "name": "epoch-0068",
+      "loss": 1.0440919,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 69,
+      "generation": 69,
+      "name": "epoch-0069",
+      "loss": 1.0404956,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 70,
+      "generation": 70,
+      "name": "epoch-0070",
+      "loss": 1.0369412,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 71,
+      "generation": 71,
+      "name": "epoch-0071",
+      "loss": 1.0334282,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 72,
+      "generation": 72,
+      "name": "epoch-0072",
+      "loss": 1.029956,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 73,
+      "generation": 73,
+      "name": "epoch-0073",
+      "loss": 1.0265243,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 74,
+      "generation": 74,
+      "name": "epoch-0074",
+      "loss": 1.0231325,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 75,
+      "generation": 75,
+      "name": "epoch-0075",
+      "loss": 1.0197802,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 76,
+      "generation": 76,
+      "name": "epoch-0076",
+      "loss": 1.0164671,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 77,
+      "generation": 77,
+      "name": "epoch-0077",
+      "loss": 1.013193,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 78,
+      "generation": 78,
+      "name": "epoch-0078",
+      "loss": 1.0099579,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 79,
+      "generation": 79,
+      "name": "epoch-0079",
+      "loss": 1.0067617,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 80,
+      "generation": 80,
+      "name": "epoch-0080",
+      "loss": 1.0036046,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 81,
+      "generation": 81,
+      "name": "epoch-0081",
+      "loss": 1.0004863,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 82,
+      "generation": 82,
+      "name": "epoch-0082",
+      "loss": 0.9974068,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 83,
+      "generation": 83,
+      "name": "epoch-0083",
+      "loss": 0.9943658,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 84,
+      "generation": 84,
+      "name": "epoch-0084",
+      "loss": 0.991363,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 85,
+      "generation": 85,
+      "name": "epoch-0085",
+      "loss": 0.9883982,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 86,
+      "generation": 86,
+      "name": "epoch-0086",
+      "loss": 0.9854713,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 87,
+      "generation": 87,
+      "name": "epoch-0087",
+      "loss": 0.982582,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 88,
+      "generation": 88,
+      "name": "epoch-0088",
+      "loss": 0.9797303,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 89,
+      "generation": 89,
+      "name": "epoch-0089",
+      "loss": 0.976916,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 90,
+      "generation": 90,
+      "name": "epoch-0090",
+      "loss": 0.9741391,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 91,
+      "generation": 91,
+      "name": "epoch-0091",
+      "loss": 0.9713992,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 92,
+      "generation": 92,
+      "name": "epoch-0092",
+      "loss": 0.9686963,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 93,
+      "generation": 93,
+      "name": "epoch-0093",
+      "loss": 0.9660302,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 94,
+      "generation": 94,
+      "name": "epoch-0094",
+      "loss": 0.9634005,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 95,
+      "generation": 95,
+      "name": "epoch-0095",
+      "loss": 0.9608071,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 96,
+      "generation": 96,
+      "name": "epoch-0096",
+      "loss": 0.9582498,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 97,
+      "generation": 97,
+      "name": "epoch-0097",
+      "loss": 0.9557282,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 98,
+      "generation": 98,
+      "name": "epoch-0098",
+      "loss": 0.9532422,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 99,
+      "generation": 99,
+      "name": "epoch-0099",
+      "loss": 0.9507916,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 100,
+      "generation": 100,
+      "name": "epoch-0100",
+      "loss": 0.948376,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 101,
+      "generation": 101,
+      "name": "epoch-0101",
+      "loss": 0.9459951,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 102,
+      "generation": 102,
+      "name": "epoch-0102",
+      "loss": 0.9436488,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 103,
+      "generation": 103,
+      "name": "epoch-0103",
+      "loss": 0.9413367,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 104,
+      "generation": 104,
+      "name": "epoch-0104",
+      "loss": 0.9390586,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 105,
+      "generation": 105,
+      "name": "epoch-0105",
+      "loss": 0.9368141,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 106,
+      "generation": 106,
+      "name": "epoch-0106",
+      "loss": 0.9346031,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 107,
+      "generation": 107,
+      "name": "epoch-0107",
+      "loss": 0.9324252,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 108,
+      "generation": 108,
+      "name": "epoch-0108",
+      "loss": 0.9302801,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 109,
+      "generation": 109,
+      "name": "epoch-0109",
+      "loss": 0.9281675,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 110,
+      "generation": 110,
+      "name": "epoch-0110",
+      "loss": 0.9260871,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 111,
+      "generation": 111,
+      "name": "epoch-0111",
+      "loss": 0.9240386,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 112,
+      "generation": 112,
+      "name": "epoch-0112",
+      "loss": 0.9220217,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 113,
+      "generation": 113,
+      "name": "epoch-0113",
+      "loss": 0.9200361,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 114,
+      "generation": 114,
+      "name": "epoch-0114",
+      "loss": 0.9180816,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 115,
+      "generation": 115,
+      "name": "epoch-0115",
+      "loss": 0.9161577,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 116,
+      "generation": 116,
+      "name": "epoch-0116",
+      "loss": 0.9142643,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 117,
+      "generation": 117,
+      "name": "epoch-0117",
+      "loss": 0.912401,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 118,
+      "generation": 118,
+      "name": "epoch-0118",
+      "loss": 0.9105675,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 119,
+      "generation": 119,
+      "name": "epoch-0119",
+      "loss": 0.9087634,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 120,
+      "generation": 120,
+      "name": "epoch-0120",
+      "loss": 0.9069885,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 121,
+      "generation": 121,
+      "name": "epoch-0121",
+      "loss": 0.9052424,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 122,
+      "generation": 122,
+      "name": "epoch-0122",
+      "loss": 0.9035248,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 123,
+      "generation": 123,
+      "name": "epoch-0123",
+      "loss": 0.9018355,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 124,
+      "generation": 124,
+      "name": "epoch-0124",
+      "loss": 0.900174,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 125,
+      "generation": 125,
+      "name": "epoch-0125",
+      "loss": 0.8985402,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 126,
+      "generation": 126,
+      "name": "epoch-0126",
+      "loss": 0.8969336,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 127,
+      "generation": 127,
+      "name": "epoch-0127",
+      "loss": 0.895354,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 128,
+      "generation": 128,
+      "name": "epoch-0128",
+      "loss": 0.8938011,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 129,
+      "generation": 129,
+      "name": "epoch-0129",
+      "loss": 0.8922744,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 130,
+      "generation": 130,
+      "name": "epoch-0130",
+      "loss": 0.8907739,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 131,
+      "generation": 131,
+      "name": "epoch-0131",
+      "loss": 0.889299,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 132,
+      "generation": 132,
+      "name": "epoch-0132",
+      "loss": 0.8878496,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 133,
+      "generation": 133,
+      "name": "epoch-0133",
+      "loss": 0.8864252,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 134,
+      "generation": 134,
+      "name": "epoch-0134",
+      "loss": 0.8850257,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 135,
+      "generation": 135,
+      "name": "epoch-0135",
+      "loss": 0.8836506,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 136,
+      "generation": 136,
+      "name": "epoch-0136",
+      "loss": 0.8822997,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 137,
+      "generation": 137,
+      "name": "epoch-0137",
+      "loss": 0.8809726,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 138,
+      "generation": 138,
+      "name": "epoch-0138",
+      "loss": 0.8796691,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 139,
+      "generation": 139,
+      "name": "epoch-0139",
+      "loss": 0.8783888,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 140,
+      "generation": 140,
+      "name": "epoch-0140",
+      "loss": 0.8771315,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 141,
+      "generation": 141,
+      "name": "epoch-0141",
+      "loss": 0.8758968,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 142,
+      "generation": 142,
+      "name": "epoch-0142",
+      "loss": 0.8746844,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 143,
+      "generation": 143,
+      "name": "epoch-0143",
+      "loss": 0.8734941,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 144,
+      "generation": 144,
+      "name": "epoch-0144",
+      "loss": 0.8723255,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 145,
+      "generation": 145,
+      "name": "epoch-0145",
+      "loss": 0.8711782,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 146,
+      "generation": 146,
+      "name": "epoch-0146",
+      "loss": 0.8700521,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 147,
+      "generation": 147,
+      "name": "epoch-0147",
+      "loss": 0.8689468,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 148,
+      "generation": 148,
+      "name": "epoch-0148",
+      "loss": 0.8678621,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 149,
+      "generation": 149,
+      "name": "epoch-0149",
+      "loss": 0.8667975,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 150,
+      "generation": 150,
+      "name": "epoch-0150",
+      "loss": 0.8657529,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 151,
+      "generation": 151,
+      "name": "epoch-0151",
+      "loss": 0.864728,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 152,
+      "generation": 152,
+      "name": "epoch-0152",
+      "loss": 0.8637223,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 153,
+      "generation": 153,
+      "name": "epoch-0153",
+      "loss": 0.8627358,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 154,
+      "generation": 154,
+      "name": "epoch-0154",
+      "loss": 0.8617679,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 155,
+      "generation": 155,
+      "name": "epoch-0155",
+      "loss": 0.8608186,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 156,
+      "generation": 156,
+      "name": "epoch-0156",
+      "loss": 0.8598875,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 157,
+      "generation": 157,
+      "name": "epoch-0157",
+      "loss": 0.8589742,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 158,
+      "generation": 158,
+      "name": "epoch-0158",
+      "loss": 0.8580786,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 159,
+      "generation": 159,
+      "name": "epoch-0159",
+      "loss": 0.8572004,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 160,
+      "generation": 160,
+      "name": "epoch-0160",
+      "loss": 0.8563392,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 161,
+      "generation": 161,
+      "name": "epoch-0161",
+      "loss": 0.8554949,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 162,
+      "generation": 162,
+      "name": "epoch-0162",
+      "loss": 0.854667,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 163,
+      "generation": 163,
+      "name": "epoch-0163",
+      "loss": 0.8538554,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 164,
+      "generation": 164,
+      "name": "epoch-0164",
+      "loss": 0.8530598,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 165,
+      "generation": 165,
+      "name": "epoch-0165",
+      "loss": 0.8522799,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 166,
+      "generation": 166,
+      "name": "epoch-0166",
+      "loss": 0.8515155,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 167,
+      "generation": 167,
+      "name": "epoch-0167",
+      "loss": 0.8507663,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 168,
+      "generation": 168,
+      "name": "epoch-0168",
+      "loss": 0.850032,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 169,
+      "generation": 169,
+      "name": "epoch-0169",
+      "loss": 0.8493123,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 170,
+      "generation": 170,
+      "name": "epoch-0170",
+      "loss": 0.8486071,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 171,
+      "generation": 171,
+      "name": "epoch-0171",
+      "loss": 0.8479161,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 172,
+      "generation": 172,
+      "name": "epoch-0172",
+      "loss": 0.847239,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 173,
+      "generation": 173,
+      "name": "epoch-0173",
+      "loss": 0.8465755,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 174,
+      "generation": 174,
+      "name": "epoch-0174",
+      "loss": 0.8459255,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 175,
+      "generation": 175,
+      "name": "epoch-0175",
+      "loss": 0.8452887,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 176,
+      "generation": 176,
+      "name": "epoch-0176",
+      "loss": 0.8446648,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 177,
+      "generation": 177,
+      "name": "epoch-0177",
+      "loss": 0.8440536,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 178,
+      "generation": 178,
+      "name": "epoch-0178",
+      "loss": 0.8434548,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 179,
+      "generation": 179,
+      "name": "epoch-0179",
+      "loss": 0.8428684,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 180,
+      "generation": 180,
+      "name": "epoch-0180",
+      "loss": 0.8422939,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 181,
+      "generation": 181,
+      "name": "epoch-0181",
+      "loss": 0.8417312,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 182,
+      "generation": 182,
+      "name": "epoch-0182",
+      "loss": 0.84118,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 183,
+      "generation": 183,
+      "name": "epoch-0183",
+      "loss": 0.8406402,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 184,
+      "generation": 184,
+      "name": "epoch-0184",
+      "loss": 0.8401115,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 185,
+      "generation": 185,
+      "name": "epoch-0185",
+      "loss": 0.8395937,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 186,
+      "generation": 186,
+      "name": "epoch-0186",
+      "loss": 0.8390866,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 187,
+      "generation": 187,
+      "name": "epoch-0187",
+      "loss": 0.83859,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 188,
+      "generation": 188,
+      "name": "epoch-0188",
+      "loss": 0.8381036,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 189,
+      "generation": 189,
+      "name": "epoch-0189",
+      "loss": 0.8376273,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 190,
+      "generation": 190,
+      "name": "epoch-0190",
+      "loss": 0.8371609,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 191,
+      "generation": 191,
+      "name": "epoch-0191",
+      "loss": 0.8367041,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 192,
+      "generation": 192,
+      "name": "epoch-0192",
+      "loss": 0.8362567,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 193,
+      "generation": 193,
+      "name": "epoch-0193",
+      "loss": 0.8358187,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 194,
+      "generation": 194,
+      "name": "epoch-0194",
+      "loss": 0.8353897,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 195,
+      "generation": 195,
+      "name": "epoch-0195",
+      "loss": 0.8349696,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 196,
+      "generation": 196,
+      "name": "epoch-0196",
+      "loss": 0.8345582,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 197,
+      "generation": 197,
+      "name": "epoch-0197",
+      "loss": 0.8341553,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 198,
+      "generation": 198,
+      "name": "epoch-0198",
+      "loss": 0.8337608,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 199,
+      "generation": 199,
+      "name": "epoch-0199",
+      "loss": 0.8333744,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 200,
+      "generation": 200,
+      "name": "epoch-0200",
+      "loss": 0.832996,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 201,
+      "generation": 201,
+      "name": "epoch-0201",
+      "loss": 0.8326254,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 202,
+      "generation": 202,
+      "name": "epoch-0202",
+      "loss": 0.8322625,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 203,
+      "generation": 203,
+      "name": "epoch-0203",
+      "loss": 0.831907,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 204,
+      "generation": 204,
+      "name": "epoch-0204",
+      "loss": 0.8315589,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 205,
+      "generation": 205,
+      "name": "epoch-0205",
+      "loss": 0.8312179,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 206,
+      "generation": 206,
+      "name": "epoch-0206",
+      "loss": 0.8308839,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 207,
+      "generation": 207,
+      "name": "epoch-0207",
+      "loss": 0.8305567,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 208,
+      "generation": 208,
+      "name": "epoch-0208",
+      "loss": 0.8302363,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 209,
+      "generation": 209,
+      "name": "epoch-0209",
+      "loss": 0.8299223,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 210,
+      "generation": 210,
+      "name": "epoch-0210",
+      "loss": 0.8296148,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 211,
+      "generation": 211,
+      "name": "epoch-0211",
+      "loss": 0.8293134,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 212,
+      "generation": 212,
+      "name": "epoch-0212",
+      "loss": 0.8290182,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 213,
+      "generation": 213,
+      "name": "epoch-0213",
+      "loss": 0.828729,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 214,
+      "generation": 214,
+      "name": "epoch-0214",
+      "loss": 0.8284455,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 215,
+      "generation": 215,
+      "name": "epoch-0215",
+      "loss": 0.8281678,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 216,
+      "generation": 216,
+      "name": "epoch-0216",
+      "loss": 0.8278956,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 217,
+      "generation": 217,
+      "name": "epoch-0217",
+      "loss": 0.8276288,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 218,
+      "generation": 218,
+      "name": "epoch-0218",
+      "loss": 0.8273674,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 219,
+      "generation": 219,
+      "name": "epoch-0219",
+      "loss": 0.8271111,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 220,
+      "generation": 220,
+      "name": "epoch-0220",
+      "loss": 0.8268598,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 221,
+      "generation": 221,
+      "name": "epoch-0221",
+      "loss": 0.8266135,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 222,
+      "generation": 222,
+      "name": "epoch-0222",
+      "loss": 0.826372,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 223,
+      "generation": 223,
+      "name": "epoch-0223",
+      "loss": 0.8261352,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 224,
+      "generation": 224,
+      "name": "epoch-0224",
+      "loss": 0.825903,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 225,
+      "generation": 225,
+      "name": "epoch-0225",
+      "loss": 0.8256752,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 226,
+      "generation": 226,
+      "name": "epoch-0226",
+      "loss": 0.8254518,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 227,
+      "generation": 227,
+      "name": "epoch-0227",
+      "loss": 0.8252327,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 228,
+      "generation": 228,
+      "name": "epoch-0228",
+      "loss": 0.8250177,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 229,
+      "generation": 229,
+      "name": "epoch-0229",
+      "loss": 0.8248067,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 230,
+      "generation": 230,
+      "name": "epoch-0230",
+      "loss": 0.8245997,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 231,
+      "generation": 231,
+      "name": "epoch-0231",
+      "loss": 0.8243966,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 232,
+      "generation": 232,
+      "name": "epoch-0232",
+      "loss": 0.8241972,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 233,
+      "generation": 233,
+      "name": "epoch-0233",
+      "loss": 0.8240015,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 234,
+      "generation": 234,
+      "name": "epoch-0234",
+      "loss": 0.8238094,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 235,
+      "generation": 235,
+      "name": "epoch-0235",
+      "loss": 0.8236207,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 236,
+      "generation": 236,
+      "name": "epoch-0236",
+      "loss": 0.8234355,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 237,
+      "generation": 237,
+      "name": "epoch-0237",
+      "loss": 0.8232535,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 238,
+      "generation": 238,
+      "name": "epoch-0238",
+      "loss": 0.8230748,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 239,
+      "generation": 239,
+      "name": "epoch-0239",
+      "loss": 0.8228992,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 240,
+      "generation": 240,
+      "name": "epoch-0240",
+      "loss": 0.8227267,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 241,
+      "generation": 241,
+      "name": "epoch-0241",
+      "loss": 0.8225571,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 242,
+      "generation": 242,
+      "name": "epoch-0242",
+      "loss": 0.8223905,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 243,
+      "generation": 243,
+      "name": "epoch-0243",
+      "loss": 0.8222267,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 244,
+      "generation": 244,
+      "name": "epoch-0244",
+      "loss": 0.8220657,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 245,
+      "generation": 245,
+      "name": "epoch-0245",
+      "loss": 0.8219073,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 246,
+      "generation": 246,
+      "name": "epoch-0246",
+      "loss": 0.8217516,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 247,
+      "generation": 247,
+      "name": "epoch-0247",
+      "loss": 0.8215984,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 248,
+      "generation": 248,
+      "name": "epoch-0248",
+      "loss": 0.8214478,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 249,
+      "generation": 249,
+      "name": "epoch-0249",
+      "loss": 0.8212995,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 250,
+      "generation": 250,
+      "name": "epoch-0250",
+      "loss": 0.8211536,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 251,
+      "generation": 251,
+      "name": "epoch-0251",
+      "loss": 0.82101,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 252,
+      "generation": 252,
+      "name": "epoch-0252",
+      "loss": 0.8208687,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 253,
+      "generation": 253,
+      "name": "epoch-0253",
+      "loss": 0.8207295,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 254,
+      "generation": 254,
+      "name": "epoch-0254",
+      "loss": 0.8205924,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 255,
+      "generation": 255,
+      "name": "epoch-0255",
+      "loss": 0.8204574,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 256,
+      "generation": 256,
+      "name": "epoch-0256",
+      "loss": 0.8203244,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 257,
+      "generation": 257,
+      "name": "epoch-0257",
+      "loss": 0.8201934,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 258,
+      "generation": 258,
+      "name": "epoch-0258",
+      "loss": 0.8200643,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 259,
+      "generation": 259,
+      "name": "epoch-0259",
+      "loss": 0.819937,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 260,
+      "generation": 260,
+      "name": "epoch-0260",
+      "loss": 0.8198116,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 261,
+      "generation": 261,
+      "name": "epoch-0261",
+      "loss": 0.8196879,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 262,
+      "generation": 262,
+      "name": "epoch-0262",
+      "loss": 0.8195659,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 263,
+      "generation": 263,
+      "name": "epoch-0263",
+      "loss": 0.8194456,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 264,
+      "generation": 264,
+      "name": "epoch-0264",
+      "loss": 0.819327,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 265,
+      "generation": 265,
+      "name": "epoch-0265",
+      "loss": 0.8192099,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 266,
+      "generation": 266,
+      "name": "epoch-0266",
+      "loss": 0.8190943,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 267,
+      "generation": 267,
+      "name": "epoch-0267",
+      "loss": 0.8189802,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 268,
+      "generation": 268,
+      "name": "epoch-0268",
+      "loss": 0.8188676,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 269,
+      "generation": 269,
+      "name": "epoch-0269",
+      "loss": 0.8187565,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 270,
+      "generation": 270,
+      "name": "epoch-0270",
+      "loss": 0.8186467,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 271,
+      "generation": 271,
+      "name": "epoch-0271",
+      "loss": 0.8185382,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 272,
+      "generation": 272,
+      "name": "epoch-0272",
+      "loss": 0.8184311,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 273,
+      "generation": 273,
+      "name": "epoch-0273",
+      "loss": 0.8183252,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 274,
+      "generation": 274,
+      "name": "epoch-0274",
+      "loss": 0.8182206,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 275,
+      "generation": 275,
+      "name": "epoch-0275",
+      "loss": 0.8181172,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 276,
+      "generation": 276,
+      "name": "epoch-0276",
+      "loss": 0.818015,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 277,
+      "generation": 277,
+      "name": "epoch-0277",
+      "loss": 0.8179139,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 278,
+      "generation": 278,
+      "name": "epoch-0278",
+      "loss": 0.8178139,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 279,
+      "generation": 279,
+      "name": "epoch-0279",
+      "loss": 0.8177151,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 280,
+      "generation": 280,
+      "name": "epoch-0280",
+      "loss": 0.8176173,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 281,
+      "generation": 281,
+      "name": "epoch-0281",
+      "loss": 0.8175205,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 282,
+      "generation": 282,
+      "name": "epoch-0282",
+      "loss": 0.8174247,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 283,
+      "generation": 283,
+      "name": "epoch-0283",
+      "loss": 0.8173299,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 284,
+      "generation": 284,
+      "name": "epoch-0284",
+      "loss": 0.8172361,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 285,
+      "generation": 285,
+      "name": "epoch-0285",
+      "loss": 0.8171431,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 286,
+      "generation": 286,
+      "name": "epoch-0286",
+      "loss": 0.8170511,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 287,
+      "generation": 287,
+      "name": "epoch-0287",
+      "loss": 0.81696,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 288,
+      "generation": 288,
+      "name": "epoch-0288",
+      "loss": 0.8168697,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 289,
+      "generation": 289,
+      "name": "epoch-0289",
+      "loss": 0.8167803,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 290,
+      "generation": 290,
+      "name": "epoch-0290",
+      "loss": 0.8166917,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 291,
+      "generation": 291,
+      "name": "epoch-0291",
+      "loss": 0.8166038,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 292,
+      "generation": 292,
+      "name": "epoch-0292",
+      "loss": 0.8165168,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 293,
+      "generation": 293,
+      "name": "epoch-0293",
+      "loss": 0.8164305,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 294,
+      "generation": 294,
+      "name": "epoch-0294",
+      "loss": 0.816345,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 295,
+      "generation": 295,
+      "name": "epoch-0295",
+      "loss": 0.8162601,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 296,
+      "generation": 296,
+      "name": "epoch-0296",
+      "loss": 0.816176,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 297,
+      "generation": 297,
+      "name": "epoch-0297",
+      "loss": 0.8160925,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 298,
+      "generation": 298,
+      "name": "epoch-0298",
+      "loss": 0.8160097,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 299,
+      "generation": 299,
+      "name": "epoch-0299",
+      "loss": 0.8159276,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 300,
+      "generation": 300,
+      "name": "epoch-0300",
+      "loss": 0.8158461,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 301,
+      "generation": 301,
+      "name": "epoch-0301",
+      "loss": 0.8157652,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 302,
+      "generation": 302,
+      "name": "epoch-0302",
+      "loss": 0.8156849,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 303,
+      "generation": 303,
+      "name": "epoch-0303",
+      "loss": 0.8156052,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 304,
+      "generation": 304,
+      "name": "epoch-0304",
+      "loss": 0.8155261,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 305,
+      "generation": 305,
+      "name": "epoch-0305",
+      "loss": 0.8154475,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 306,
+      "generation": 306,
+      "name": "epoch-0306",
+      "loss": 0.8153695,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 307,
+      "generation": 307,
+      "name": "epoch-0307",
+      "loss": 0.8152921,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 308,
+      "generation": 308,
+      "name": "epoch-0308",
+      "loss": 0.8152151,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 309,
+      "generation": 309,
+      "name": "epoch-0309",
+      "loss": 0.8151387,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 310,
+      "generation": 310,
+      "name": "epoch-0310",
+      "loss": 0.8150627,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 311,
+      "generation": 311,
+      "name": "epoch-0311",
+      "loss": 0.8149873,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 312,
+      "generation": 312,
+      "name": "epoch-0312",
+      "loss": 0.8149123,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 313,
+      "generation": 313,
+      "name": "epoch-0313",
+      "loss": 0.8148378,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 314,
+      "generation": 314,
+      "name": "epoch-0314",
+      "loss": 0.8147637,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 315,
+      "generation": 315,
+      "name": "epoch-0315",
+      "loss": 0.8146901,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 316,
+      "generation": 316,
+      "name": "epoch-0316",
+      "loss": 0.814617,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 317,
+      "generation": 317,
+      "name": "epoch-0317",
+      "loss": 0.8145442,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 318,
+      "generation": 318,
+      "name": "epoch-0318",
+      "loss": 0.8144719,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 319,
+      "generation": 319,
+      "name": "epoch-0319",
+      "loss": 0.8144,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 320,
+      "generation": 320,
+      "name": "epoch-0320",
+      "loss": 0.8143285,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 321,
+      "generation": 321,
+      "name": "epoch-0321",
+      "loss": 0.8142573,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 322,
+      "generation": 322,
+      "name": "epoch-0322",
+      "loss": 0.8141866,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 323,
+      "generation": 323,
+      "name": "epoch-0323",
+      "loss": 0.8141163,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 324,
+      "generation": 324,
+      "name": "epoch-0324",
+      "loss": 0.8140463,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 325,
+      "generation": 325,
+      "name": "epoch-0325",
+      "loss": 0.8139766,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 326,
+      "generation": 326,
+      "name": "epoch-0326",
+      "loss": 0.8139074,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 327,
+      "generation": 327,
+      "name": "epoch-0327",
+      "loss": 0.8138384,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 328,
+      "generation": 328,
+      "name": "epoch-0328",
+      "loss": 0.8137698,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 329,
+      "generation": 329,
+      "name": "epoch-0329",
+      "loss": 0.8137016,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 330,
+      "generation": 330,
+      "name": "epoch-0330",
+      "loss": 0.8136337,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 331,
+      "generation": 331,
+      "name": "epoch-0331",
+      "loss": 0.8135661,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 332,
+      "generation": 332,
+      "name": "epoch-0332",
+      "loss": 0.8134988,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 333,
+      "generation": 333,
+      "name": "epoch-0333",
+      "loss": 0.8134318,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 334,
+      "generation": 334,
+      "name": "epoch-0334",
+      "loss": 0.8133651,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 335,
+      "generation": 335,
+      "name": "epoch-0335",
+      "loss": 0.8132988,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 336,
+      "generation": 336,
+      "name": "epoch-0336",
+      "loss": 0.8132327,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 337,
+      "generation": 337,
+      "name": "epoch-0337",
+      "loss": 0.8131669,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 338,
+      "generation": 338,
+      "name": "epoch-0338",
+      "loss": 0.8131014,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 339,
+      "generation": 339,
+      "name": "epoch-0339",
+      "loss": 0.8130362,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 340,
+      "generation": 340,
+      "name": "epoch-0340",
+      "loss": 0.8129712,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 341,
+      "generation": 341,
+      "name": "epoch-0341",
+      "loss": 0.8129066,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 342,
+      "generation": 342,
+      "name": "epoch-0342",
+      "loss": 0.8128422,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 343,
+      "generation": 343,
+      "name": "epoch-0343",
+      "loss": 0.812778,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 344,
+      "generation": 344,
+      "name": "epoch-0344",
+      "loss": 0.8127141,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 345,
+      "generation": 345,
+      "name": "epoch-0345",
+      "loss": 0.8126505,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 346,
+      "generation": 346,
+      "name": "epoch-0346",
+      "loss": 0.8125871,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 347,
+      "generation": 347,
+      "name": "epoch-0347",
+      "loss": 0.812524,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 348,
+      "generation": 348,
+      "name": "epoch-0348",
+      "loss": 0.8124611,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 349,
+      "generation": 349,
+      "name": "epoch-0349",
+      "loss": 0.8123985,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 350,
+      "generation": 350,
+      "name": "epoch-0350",
+      "loss": 0.8123361,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 351,
+      "generation": 351,
+      "name": "epoch-0351",
+      "loss": 0.8122739,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 352,
+      "generation": 352,
+      "name": "epoch-0352",
+      "loss": 0.8122119,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 353,
+      "generation": 353,
+      "name": "epoch-0353",
+      "loss": 0.8121502,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 354,
+      "generation": 354,
+      "name": "epoch-0354",
+      "loss": 0.8120887,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 355,
+      "generation": 355,
+      "name": "epoch-0355",
+      "loss": 0.8120274,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 356,
+      "generation": 356,
+      "name": "epoch-0356",
+      "loss": 0.8119664,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 357,
+      "generation": 357,
+      "name": "epoch-0357",
+      "loss": 0.8119055,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 358,
+      "generation": 358,
+      "name": "epoch-0358",
+      "loss": 0.8118449,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 359,
+      "generation": 359,
+      "name": "epoch-0359",
+      "loss": 0.8117845,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 360,
+      "generation": 360,
+      "name": "epoch-0360",
+      "loss": 0.8117243,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 361,
+      "generation": 361,
+      "name": "epoch-0361",
+      "loss": 0.8116643,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 362,
+      "generation": 362,
+      "name": "epoch-0362",
+      "loss": 0.8116045,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 363,
+      "generation": 363,
+      "name": "epoch-0363",
+      "loss": 0.8115449,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 364,
+      "generation": 364,
+      "name": "epoch-0364",
+      "loss": 0.8114855,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 365,
+      "generation": 365,
+      "name": "epoch-0365",
+      "loss": 0.8114263,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 366,
+      "generation": 366,
+      "name": "epoch-0366",
+      "loss": 0.8113673,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 367,
+      "generation": 367,
+      "name": "epoch-0367",
+      "loss": 0.8113085,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 368,
+      "generation": 368,
+      "name": "epoch-0368",
+      "loss": 0.8112498,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 369,
+      "generation": 369,
+      "name": "epoch-0369",
+      "loss": 0.8111914,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 370,
+      "generation": 370,
+      "name": "epoch-0370",
+      "loss": 0.8111331,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 371,
+      "generation": 371,
+      "name": "epoch-0371",
+      "loss": 0.8110751,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 372,
+      "generation": 372,
+      "name": "epoch-0372",
+      "loss": 0.8110172,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 373,
+      "generation": 373,
+      "name": "epoch-0373",
+      "loss": 0.8109595,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 374,
+      "generation": 374,
+      "name": "epoch-0374",
+      "loss": 0.810902,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 375,
+      "generation": 375,
+      "name": "epoch-0375",
+      "loss": 0.8108446,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 376,
+      "generation": 376,
+      "name": "epoch-0376",
+      "loss": 0.8107875,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 377,
+      "generation": 377,
+      "name": "epoch-0377",
+      "loss": 0.8107305,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 378,
+      "generation": 378,
+      "name": "epoch-0378",
+      "loss": 0.8106736,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 379,
+      "generation": 379,
+      "name": "epoch-0379",
+      "loss": 0.810617,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 380,
+      "generation": 380,
+      "name": "epoch-0380",
+      "loss": 0.8105605,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 381,
+      "generation": 381,
+      "name": "epoch-0381",
+      "loss": 0.8105042,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 382,
+      "generation": 382,
+      "name": "epoch-0382",
+      "loss": 0.8104481,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 383,
+      "generation": 383,
+      "name": "epoch-0383",
+      "loss": 0.8103921,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 384,
+      "generation": 384,
+      "name": "epoch-0384",
+      "loss": 0.8103363,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 385,
+      "generation": 385,
+      "name": "epoch-0385",
+      "loss": 0.8102806,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 386,
+      "generation": 386,
+      "name": "epoch-0386",
+      "loss": 0.8102251,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 387,
+      "generation": 387,
+      "name": "epoch-0387",
+      "loss": 0.8101698,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 388,
+      "generation": 388,
+      "name": "epoch-0388",
+      "loss": 0.8101146,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 389,
+      "generation": 389,
+      "name": "epoch-0389",
+      "loss": 0.8100596,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 390,
+      "generation": 390,
+      "name": "epoch-0390",
+      "loss": 0.8100048,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 391,
+      "generation": 391,
+      "name": "epoch-0391",
+      "loss": 0.8099501,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 392,
+      "generation": 392,
+      "name": "epoch-0392",
+      "loss": 0.8098955,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 393,
+      "generation": 393,
+      "name": "epoch-0393",
+      "loss": 0.8098411,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 394,
+      "generation": 394,
+      "name": "epoch-0394",
+      "loss": 0.8097869,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 395,
+      "generation": 395,
+      "name": "epoch-0395",
+      "loss": 0.8097328,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 396,
+      "generation": 396,
+      "name": "epoch-0396",
+      "loss": 0.8096789,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 397,
+      "generation": 397,
+      "name": "epoch-0397",
+      "loss": 0.8096251,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 398,
+      "generation": 398,
+      "name": "epoch-0398",
+      "loss": 0.8095715,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 399,
+      "generation": 399,
+      "name": "epoch-0399",
+      "loss": 0.809518,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 400,
+      "generation": 400,
+      "name": "epoch-0400",
+      "loss": 0.8094647,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 401,
+      "generation": 401,
+      "name": "epoch-0401",
+      "loss": 0.8094115,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 402,
+      "generation": 402,
+      "name": "epoch-0402",
+      "loss": 0.8093584,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 403,
+      "generation": 403,
+      "name": "epoch-0403",
+      "loss": 0.8093055,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 404,
+      "generation": 404,
+      "name": "epoch-0404",
+      "loss": 0.8092528,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 405,
+      "generation": 405,
+      "name": "epoch-0405",
+      "loss": 0.8092002,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 406,
+      "generation": 406,
+      "name": "epoch-0406",
+      "loss": 0.8091477,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 407,
+      "generation": 407,
+      "name": "epoch-0407",
+      "loss": 0.8090954,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 408,
+      "generation": 408,
+      "name": "epoch-0408",
+      "loss": 0.8090432,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 409,
+      "generation": 409,
+      "name": "epoch-0409",
+      "loss": 0.8089911,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 410,
+      "generation": 410,
+      "name": "epoch-0410",
+      "loss": 0.8089392,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 411,
+      "generation": 411,
+      "name": "epoch-0411",
+      "loss": 0.8088874,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 412,
+      "generation": 412,
+      "name": "epoch-0412",
+      "loss": 0.8088358,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 413,
+      "generation": 413,
+      "name": "epoch-0413",
+      "loss": 0.8087843,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 414,
+      "generation": 414,
+      "name": "epoch-0414",
+      "loss": 0.8087329,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 415,
+      "generation": 415,
+      "name": "epoch-0415",
+      "loss": 0.8086817,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 416,
+      "generation": 416,
+      "name": "epoch-0416",
+      "loss": 0.8086306,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 417,
+      "generation": 417,
+      "name": "epoch-0417",
+      "loss": 0.8085796,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 418,
+      "generation": 418,
+      "name": "epoch-0418",
+      "loss": 0.8085288,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 419,
+      "generation": 419,
+      "name": "epoch-0419",
+      "loss": 0.8084781,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 420,
+      "generation": 420,
+      "name": "epoch-0420",
+      "loss": 0.8084275,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 421,
+      "generation": 421,
+      "name": "epoch-0421",
+      "loss": 0.8083771,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 422,
+      "generation": 422,
+      "name": "epoch-0422",
+      "loss": 0.8083268,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 423,
+      "generation": 423,
+      "name": "epoch-0423",
+      "loss": 0.8082766,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 424,
+      "generation": 424,
+      "name": "epoch-0424",
+      "loss": 0.8082265,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 425,
+      "generation": 425,
+      "name": "epoch-0425",
+      "loss": 0.8081766,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 426,
+      "generation": 426,
+      "name": "epoch-0426",
+      "loss": 0.8081268,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 427,
+      "generation": 427,
+      "name": "epoch-0427",
+      "loss": 0.8080771,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 428,
+      "generation": 428,
+      "name": "epoch-0428",
+      "loss": 0.8080276,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 429,
+      "generation": 429,
+      "name": "epoch-0429",
+      "loss": 0.8079782,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 430,
+      "generation": 430,
+      "name": "epoch-0430",
+      "loss": 0.8079289,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 431,
+      "generation": 431,
+      "name": "epoch-0431",
+      "loss": 0.8078797,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 432,
+      "generation": 432,
+      "name": "epoch-0432",
+      "loss": 0.8078307,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 433,
+      "generation": 433,
+      "name": "epoch-0433",
+      "loss": 0.8077817,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 434,
+      "generation": 434,
+      "name": "epoch-0434",
+      "loss": 0.8077329,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 435,
+      "generation": 435,
+      "name": "epoch-0435",
+      "loss": 0.8076843,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 436,
+      "generation": 436,
+      "name": "epoch-0436",
+      "loss": 0.8076357,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 437,
+      "generation": 437,
+      "name": "epoch-0437",
+      "loss": 0.8075873,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 438,
+      "generation": 438,
+      "name": "epoch-0438",
+      "loss": 0.807539,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 439,
+      "generation": 439,
+      "name": "epoch-0439",
+      "loss": 0.8074908,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 440,
+      "generation": 440,
+      "name": "epoch-0440",
+      "loss": 0.8074427,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 441,
+      "generation": 441,
+      "name": "epoch-0441",
+      "loss": 0.8073948,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 442,
+      "generation": 442,
+      "name": "epoch-0442",
+      "loss": 0.8073469,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 443,
+      "generation": 443,
+      "name": "epoch-0443",
+      "loss": 0.8072992,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 444,
+      "generation": 444,
+      "name": "epoch-0444",
+      "loss": 0.8072516,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 445,
+      "generation": 445,
+      "name": "epoch-0445",
+      "loss": 0.8072041,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 446,
+      "generation": 446,
+      "name": "epoch-0446",
+      "loss": 0.8071567,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 447,
+      "generation": 447,
+      "name": "epoch-0447",
+      "loss": 0.8071095,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 448,
+      "generation": 448,
+      "name": "epoch-0448",
+      "loss": 0.8070624,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 449,
+      "generation": 449,
+      "name": "epoch-0449",
+      "loss": 0.8070153,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 450,
+      "generation": 450,
+      "name": "epoch-0450",
+      "loss": 0.8069684,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 451,
+      "generation": 451,
+      "name": "epoch-0451",
+      "loss": 0.8069216,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 452,
+      "generation": 452,
+      "name": "epoch-0452",
+      "loss": 0.806875,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 453,
+      "generation": 453,
+      "name": "epoch-0453",
+      "loss": 0.8068284,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 454,
+      "generation": 454,
+      "name": "epoch-0454",
+      "loss": 0.8067819,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 455,
+      "generation": 455,
+      "name": "epoch-0455",
+      "loss": 0.8067356,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 456,
+      "generation": 456,
+      "name": "epoch-0456",
+      "loss": 0.8066894,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 457,
+      "generation": 457,
+      "name": "epoch-0457",
+      "loss": 0.8066432,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 458,
+      "generation": 458,
+      "name": "epoch-0458",
+      "loss": 0.8065972,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 459,
+      "generation": 459,
+      "name": "epoch-0459",
+      "loss": 0.8065513,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 460,
+      "generation": 460,
+      "name": "epoch-0460",
+      "loss": 0.8065055,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 461,
+      "generation": 461,
+      "name": "epoch-0461",
+      "loss": 0.8064599,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 462,
+      "generation": 462,
+      "name": "epoch-0462",
+      "loss": 0.8064143,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 463,
+      "generation": 463,
+      "name": "epoch-0463",
+      "loss": 0.8063688,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 464,
+      "generation": 464,
+      "name": "epoch-0464",
+      "loss": 0.8063235,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 465,
+      "generation": 465,
+      "name": "epoch-0465",
+      "loss": 0.8062782,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 466,
+      "generation": 466,
+      "name": "epoch-0466",
+      "loss": 0.8062331,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 467,
+      "generation": 467,
+      "name": "epoch-0467",
+      "loss": 0.8061881,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 468,
+      "generation": 468,
+      "name": "epoch-0468",
+      "loss": 0.8061431,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 469,
+      "generation": 469,
+      "name": "epoch-0469",
+      "loss": 0.8060983,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 470,
+      "generation": 470,
+      "name": "epoch-0470",
+      "loss": 0.8060536,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 471,
+      "generation": 471,
+      "name": "epoch-0471",
+      "loss": 0.806009,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 472,
+      "generation": 472,
+      "name": "epoch-0472",
+      "loss": 0.8059645,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 473,
+      "generation": 473,
+      "name": "epoch-0473",
+      "loss": 0.8059201,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 474,
+      "generation": 474,
+      "name": "epoch-0474",
+      "loss": 0.8058758,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 475,
+      "generation": 475,
+      "name": "epoch-0475",
+      "loss": 0.8058316,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 476,
+      "generation": 476,
+      "name": "epoch-0476",
+      "loss": 0.8057875,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 477,
+      "generation": 477,
+      "name": "epoch-0477",
+      "loss": 0.8057435,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 478,
+      "generation": 478,
+      "name": "epoch-0478",
+      "loss": 0.8056996,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 479,
+      "generation": 479,
+      "name": "epoch-0479",
+      "loss": 0.8056558,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 480,
+      "generation": 480,
+      "name": "epoch-0480",
+      "loss": 0.8056122,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 481,
+      "generation": 481,
+      "name": "epoch-0481",
+      "loss": 0.8055686,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 482,
+      "generation": 482,
+      "name": "epoch-0482",
+      "loss": 0.8055251,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 483,
+      "generation": 483,
+      "name": "epoch-0483",
+      "loss": 0.8054817,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 484,
+      "generation": 484,
+      "name": "epoch-0484",
+      "loss": 0.8054385,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 485,
+      "generation": 485,
+      "name": "epoch-0485",
+      "loss": 0.8053953,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 486,
+      "generation": 486,
+      "name": "epoch-0486",
+      "loss": 0.8053522,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 487,
+      "generation": 487,
+      "name": "epoch-0487",
+      "loss": 0.8053092,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 488,
+      "generation": 488,
+      "name": "epoch-0488",
+      "loss": 0.8052663,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 489,
+      "generation": 489,
+      "name": "epoch-0489",
+      "loss": 0.8052235,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 490,
+      "generation": 490,
+      "name": "epoch-0490",
+      "loss": 0.8051809,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 491,
+      "generation": 491,
+      "name": "epoch-0491",
+      "loss": 0.8051383,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 492,
+      "generation": 492,
+      "name": "epoch-0492",
+      "loss": 0.8050958,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 493,
+      "generation": 493,
+      "name": "epoch-0493",
+      "loss": 0.8050534,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 494,
+      "generation": 494,
+      "name": "epoch-0494",
+      "loss": 0.8050111,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 495,
+      "generation": 495,
+      "name": "epoch-0495",
+      "loss": 0.8049689,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 496,
+      "generation": 496,
+      "name": "epoch-0496",
+      "loss": 0.8049268,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 497,
+      "generation": 497,
+      "name": "epoch-0497",
+      "loss": 0.8048848,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 498,
+      "generation": 498,
+      "name": "epoch-0498",
+      "loss": 0.8048428,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 499,
+      "generation": 499,
+      "name": "epoch-0499",
+      "loss": 0.804801,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 500,
+      "generation": 500,
+      "name": "epoch-0500",
+      "loss": 0.8047593,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 501,
+      "generation": 501,
+      "name": "epoch-0501",
+      "loss": 0.8047177,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 502,
+      "generation": 502,
+      "name": "epoch-0502",
+      "loss": 0.8046761,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 503,
+      "generation": 503,
+      "name": "epoch-0503",
+      "loss": 0.8046347,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 504,
+      "generation": 504,
+      "name": "epoch-0504",
+      "loss": 0.8045933,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 505,
+      "generation": 505,
+      "name": "epoch-0505",
+      "loss": 0.8045521,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 506,
+      "generation": 506,
+      "name": "epoch-0506",
+      "loss": 0.8045109,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 507,
+      "generation": 507,
+      "name": "epoch-0507",
+      "loss": 0.8044698,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 508,
+      "generation": 508,
+      "name": "epoch-0508",
+      "loss": 0.8044288,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 509,
+      "generation": 509,
+      "name": "epoch-0509",
+      "loss": 0.8043879,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 510,
+      "generation": 510,
+      "name": "epoch-0510",
+      "loss": 0.8043471,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 511,
+      "generation": 511,
+      "name": "epoch-0511",
+      "loss": 0.8043064,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 512,
+      "generation": 512,
+      "name": "epoch-0512",
+      "loss": 0.8042658,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 513,
+      "generation": 513,
+      "name": "epoch-0513",
+      "loss": 0.8042253,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 514,
+      "generation": 514,
+      "name": "epoch-0514",
+      "loss": 0.8041848,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 515,
+      "generation": 515,
+      "name": "epoch-0515",
+      "loss": 0.8041445,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 516,
+      "generation": 516,
+      "name": "epoch-0516",
+      "loss": 0.8041042,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 517,
+      "generation": 517,
+      "name": "epoch-0517",
+      "loss": 0.804064,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 518,
+      "generation": 518,
+      "name": "epoch-0518",
+      "loss": 0.8040239,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 519,
+      "generation": 519,
+      "name": "epoch-0519",
+      "loss": 0.8039839,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 520,
+      "generation": 520,
+      "name": "epoch-0520",
+      "loss": 0.803944,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 521,
+      "generation": 521,
+      "name": "epoch-0521",
+      "loss": 0.8039042,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 522,
+      "generation": 522,
+      "name": "epoch-0522",
+      "loss": 0.8038645,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 523,
+      "generation": 523,
+      "name": "epoch-0523",
+      "loss": 0.8038248,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 524,
+      "generation": 524,
+      "name": "epoch-0524",
+      "loss": 0.8037852,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 525,
+      "generation": 525,
+      "name": "epoch-0525",
+      "loss": 0.8037458,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 526,
+      "generation": 526,
+      "name": "epoch-0526",
+      "loss": 0.8037064,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 527,
+      "generation": 527,
+      "name": "epoch-0527",
+      "loss": 0.8036671,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 528,
+      "generation": 528,
+      "name": "epoch-0528",
+      "loss": 0.8036279,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 529,
+      "generation": 529,
+      "name": "epoch-0529",
+      "loss": 0.8035887,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 530,
+      "generation": 530,
+      "name": "epoch-0530",
+      "loss": 0.8035497,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 531,
+      "generation": 531,
+      "name": "epoch-0531",
+      "loss": 0.8035107,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 532,
+      "generation": 532,
+      "name": "epoch-0532",
+      "loss": 0.8034718,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 533,
+      "generation": 533,
+      "name": "epoch-0533",
+      "loss": 0.803433,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 534,
+      "generation": 534,
+      "name": "epoch-0534",
+      "loss": 0.8033943,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 535,
+      "generation": 535,
+      "name": "epoch-0535",
+      "loss": 0.8033557,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 536,
+      "generation": 536,
+      "name": "epoch-0536",
+      "loss": 0.8033172,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 537,
+      "generation": 537,
+      "name": "epoch-0537",
+      "loss": 0.8032787,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 538,
+      "generation": 538,
+      "name": "epoch-0538",
+      "loss": 0.8032403,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 539,
+      "generation": 539,
+      "name": "epoch-0539",
+      "loss": 0.803202,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 540,
+      "generation": 540,
+      "name": "epoch-0540",
+      "loss": 0.8031638,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 541,
+      "generation": 541,
+      "name": "epoch-0541",
+      "loss": 0.8031257,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 542,
+      "generation": 542,
+      "name": "epoch-0542",
+      "loss": 0.8030876,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 543,
+      "generation": 543,
+      "name": "epoch-0543",
+      "loss": 0.8030496,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 544,
+      "generation": 544,
+      "name": "epoch-0544",
+      "loss": 0.8030117,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 545,
+      "generation": 545,
+      "name": "epoch-0545",
+      "loss": 0.8029739,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 546,
+      "generation": 546,
+      "name": "epoch-0546",
+      "loss": 0.8029362,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 547,
+      "generation": 547,
+      "name": "epoch-0547",
+      "loss": 0.8028986,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 548,
+      "generation": 548,
+      "name": "epoch-0548",
+      "loss": 0.802861,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 549,
+      "generation": 549,
+      "name": "epoch-0549",
+      "loss": 0.8028235,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 550,
+      "generation": 550,
+      "name": "epoch-0550",
+      "loss": 0.8027861,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 551,
+      "generation": 551,
+      "name": "epoch-0551",
+      "loss": 0.8027488,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 552,
+      "generation": 552,
+      "name": "epoch-0552",
+      "loss": 0.8027115,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 553,
+      "generation": 553,
+      "name": "epoch-0553",
+      "loss": 0.8026743,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 554,
+      "generation": 554,
+      "name": "epoch-0554",
+      "loss": 0.8026372,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 555,
+      "generation": 555,
+      "name": "epoch-0555",
+      "loss": 0.8026002,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 556,
+      "generation": 556,
+      "name": "epoch-0556",
+      "loss": 0.8025633,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 557,
+      "generation": 557,
+      "name": "epoch-0557",
+      "loss": 0.8025264,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 558,
+      "generation": 558,
+      "name": "epoch-0558",
+      "loss": 0.8024896,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 559,
+      "generation": 559,
+      "name": "epoch-0559",
+      "loss": 0.8024529,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 560,
+      "generation": 560,
+      "name": "epoch-0560",
+      "loss": 0.8024163,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 561,
+      "generation": 561,
+      "name": "epoch-0561",
+      "loss": 0.8023798,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 562,
+      "generation": 562,
+      "name": "epoch-0562",
+      "loss": 0.8023433,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 563,
+      "generation": 563,
+      "name": "epoch-0563",
+      "loss": 0.8023069,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 564,
+      "generation": 564,
+      "name": "epoch-0564",
+      "loss": 0.8022705,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 565,
+      "generation": 565,
+      "name": "epoch-0565",
+      "loss": 0.8022343,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 566,
+      "generation": 566,
+      "name": "epoch-0566",
+      "loss": 0.8021981,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 567,
+      "generation": 567,
+      "name": "epoch-0567",
+      "loss": 0.802162,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 568,
+      "generation": 568,
+      "name": "epoch-0568",
+      "loss": 0.802126,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 569,
+      "generation": 569,
+      "name": "epoch-0569",
+      "loss": 0.8020901,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 570,
+      "generation": 570,
+      "name": "epoch-0570",
+      "loss": 0.8020542,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 571,
+      "generation": 571,
+      "name": "epoch-0571",
+      "loss": 0.8020184,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 572,
+      "generation": 572,
+      "name": "epoch-0572",
+      "loss": 0.8019826,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 573,
+      "generation": 573,
+      "name": "epoch-0573",
+      "loss": 0.801947,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 574,
+      "generation": 574,
+      "name": "epoch-0574",
+      "loss": 0.8019114,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 575,
+      "generation": 575,
+      "name": "epoch-0575",
+      "loss": 0.8018759,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 576,
+      "generation": 576,
+      "name": "epoch-0576",
+      "loss": 0.8018405,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 577,
+      "generation": 577,
+      "name": "epoch-0577",
+      "loss": 0.8018051,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 578,
+      "generation": 578,
+      "name": "epoch-0578",
+      "loss": 0.8017698,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 579,
+      "generation": 579,
+      "name": "epoch-0579",
+      "loss": 0.8017346,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 580,
+      "generation": 580,
+      "name": "epoch-0580",
+      "loss": 0.8016995,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 581,
+      "generation": 581,
+      "name": "epoch-0581",
+      "loss": 0.8016644,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 582,
+      "generation": 582,
+      "name": "epoch-0582",
+      "loss": 0.8016294,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 583,
+      "generation": 583,
+      "name": "epoch-0583",
+      "loss": 0.8015945,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 584,
+      "generation": 584,
+      "name": "epoch-0584",
+      "loss": 0.8015596,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 585,
+      "generation": 585,
+      "name": "epoch-0585",
+      "loss": 0.8015248,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 586,
+      "generation": 586,
+      "name": "epoch-0586",
+      "loss": 0.8014901,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 587,
+      "generation": 587,
+      "name": "epoch-0587",
+      "loss": 0.8014555,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 588,
+      "generation": 588,
+      "name": "epoch-0588",
+      "loss": 0.8014209,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 589,
+      "generation": 589,
+      "name": "epoch-0589",
+      "loss": 0.8013864,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 590,
+      "generation": 590,
+      "name": "epoch-0590",
+      "loss": 0.8013519,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 591,
+      "generation": 591,
+      "name": "epoch-0591",
+      "loss": 0.8013176,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 592,
+      "generation": 592,
+      "name": "epoch-0592",
+      "loss": 0.8012833,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 593,
+      "generation": 593,
+      "name": "epoch-0593",
+      "loss": 0.8012491,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 594,
+      "generation": 594,
+      "name": "epoch-0594",
+      "loss": 0.8012149,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 595,
+      "generation": 595,
+      "name": "epoch-0595",
+      "loss": 0.8011808,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 596,
+      "generation": 596,
+      "name": "epoch-0596",
+      "loss": 0.8011468,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 597,
+      "generation": 597,
+      "name": "epoch-0597",
+      "loss": 0.8011128,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 598,
+      "generation": 598,
+      "name": "epoch-0598",
+      "loss": 0.801079,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 599,
+      "generation": 599,
+      "name": "epoch-0599",
+      "loss": 0.8010451,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 600,
+      "generation": 600,
+      "name": "epoch-0600",
+      "loss": 0.8010114,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 601,
+      "generation": 601,
+      "name": "epoch-0601",
+      "loss": 0.8009777,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 602,
+      "generation": 602,
+      "name": "epoch-0602",
+      "loss": 0.8009441,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 603,
+      "generation": 603,
+      "name": "epoch-0603",
+      "loss": 0.8009105,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 604,
+      "generation": 604,
+      "name": "epoch-0604",
+      "loss": 0.8008771,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 605,
+      "generation": 605,
+      "name": "epoch-0605",
+      "loss": 0.8008437,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 606,
+      "generation": 606,
+      "name": "epoch-0606",
+      "loss": 0.8008103,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 607,
+      "generation": 607,
+      "name": "epoch-0607",
+      "loss": 0.800777,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 608,
+      "generation": 608,
+      "name": "epoch-0608",
+      "loss": 0.8007438,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 609,
+      "generation": 609,
+      "name": "epoch-0609",
+      "loss": 0.8007107,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 610,
+      "generation": 610,
+      "name": "epoch-0610",
+      "loss": 0.8006776,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 611,
+      "generation": 611,
+      "name": "epoch-0611",
+      "loss": 0.8006446,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 612,
+      "generation": 612,
+      "name": "epoch-0612",
+      "loss": 0.8006116,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 613,
+      "generation": 613,
+      "name": "epoch-0613",
+      "loss": 0.8005787,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 614,
+      "generation": 614,
+      "name": "epoch-0614",
+      "loss": 0.8005459,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 615,
+      "generation": 615,
+      "name": "epoch-0615",
+      "loss": 0.8005132,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 616,
+      "generation": 616,
+      "name": "epoch-0616",
+      "loss": 0.8004805,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 617,
+      "generation": 617,
+      "name": "epoch-0617",
+      "loss": 0.8004478,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 618,
+      "generation": 618,
+      "name": "epoch-0618",
+      "loss": 0.8004153,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 619,
+      "generation": 619,
+      "name": "epoch-0619",
+      "loss": 0.8003828,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 620,
+      "generation": 620,
+      "name": "epoch-0620",
+      "loss": 0.8003503,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 621,
+      "generation": 621,
+      "name": "epoch-0621",
+      "loss": 0.800318,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 622,
+      "generation": 622,
+      "name": "epoch-0622",
+      "loss": 0.8002857,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 623,
+      "generation": 623,
+      "name": "epoch-0623",
+      "loss": 0.8002534,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 624,
+      "generation": 624,
+      "name": "epoch-0624",
+      "loss": 0.8002212,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 625,
+      "generation": 625,
+      "name": "epoch-0625",
+      "loss": 0.8001891,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 626,
+      "generation": 626,
+      "name": "epoch-0626",
+      "loss": 0.8001571,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 627,
+      "generation": 627,
+      "name": "epoch-0627",
+      "loss": 0.8001251,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 628,
+      "generation": 628,
+      "name": "epoch-0628",
+      "loss": 0.8000931,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 629,
+      "generation": 629,
+      "name": "epoch-0629",
+      "loss": 0.8000613,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 630,
+      "generation": 630,
+      "name": "epoch-0630",
+      "loss": 0.8000295,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 631,
+      "generation": 631,
+      "name": "epoch-0631",
+      "loss": 0.7999977,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 632,
+      "generation": 632,
+      "name": "epoch-0632",
+      "loss": 0.799966,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 633,
+      "generation": 633,
+      "name": "epoch-0633",
+      "loss": 0.7999344,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 634,
+      "generation": 634,
+      "name": "epoch-0634",
+      "loss": 0.7999029,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 635,
+      "generation": 635,
+      "name": "epoch-0635",
+      "loss": 0.7998714,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 636,
+      "generation": 636,
+      "name": "epoch-0636",
+      "loss": 0.7998399,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 637,
+      "generation": 637,
+      "name": "epoch-0637",
+      "loss": 0.7998085,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 638,
+      "generation": 638,
+      "name": "epoch-0638",
+      "loss": 0.7997772,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 639,
+      "generation": 639,
+      "name": "epoch-0639",
+      "loss": 0.799746,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 640,
+      "generation": 640,
+      "name": "epoch-0640",
+      "loss": 0.7997148,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 641,
+      "generation": 641,
+      "name": "epoch-0641",
+      "loss": 0.7996836,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 642,
+      "generation": 642,
+      "name": "epoch-0642",
+      "loss": 0.7996526,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 643,
+      "generation": 643,
+      "name": "epoch-0643",
+      "loss": 0.7996215,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 644,
+      "generation": 644,
+      "name": "epoch-0644",
+      "loss": 0.7995906,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 645,
+      "generation": 645,
+      "name": "epoch-0645",
+      "loss": 0.7995597,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 646,
+      "generation": 646,
+      "name": "epoch-0646",
+      "loss": 0.7995288,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 647,
+      "generation": 647,
+      "name": "epoch-0647",
+      "loss": 0.7994981,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 648,
+      "generation": 648,
+      "name": "epoch-0648",
+      "loss": 0.7994673,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 649,
+      "generation": 649,
+      "name": "epoch-0649",
+      "loss": 0.7994367,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 650,
+      "generation": 650,
+      "name": "epoch-0650",
+      "loss": 0.7994061,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 651,
+      "generation": 651,
+      "name": "epoch-0651",
+      "loss": 0.7993755,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 652,
+      "generation": 652,
+      "name": "epoch-0652",
+      "loss": 0.799345,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 653,
+      "generation": 653,
+      "name": "epoch-0653",
+      "loss": 0.7993146,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 654,
+      "generation": 654,
+      "name": "epoch-0654",
+      "loss": 0.7992842,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 655,
+      "generation": 655,
+      "name": "epoch-0655",
+      "loss": 0.7992539,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 656,
+      "generation": 656,
+      "name": "epoch-0656",
+      "loss": 0.7992237,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 657,
+      "generation": 657,
+      "name": "epoch-0657",
+      "loss": 0.7991935,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 658,
+      "generation": 658,
+      "name": "epoch-0658",
+      "loss": 0.7991633,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 659,
+      "generation": 659,
+      "name": "epoch-0659",
+      "loss": 0.7991332,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 660,
+      "generation": 660,
+      "name": "epoch-0660",
+      "loss": 0.7991032,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 661,
+      "generation": 661,
+      "name": "epoch-0661",
+      "loss": 0.7990732,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 662,
+      "generation": 662,
+      "name": "epoch-0662",
+      "loss": 0.7990433,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 663,
+      "generation": 663,
+      "name": "epoch-0663",
+      "loss": 0.7990135,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 664,
+      "generation": 664,
+      "name": "epoch-0664",
+      "loss": 0.7989837,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 665,
+      "generation": 665,
+      "name": "epoch-0665",
+      "loss": 0.7989539,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 666,
+      "generation": 666,
+      "name": "epoch-0666",
+      "loss": 0.7989242,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 667,
+      "generation": 667,
+      "name": "epoch-0667",
+      "loss": 0.7988946,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 668,
+      "generation": 668,
+      "name": "epoch-0668",
+      "loss": 0.798865,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 669,
+      "generation": 669,
+      "name": "epoch-0669",
+      "loss": 0.7988355,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 670,
+      "generation": 670,
+      "name": "epoch-0670",
+      "loss": 0.798806,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 671,
+      "generation": 671,
+      "name": "epoch-0671",
+      "loss": 0.7987766,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 672,
+      "generation": 672,
+      "name": "epoch-0672",
+      "loss": 0.7987472,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 673,
+      "generation": 673,
+      "name": "epoch-0673",
+      "loss": 0.7987179,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 674,
+      "generation": 674,
+      "name": "epoch-0674",
+      "loss": 0.7986887,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 675,
+      "generation": 675,
+      "name": "epoch-0675",
+      "loss": 0.7986595,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 676,
+      "generation": 676,
+      "name": "epoch-0676",
+      "loss": 0.7986304,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 677,
+      "generation": 677,
+      "name": "epoch-0677",
+      "loss": 0.7986013,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 678,
+      "generation": 678,
+      "name": "epoch-0678",
+      "loss": 0.7985722,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 679,
+      "generation": 679,
+      "name": "epoch-0679",
+      "loss": 0.7985433,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 680,
+      "generation": 680,
+      "name": "epoch-0680",
+      "loss": 0.7985143,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 681,
+      "generation": 681,
+      "name": "epoch-0681",
+      "loss": 0.7984855,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 682,
+      "generation": 682,
+      "name": "epoch-0682",
+      "loss": 0.7984566,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 683,
+      "generation": 683,
+      "name": "epoch-0683",
+      "loss": 0.7984279,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 684,
+      "generation": 684,
+      "name": "epoch-0684",
+      "loss": 0.7983992,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 685,
+      "generation": 685,
+      "name": "epoch-0685",
+      "loss": 0.7983705,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 686,
+      "generation": 686,
+      "name": "epoch-0686",
+      "loss": 0.7983419,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 687,
+      "generation": 687,
+      "name": "epoch-0687",
+      "loss": 0.7983134,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 688,
+      "generation": 688,
+      "name": "epoch-0688",
+      "loss": 0.7982849,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 689,
+      "generation": 689,
+      "name": "epoch-0689",
+      "loss": 0.7982564,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 690,
+      "generation": 690,
+      "name": "epoch-0690",
+      "loss": 0.798228,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 691,
+      "generation": 691,
+      "name": "epoch-0691",
+      "loss": 0.7981997,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 692,
+      "generation": 692,
+      "name": "epoch-0692",
+      "loss": 0.7981714,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 693,
+      "generation": 693,
+      "name": "epoch-0693",
+      "loss": 0.7981431,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 694,
+      "generation": 694,
+      "name": "epoch-0694",
+      "loss": 0.798115,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 695,
+      "generation": 695,
+      "name": "epoch-0695",
+      "loss": 0.7980868,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 696,
+      "generation": 696,
+      "name": "epoch-0696",
+      "loss": 0.7980587,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 697,
+      "generation": 697,
+      "name": "epoch-0697",
+      "loss": 0.7980307,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 698,
+      "generation": 698,
+      "name": "epoch-0698",
+      "loss": 0.7980027,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 699,
+      "generation": 699,
+      "name": "epoch-0699",
+      "loss": 0.7979748,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 700,
+      "generation": 700,
+      "name": "epoch-0700",
+      "loss": 0.7979469,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 701,
+      "generation": 701,
+      "name": "epoch-0701",
+      "loss": 0.7979191,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 702,
+      "generation": 702,
+      "name": "epoch-0702",
+      "loss": 0.7978913,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 703,
+      "generation": 703,
+      "name": "epoch-0703",
+      "loss": 0.7978636,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 704,
+      "generation": 704,
+      "name": "epoch-0704",
+      "loss": 0.7978359,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 705,
+      "generation": 705,
+      "name": "epoch-0705",
+      "loss": 0.7978083,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 706,
+      "generation": 706,
+      "name": "epoch-0706",
+      "loss": 0.7977807,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 707,
+      "generation": 707,
+      "name": "epoch-0707",
+      "loss": 0.7977532,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 708,
+      "generation": 708,
+      "name": "epoch-0708",
+      "loss": 0.7977257,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 709,
+      "generation": 709,
+      "name": "epoch-0709",
+      "loss": 0.7976983,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 710,
+      "generation": 710,
+      "name": "epoch-0710",
+      "loss": 0.7976709,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 711,
+      "generation": 711,
+      "name": "epoch-0711",
+      "loss": 0.7976436,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 712,
+      "generation": 712,
+      "name": "epoch-0712",
+      "loss": 0.7976163,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 713,
+      "generation": 713,
+      "name": "epoch-0713",
+      "loss": 0.7975891,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 714,
+      "generation": 714,
+      "name": "epoch-0714",
+      "loss": 0.7975619,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 715,
+      "generation": 715,
+      "name": "epoch-0715",
+      "loss": 0.7975348,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 716,
+      "generation": 716,
+      "name": "epoch-0716",
+      "loss": 0.7975077,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 717,
+      "generation": 717,
+      "name": "epoch-0717",
+      "loss": 0.7974807,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 718,
+      "generation": 718,
+      "name": "epoch-0718",
+      "loss": 0.7974537,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 719,
+      "generation": 719,
+      "name": "epoch-0719",
+      "loss": 0.7974267,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 720,
+      "generation": 720,
+      "name": "epoch-0720",
+      "loss": 0.7973999,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 721,
+      "generation": 721,
+      "name": "epoch-0721",
+      "loss": 0.797373,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 722,
+      "generation": 722,
+      "name": "epoch-0722",
+      "loss": 0.7973462,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 723,
+      "generation": 723,
+      "name": "epoch-0723",
+      "loss": 0.7973195,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 724,
+      "generation": 724,
+      "name": "epoch-0724",
+      "loss": 0.7972928,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 725,
+      "generation": 725,
+      "name": "epoch-0725",
+      "loss": 0.7972661,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 726,
+      "generation": 726,
+      "name": "epoch-0726",
+      "loss": 0.7972395,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 727,
+      "generation": 727,
+      "name": "epoch-0727",
+      "loss": 0.797213,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 728,
+      "generation": 728,
+      "name": "epoch-0728",
+      "loss": 0.7971865,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 729,
+      "generation": 729,
+      "name": "epoch-0729",
+      "loss": 0.79716,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 730,
+      "generation": 730,
+      "name": "epoch-0730",
+      "loss": 0.7971336,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 731,
+      "generation": 731,
+      "name": "epoch-0731",
+      "loss": 0.7971073,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 732,
+      "generation": 732,
+      "name": "epoch-0732",
+      "loss": 0.7970809,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 733,
+      "generation": 733,
+      "name": "epoch-0733",
+      "loss": 0.7970547,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 734,
+      "generation": 734,
+      "name": "epoch-0734",
+      "loss": 0.7970284,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 735,
+      "generation": 735,
+      "name": "epoch-0735",
+      "loss": 0.7970023,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 736,
+      "generation": 736,
+      "name": "epoch-0736",
+      "loss": 0.7969761,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 737,
+      "generation": 737,
+      "name": "epoch-0737",
+      "loss": 0.7969501,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 738,
+      "generation": 738,
+      "name": "epoch-0738",
+      "loss": 0.796924,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 739,
+      "generation": 739,
+      "name": "epoch-0739",
+      "loss": 0.796898,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 740,
+      "generation": 740,
+      "name": "epoch-0740",
+      "loss": 0.7968721,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 741,
+      "generation": 741,
+      "name": "epoch-0741",
+      "loss": 0.7968462,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 742,
+      "generation": 742,
+      "name": "epoch-0742",
+      "loss": 0.7968203,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 743,
+      "generation": 743,
+      "name": "epoch-0743",
+      "loss": 0.7967945,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 744,
+      "generation": 744,
+      "name": "epoch-0744",
+      "loss": 0.7967688,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 745,
+      "generation": 745,
+      "name": "epoch-0745",
+      "loss": 0.796743,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 746,
+      "generation": 746,
+      "name": "epoch-0746",
+      "loss": 0.7967174,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 747,
+      "generation": 747,
+      "name": "epoch-0747",
+      "loss": 0.7966917,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 748,
+      "generation": 748,
+      "name": "epoch-0748",
+      "loss": 0.7966661,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 749,
+      "generation": 749,
+      "name": "epoch-0749",
+      "loss": 0.7966406,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 750,
+      "generation": 750,
+      "name": "epoch-0750",
+      "loss": 0.7966151,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 751,
+      "generation": 751,
+      "name": "epoch-0751",
+      "loss": 0.7965897,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 752,
+      "generation": 752,
+      "name": "epoch-0752",
+      "loss": 0.7965643,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 753,
+      "generation": 753,
+      "name": "epoch-0753",
+      "loss": 0.7965389,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 754,
+      "generation": 754,
+      "name": "epoch-0754",
+      "loss": 0.7965136,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 755,
+      "generation": 755,
+      "name": "epoch-0755",
+      "loss": 0.7964883,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 756,
+      "generation": 756,
+      "name": "epoch-0756",
+      "loss": 0.7964631,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 757,
+      "generation": 757,
+      "name": "epoch-0757",
+      "loss": 0.7964379,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 758,
+      "generation": 758,
+      "name": "epoch-0758",
+      "loss": 0.7964128,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 759,
+      "generation": 759,
+      "name": "epoch-0759",
+      "loss": 0.7963877,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 760,
+      "generation": 760,
+      "name": "epoch-0760",
+      "loss": 0.7963626,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 761,
+      "generation": 761,
+      "name": "epoch-0761",
+      "loss": 0.7963376,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 762,
+      "generation": 762,
+      "name": "epoch-0762",
+      "loss": 0.7963126,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 763,
+      "generation": 763,
+      "name": "epoch-0763",
+      "loss": 0.7962877,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 764,
+      "generation": 764,
+      "name": "epoch-0764",
+      "loss": 0.7962628,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 765,
+      "generation": 765,
+      "name": "epoch-0765",
+      "loss": 0.796238,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 766,
+      "generation": 766,
+      "name": "epoch-0766",
+      "loss": 0.7962132,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 767,
+      "generation": 767,
+      "name": "epoch-0767",
+      "loss": 0.7961885,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 768,
+      "generation": 768,
+      "name": "epoch-0768",
+      "loss": 0.7961638,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 769,
+      "generation": 769,
+      "name": "epoch-0769",
+      "loss": 0.7961391,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 770,
+      "generation": 770,
+      "name": "epoch-0770",
+      "loss": 0.7961145,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 771,
+      "generation": 771,
+      "name": "epoch-0771",
+      "loss": 0.7960899,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 772,
+      "generation": 772,
+      "name": "epoch-0772",
+      "loss": 0.7960654,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 773,
+      "generation": 773,
+      "name": "epoch-0773",
+      "loss": 0.7960409,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 774,
+      "generation": 774,
+      "name": "epoch-0774",
+      "loss": 0.7960164,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 775,
+      "generation": 775,
+      "name": "epoch-0775",
+      "loss": 0.795992,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 776,
+      "generation": 776,
+      "name": "epoch-0776",
+      "loss": 0.7959676,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 777,
+      "generation": 777,
+      "name": "epoch-0777",
+      "loss": 0.7959433,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 778,
+      "generation": 778,
+      "name": "epoch-0778",
+      "loss": 0.795919,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 779,
+      "generation": 779,
+      "name": "epoch-0779",
+      "loss": 0.7958948,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 780,
+      "generation": 780,
+      "name": "epoch-0780",
+      "loss": 0.7958706,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 781,
+      "generation": 781,
+      "name": "epoch-0781",
+      "loss": 0.7958464,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 782,
+      "generation": 782,
+      "name": "epoch-0782",
+      "loss": 0.7958223,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 783,
+      "generation": 783,
+      "name": "epoch-0783",
+      "loss": 0.7957982,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 784,
+      "generation": 784,
+      "name": "epoch-0784",
+      "loss": 0.7957742,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 785,
+      "generation": 785,
+      "name": "epoch-0785",
+      "loss": 0.7957502,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 786,
+      "generation": 786,
+      "name": "epoch-0786",
+      "loss": 0.7957262,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 787,
+      "generation": 787,
+      "name": "epoch-0787",
+      "loss": 0.7957023,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 788,
+      "generation": 788,
+      "name": "epoch-0788",
+      "loss": 0.7956784,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 789,
+      "generation": 789,
+      "name": "epoch-0789",
+      "loss": 0.7956546,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 790,
+      "generation": 790,
+      "name": "epoch-0790",
+      "loss": 0.7956308,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 791,
+      "generation": 791,
+      "name": "epoch-0791",
+      "loss": 0.7956071,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 792,
+      "generation": 792,
+      "name": "epoch-0792",
+      "loss": 0.7955833,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 793,
+      "generation": 793,
+      "name": "epoch-0793",
+      "loss": 0.7955597,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 794,
+      "generation": 794,
+      "name": "epoch-0794",
+      "loss": 0.795536,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 795,
+      "generation": 795,
+      "name": "epoch-0795",
+      "loss": 0.7955125,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 796,
+      "generation": 796,
+      "name": "epoch-0796",
+      "loss": 0.7954889,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 797,
+      "generation": 797,
+      "name": "epoch-0797",
+      "loss": 0.7954654,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 798,
+      "generation": 798,
+      "name": "epoch-0798",
+      "loss": 0.7954419,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 799,
+      "generation": 799,
+      "name": "epoch-0799",
+      "loss": 0.7954185,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 800,
+      "generation": 800,
+      "name": "epoch-0800",
+      "loss": 0.7953951,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 801,
+      "generation": 801,
+      "name": "epoch-0801",
+      "loss": 0.7953717,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 802,
+      "generation": 802,
+      "name": "epoch-0802",
+      "loss": 0.7953484,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 803,
+      "generation": 803,
+      "name": "epoch-0803",
+      "loss": 0.7953252,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 804,
+      "generation": 804,
+      "name": "epoch-0804",
+      "loss": 0.7953019,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 805,
+      "generation": 805,
+      "name": "epoch-0805",
+      "loss": 0.7952787,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 806,
+      "generation": 806,
+      "name": "epoch-0806",
+      "loss": 0.7952556,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 807,
+      "generation": 807,
+      "name": "epoch-0807",
+      "loss": 0.7952324,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 808,
+      "generation": 808,
+      "name": "epoch-0808",
+      "loss": 0.7952094,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 809,
+      "generation": 809,
+      "name": "epoch-0809",
+      "loss": 0.7951863,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 810,
+      "generation": 810,
+      "name": "epoch-0810",
+      "loss": 0.7951633,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 811,
+      "generation": 811,
+      "name": "epoch-0811",
+      "loss": 0.7951404,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 812,
+      "generation": 812,
+      "name": "epoch-0812",
+      "loss": 0.7951174,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 813,
+      "generation": 813,
+      "name": "epoch-0813",
+      "loss": 0.7950946,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 814,
+      "generation": 814,
+      "name": "epoch-0814",
+      "loss": 0.7950717,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 815,
+      "generation": 815,
+      "name": "epoch-0815",
+      "loss": 0.7950489,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 816,
+      "generation": 816,
+      "name": "epoch-0816",
+      "loss": 0.7950261,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 817,
+      "generation": 817,
+      "name": "epoch-0817",
+      "loss": 0.7950034,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 818,
+      "generation": 818,
+      "name": "epoch-0818",
+      "loss": 0.7949807,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 819,
+      "generation": 819,
+      "name": "epoch-0819",
+      "loss": 0.794958,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 820,
+      "generation": 820,
+      "name": "epoch-0820",
+      "loss": 0.7949354,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 821,
+      "generation": 821,
+      "name": "epoch-0821",
+      "loss": 0.7949128,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 822,
+      "generation": 822,
+      "name": "epoch-0822",
+      "loss": 0.7948903,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 823,
+      "generation": 823,
+      "name": "epoch-0823",
+      "loss": 0.7948678,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 824,
+      "generation": 824,
+      "name": "epoch-0824",
+      "loss": 0.7948453,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 825,
+      "generation": 825,
+      "name": "epoch-0825",
+      "loss": 0.7948229,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 826,
+      "generation": 826,
+      "name": "epoch-0826",
+      "loss": 0.7948005,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 827,
+      "generation": 827,
+      "name": "epoch-0827",
+      "loss": 0.7947781,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 828,
+      "generation": 828,
+      "name": "epoch-0828",
+      "loss": 0.7947558,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 829,
+      "generation": 829,
+      "name": "epoch-0829",
+      "loss": 0.7947335,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 830,
+      "generation": 830,
+      "name": "epoch-0830",
+      "loss": 0.7947113,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 831,
+      "generation": 831,
+      "name": "epoch-0831",
+      "loss": 0.794689,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 832,
+      "generation": 832,
+      "name": "epoch-0832",
+      "loss": 0.7946669,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 833,
+      "generation": 833,
+      "name": "epoch-0833",
+      "loss": 0.7946447,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 834,
+      "generation": 834,
+      "name": "epoch-0834",
+      "loss": 0.7946226,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 835,
+      "generation": 835,
+      "name": "epoch-0835",
+      "loss": 0.7946006,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 836,
+      "generation": 836,
+      "name": "epoch-0836",
+      "loss": 0.7945785,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 837,
+      "generation": 837,
+      "name": "epoch-0837",
+      "loss": 0.7945565,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 838,
+      "generation": 838,
+      "name": "epoch-0838",
+      "loss": 0.7945346,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 839,
+      "generation": 839,
+      "name": "epoch-0839",
+      "loss": 0.7945127,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 840,
+      "generation": 840,
+      "name": "epoch-0840",
+      "loss": 0.7944908,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 841,
+      "generation": 841,
+      "name": "epoch-0841",
+      "loss": 0.7944689,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 842,
+      "generation": 842,
+      "name": "epoch-0842",
+      "loss": 0.7944471,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 843,
+      "generation": 843,
+      "name": "epoch-0843",
+      "loss": 0.7944253,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 844,
+      "generation": 844,
+      "name": "epoch-0844",
+      "loss": 0.7944036,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 845,
+      "generation": 845,
+      "name": "epoch-0845",
+      "loss": 0.7943819,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 846,
+      "generation": 846,
+      "name": "epoch-0846",
+      "loss": 0.7943602,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 847,
+      "generation": 847,
+      "name": "epoch-0847",
+      "loss": 0.7943386,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 848,
+      "generation": 848,
+      "name": "epoch-0848",
+      "loss": 0.794317,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 849,
+      "generation": 849,
+      "name": "epoch-0849",
+      "loss": 0.7942954,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 850,
+      "generation": 850,
+      "name": "epoch-0850",
+      "loss": 0.7942739,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 851,
+      "generation": 851,
+      "name": "epoch-0851",
+      "loss": 0.7942524,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 852,
+      "generation": 852,
+      "name": "epoch-0852",
+      "loss": 0.7942309,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 853,
+      "generation": 853,
+      "name": "epoch-0853",
+      "loss": 0.7942095,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 854,
+      "generation": 854,
+      "name": "epoch-0854",
+      "loss": 0.7941881,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 855,
+      "generation": 855,
+      "name": "epoch-0855",
+      "loss": 0.7941668,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 856,
+      "generation": 856,
+      "name": "epoch-0856",
+      "loss": 0.7941455,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 857,
+      "generation": 857,
+      "name": "epoch-0857",
+      "loss": 0.7941242,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 858,
+      "generation": 858,
+      "name": "epoch-0858",
+      "loss": 0.7941029,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 859,
+      "generation": 859,
+      "name": "epoch-0859",
+      "loss": 0.7940817,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 860,
+      "generation": 860,
+      "name": "epoch-0860",
+      "loss": 0.7940605,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 861,
+      "generation": 861,
+      "name": "epoch-0861",
+      "loss": 0.7940394,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 862,
+      "generation": 862,
+      "name": "epoch-0862",
+      "loss": 0.7940183,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 863,
+      "generation": 863,
+      "name": "epoch-0863",
+      "loss": 0.7939972,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 864,
+      "generation": 864,
+      "name": "epoch-0864",
+      "loss": 0.7939761,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 865,
+      "generation": 865,
+      "name": "epoch-0865",
+      "loss": 0.7939551,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 866,
+      "generation": 866,
+      "name": "epoch-0866",
+      "loss": 0.7939342,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 867,
+      "generation": 867,
+      "name": "epoch-0867",
+      "loss": 0.7939132,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 868,
+      "generation": 868,
+      "name": "epoch-0868",
+      "loss": 0.7938923,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 869,
+      "generation": 869,
+      "name": "epoch-0869",
+      "loss": 0.7938714,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 870,
+      "generation": 870,
+      "name": "epoch-0870",
+      "loss": 0.7938506,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 871,
+      "generation": 871,
+      "name": "epoch-0871",
+      "loss": 0.7938298,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 872,
+      "generation": 872,
+      "name": "epoch-0872",
+      "loss": 0.793809,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 873,
+      "generation": 873,
+      "name": "epoch-0873",
+      "loss": 0.7937883,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 874,
+      "generation": 874,
+      "name": "epoch-0874",
+      "loss": 0.7937675,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 875,
+      "generation": 875,
+      "name": "epoch-0875",
+      "loss": 0.7937469,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 876,
+      "generation": 876,
+      "name": "epoch-0876",
+      "loss": 0.7937262,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 877,
+      "generation": 877,
+      "name": "epoch-0877",
+      "loss": 0.7937056,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 878,
+      "generation": 878,
+      "name": "epoch-0878",
+      "loss": 0.793685,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 879,
+      "generation": 879,
+      "name": "epoch-0879",
+      "loss": 0.7936645,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 880,
+      "generation": 880,
+      "name": "epoch-0880",
+      "loss": 0.793644,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 881,
+      "generation": 881,
+      "name": "epoch-0881",
+      "loss": 0.7936235,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 882,
+      "generation": 882,
+      "name": "epoch-0882",
+      "loss": 0.7936031,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 883,
+      "generation": 883,
+      "name": "epoch-0883",
+      "loss": 0.7935827,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 884,
+      "generation": 884,
+      "name": "epoch-0884",
+      "loss": 0.7935623,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 885,
+      "generation": 885,
+      "name": "epoch-0885",
+      "loss": 0.7935419,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 886,
+      "generation": 886,
+      "name": "epoch-0886",
+      "loss": 0.7935216,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 887,
+      "generation": 887,
+      "name": "epoch-0887",
+      "loss": 0.7935013,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 888,
+      "generation": 888,
+      "name": "epoch-0888",
+      "loss": 0.7934811,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 889,
+      "generation": 889,
+      "name": "epoch-0889",
+      "loss": 0.7934609,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 890,
+      "generation": 890,
+      "name": "epoch-0890",
+      "loss": 0.7934407,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 891,
+      "generation": 891,
+      "name": "epoch-0891",
+      "loss": 0.7934205,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 892,
+      "generation": 892,
+      "name": "epoch-0892",
+      "loss": 0.7934004,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 893,
+      "generation": 893,
+      "name": "epoch-0893",
+      "loss": 0.7933803,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 894,
+      "generation": 894,
+      "name": "epoch-0894",
+      "loss": 0.7933603,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 895,
+      "generation": 895,
+      "name": "epoch-0895",
+      "loss": 0.7933402,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 896,
+      "generation": 896,
+      "name": "epoch-0896",
+      "loss": 0.7933202,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 897,
+      "generation": 897,
+      "name": "epoch-0897",
+      "loss": 0.7933003,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 898,
+      "generation": 898,
+      "name": "epoch-0898",
+      "loss": 0.7932803,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 899,
+      "generation": 899,
+      "name": "epoch-0899",
+      "loss": 0.7932604,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 900,
+      "generation": 900,
+      "name": "epoch-0900",
+      "loss": 0.7932406,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 901,
+      "generation": 901,
+      "name": "epoch-0901",
+      "loss": 0.7932207,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 902,
+      "generation": 902,
+      "name": "epoch-0902",
+      "loss": 0.7932009,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 903,
+      "generation": 903,
+      "name": "epoch-0903",
+      "loss": 0.7931812,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 904,
+      "generation": 904,
+      "name": "epoch-0904",
+      "loss": 0.7931614,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 905,
+      "generation": 905,
+      "name": "epoch-0905",
+      "loss": 0.7931417,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 906,
+      "generation": 906,
+      "name": "epoch-0906",
+      "loss": 0.793122,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 907,
+      "generation": 907,
+      "name": "epoch-0907",
+      "loss": 0.7931024,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 908,
+      "generation": 908,
+      "name": "epoch-0908",
+      "loss": 0.7930828,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 909,
+      "generation": 909,
+      "name": "epoch-0909",
+      "loss": 0.7930632,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 910,
+      "generation": 910,
+      "name": "epoch-0910",
+      "loss": 0.7930436,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 911,
+      "generation": 911,
+      "name": "epoch-0911",
+      "loss": 0.7930241,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 912,
+      "generation": 912,
+      "name": "epoch-0912",
+      "loss": 0.7930046,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 913,
+      "generation": 913,
+      "name": "epoch-0913",
+      "loss": 0.7929851,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 914,
+      "generation": 914,
+      "name": "epoch-0914",
+      "loss": 0.7929657,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 915,
+      "generation": 915,
+      "name": "epoch-0915",
+      "loss": 0.7929463,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 916,
+      "generation": 916,
+      "name": "epoch-0916",
+      "loss": 0.7929269,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 917,
+      "generation": 917,
+      "name": "epoch-0917",
+      "loss": 0.7929076,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 918,
+      "generation": 918,
+      "name": "epoch-0918",
+      "loss": 0.7928883,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 919,
+      "generation": 919,
+      "name": "epoch-0919",
+      "loss": 0.792869,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 920,
+      "generation": 920,
+      "name": "epoch-0920",
+      "loss": 0.7928497,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 921,
+      "generation": 921,
+      "name": "epoch-0921",
+      "loss": 0.7928305,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 922,
+      "generation": 922,
+      "name": "epoch-0922",
+      "loss": 0.7928113,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 923,
+      "generation": 923,
+      "name": "epoch-0923",
+      "loss": 0.7927922,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 924,
+      "generation": 924,
+      "name": "epoch-0924",
+      "loss": 0.792773,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 925,
+      "generation": 925,
+      "name": "epoch-0925",
+      "loss": 0.7927539,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 926,
+      "generation": 926,
+      "name": "epoch-0926",
+      "loss": 0.7927348,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 927,
+      "generation": 927,
+      "name": "epoch-0927",
+      "loss": 0.7927158,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 928,
+      "generation": 928,
+      "name": "epoch-0928",
+      "loss": 0.7926968,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 929,
+      "generation": 929,
+      "name": "epoch-0929",
+      "loss": 0.7926778,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 930,
+      "generation": 930,
+      "name": "epoch-0930",
+      "loss": 0.7926588,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 931,
+      "generation": 931,
+      "name": "epoch-0931",
+      "loss": 0.7926399,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 932,
+      "generation": 932,
+      "name": "epoch-0932",
+      "loss": 0.792621,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 933,
+      "generation": 933,
+      "name": "epoch-0933",
+      "loss": 0.7926022,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 934,
+      "generation": 934,
+      "name": "epoch-0934",
+      "loss": 0.7925833,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 935,
+      "generation": 935,
+      "name": "epoch-0935",
+      "loss": 0.7925645,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 936,
+      "generation": 936,
+      "name": "epoch-0936",
+      "loss": 0.7925457,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 937,
+      "generation": 937,
+      "name": "epoch-0937",
+      "loss": 0.792527,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 938,
+      "generation": 938,
+      "name": "epoch-0938",
+      "loss": 0.7925083,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 939,
+      "generation": 939,
+      "name": "epoch-0939",
+      "loss": 0.7924896,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 940,
+      "generation": 940,
+      "name": "epoch-0940",
+      "loss": 0.7924709,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 941,
+      "generation": 941,
+      "name": "epoch-0941",
+      "loss": 0.7924523,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 942,
+      "generation": 942,
+      "name": "epoch-0942",
+      "loss": 0.7924337,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 943,
+      "generation": 943,
+      "name": "epoch-0943",
+      "loss": 0.7924151,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 944,
+      "generation": 944,
+      "name": "epoch-0944",
+      "loss": 0.7923965,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 945,
+      "generation": 945,
+      "name": "epoch-0945",
+      "loss": 0.792378,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 946,
+      "generation": 946,
+      "name": "epoch-0946",
+      "loss": 0.7923595,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 947,
+      "generation": 947,
+      "name": "epoch-0947",
+      "loss": 0.7923411,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 948,
+      "generation": 948,
+      "name": "epoch-0948",
+      "loss": 0.7923226,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 949,
+      "generation": 949,
+      "name": "epoch-0949",
+      "loss": 0.7923042,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 950,
+      "generation": 950,
+      "name": "epoch-0950",
+      "loss": 0.7922858,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 951,
+      "generation": 951,
+      "name": "epoch-0951",
+      "loss": 0.7922675,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 952,
+      "generation": 952,
+      "name": "epoch-0952",
+      "loss": 0.7922492,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 953,
+      "generation": 953,
+      "name": "epoch-0953",
+      "loss": 0.7922309,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 954,
+      "generation": 954,
+      "name": "epoch-0954",
+      "loss": 0.7922126,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 955,
+      "generation": 955,
+      "name": "epoch-0955",
+      "loss": 0.7921944,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 956,
+      "generation": 956,
+      "name": "epoch-0956",
+      "loss": 0.7921762,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 957,
+      "generation": 957,
+      "name": "epoch-0957",
+      "loss": 0.792158,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 958,
+      "generation": 958,
+      "name": "epoch-0958",
+      "loss": 0.7921398,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 959,
+      "generation": 959,
+      "name": "epoch-0959",
+      "loss": 0.7921217,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 960,
+      "generation": 960,
+      "name": "epoch-0960",
+      "loss": 0.7921036,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 961,
+      "generation": 961,
+      "name": "epoch-0961",
+      "loss": 0.7920855,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 962,
+      "generation": 962,
+      "name": "epoch-0962",
+      "loss": 0.7920675,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 963,
+      "generation": 963,
+      "name": "epoch-0963",
+      "loss": 0.7920495,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 964,
+      "generation": 964,
+      "name": "epoch-0964",
+      "loss": 0.7920315,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 965,
+      "generation": 965,
+      "name": "epoch-0965",
+      "loss": 0.7920135,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 966,
+      "generation": 966,
+      "name": "epoch-0966",
+      "loss": 0.7919956,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 967,
+      "generation": 967,
+      "name": "epoch-0967",
+      "loss": 0.7919777,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 968,
+      "generation": 968,
+      "name": "epoch-0968",
+      "loss": 0.7919598,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 969,
+      "generation": 969,
+      "name": "epoch-0969",
+      "loss": 0.7919419,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 970,
+      "generation": 970,
+      "name": "epoch-0970",
+      "loss": 0.7919241,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 971,
+      "generation": 971,
+      "name": "epoch-0971",
+      "loss": 0.7919063,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 972,
+      "generation": 972,
+      "name": "epoch-0972",
+      "loss": 0.7918885,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 973,
+      "generation": 973,
+      "name": "epoch-0973",
+      "loss": 0.7918708,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 974,
+      "generation": 974,
+      "name": "epoch-0974",
+      "loss": 0.7918531,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 975,
+      "generation": 975,
+      "name": "epoch-0975",
+      "loss": 0.7918354,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 976,
+      "generation": 976,
+      "name": "epoch-0976",
+      "loss": 0.7918177,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 977,
+      "generation": 977,
+      "name": "epoch-0977",
+      "loss": 0.7918001,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 978,
+      "generation": 978,
+      "name": "epoch-0978",
+      "loss": 0.7917825,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 979,
+      "generation": 979,
+      "name": "epoch-0979",
+      "loss": 0.7917649,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 980,
+      "generation": 980,
+      "name": "epoch-0980",
+      "loss": 0.7917473,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 981,
+      "generation": 981,
+      "name": "epoch-0981",
+      "loss": 0.7917298,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 982,
+      "generation": 982,
+      "name": "epoch-0982",
+      "loss": 0.7917123,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 983,
+      "generation": 983,
+      "name": "epoch-0983",
+      "loss": 0.7916948,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 984,
+      "generation": 984,
+      "name": "epoch-0984",
+      "loss": 0.7916774,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 985,
+      "generation": 985,
+      "name": "epoch-0985",
+      "loss": 0.79166,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 986,
+      "generation": 986,
+      "name": "epoch-0986",
+      "loss": 0.7916426,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 987,
+      "generation": 987,
+      "name": "epoch-0987",
+      "loss": 0.7916252,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 988,
+      "generation": 988,
+      "name": "epoch-0988",
+      "loss": 0.7916078,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 989,
+      "generation": 989,
+      "name": "epoch-0989",
+      "loss": 0.7915905,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 990,
+      "generation": 990,
+      "name": "epoch-0990",
+      "loss": 0.7915732,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 991,
+      "generation": 991,
+      "name": "epoch-0991",
+      "loss": 0.791556,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 992,
+      "generation": 992,
+      "name": "epoch-0992",
+      "loss": 0.7915387,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 993,
+      "generation": 993,
+      "name": "epoch-0993",
+      "loss": 0.7915215,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 994,
+      "generation": 994,
+      "name": "epoch-0994",
+      "loss": 0.7915043,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 995,
+      "generation": 995,
+      "name": "epoch-0995",
+      "loss": 0.7914871,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 996,
+      "generation": 996,
+      "name": "epoch-0996",
+      "loss": 0.79147,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 997,
+      "generation": 997,
+      "name": "epoch-0997",
+      "loss": 0.7914529,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 998,
+      "generation": 998,
+      "name": "epoch-0998",
+      "loss": 0.7914358,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 999,
+      "generation": 999,
+      "name": "epoch-0999",
+      "loss": 0.7914187,
+      "kind": "random_curriculum_epoch"
+    },
+    {
+      "index": 1000,
+      "generation": 1000,
+      "name": "epoch-1000",
+      "loss": 0.7914017,
+      "kind": "random_curriculum_epoch"
+    }
+  ]
+}

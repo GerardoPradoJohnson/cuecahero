@@ -1,0 +1,25 @@
+{
+  "name": "Juego general Â· 200 Ã©pocas",
+  "generation": 200,
+  "method": "Song-independent supervised visual readout trained on randomized visible notes, chords, sustains, density and BPM while MaleCNS runs concurrently for neural activity. No song identity, note schedule, score or reward enters inference.",
+  "checkpoint": "episode-0200.npz",
+  "checkpoint_sha256": "bcd1f846996acf6917743e913d4856509f1e2beca751445f21d097be97c1a8e0",
+  "metrics": {
+    "lane_accuracy": 93.97,
+    "exact_frame_accuracy": 78.21,
+    "precision": 75.81,
+    "recall": 100.0,
+    "validation_frames": 1900
+  },
+  "curriculum": {
+    "songs_used": [],
+    "train_charts": 20,
+    "validation_charts": 5,
+    "randomized_bpm": [
+      70,
+      200
+    ],
+    "inference_lead_seconds": 0.14
+  },
+  "backend": "native-cpu"
+}

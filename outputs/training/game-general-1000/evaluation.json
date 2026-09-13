@@ -1,0 +1,25 @@
+{
+  "name": "Juego general Â· 1000 Ã©pocas",
+  "generation": 1000,
+  "method": "Song-independent supervised visual readout trained on randomized visible notes, chords, sustains, density and BPM while MaleCNS runs concurrently for neural activity. No song identity, note schedule, score or reward enters inference.",
+  "checkpoint": "episode-1000.npz",
+  "checkpoint_sha256": "7c933be3da60c12d4c1cba44011d184b98c6106e0de1d0e4f68d9248818e37b2",
+  "metrics": {
+    "lane_accuracy": 95.34,
+    "exact_frame_accuracy": 83.0,
+    "precision": 80.66,
+    "recall": 99.09,
+    "validation_frames": 1900
+  },
+  "curriculum": {
+    "songs_used": [],
+    "train_charts": 20,
+    "validation_charts": 5,
+    "randomized_bpm": [
+      70,
+      200
+    ],
+    "inference_lead_seconds": 0.14
+  },
+  "backend": "native-cpu"
+}

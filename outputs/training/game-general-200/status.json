@@ -1,0 +1,12 @@
+{
+  "stage": "complete",
+  "completed": 200,
+  "target": 200,
+  "metrics": {
+    "lane_accuracy": 93.97,
+    "exact_frame_accuracy": 78.21,
+    "precision": 75.81,
+    "recall": 100.0,
+    "validation_frames": 1900
+  }
+}

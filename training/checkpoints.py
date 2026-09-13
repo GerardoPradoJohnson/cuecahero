@@ -21,9 +21,11 @@ def catalogue():
         path = summary.parent / data['checkpoint']
         if not path.is_file():
             continue
+        playback = summary.parent / data.get('playback', '') if data.get('playback') else None
         rows.append(dict(path=str(path.relative_to(ROOT)).replace('\\', '/'),
                          name=data['name'], generation=data['generation'],
-                         metrics=data['metrics'], method=data['method']))
+                         metrics=data['metrics'], method=data['method'],
+                         playback_available=bool(playback and playback.is_file())))
     jobs = []
     for status in sorted(root.glob('*/status.json')):
         data = json.loads(status.read_text(encoding='utf-8'))
@@ -37,6 +39,8 @@ def recording_path(relative):
     summary = json.loads((checkpoint.parent / 'evaluation.json').read_text(encoding='utf-8'))
     if checkpoint.name != summary['checkpoint']:
         raise ValueError('No evaluated recording for this checkpoint')
+    if not summary.get('playback'):
+        raise ValueError('This checkpoint has no fixed-song recording')
     path = checkpoint.parent / summary['playback']
     for file, expected in [(checkpoint, summary['checkpoint_sha256']),
                            (path, summary['playback_sha256']),

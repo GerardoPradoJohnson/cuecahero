@@ -24,11 +24,12 @@ def test_plasticity_binds_to_real_malecns_graph():
     p.bind(brain, encoder.retina, decoder.indices, 'test-graph-hash')
     
     assert p.bound is True
-    # Verify exactly 4,276 connections exist between retina and lamina interneurons
-    assert len(p.edges) == 4276
-    assert len(p.pre) == 4276
-    assert len(p.post) == 4276
-    assert len(p.baseline) == 4276
+    # The active edge count follows the configured visual viewport.
+    edge_count = len(p.edges)
+    assert edge_count > 0
+    assert len(p.pre) == edge_count
+    assert len(p.post) == edge_count
+    assert len(p.baseline) == edge_count
     assert np.all(p.baseline != 0)
     assert np.all(np.isfinite(p.baseline))
 

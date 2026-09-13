@@ -37,3 +37,19 @@ def test_recording_checks_provenance_and_rejects_paths(tmp_path,monkeypatch):
     with pytest.raises(ValueError):checkpoints.recording_path(relative)
     with pytest.raises(ValueError):checkpoints.resolve_checkpoint('../outside.npz')
     with pytest.raises(ValueError):checkpoints.resolve_checkpoint('config/songs/la_consentida.json')
+
+
+def test_catalogue_accepts_song_independent_checkpoint_without_playback(tmp_path, monkeypatch):
+    monkeypatch.setattr(checkpoints, 'ROOT', tmp_path)
+    folder = tmp_path/'outputs/training/game-general-200'
+    folder.mkdir(parents=True)
+    (folder/'episode-0200.npz').write_bytes(b'checkpoint')
+    (folder/'evaluation.json').write_text(json.dumps({
+        'checkpoint':'episode-0200.npz', 'name':'Juego general · 200 épocas',
+        'generation':200, 'method':'random curriculum',
+        'metrics':{'lane_accuracy':95.0}
+    }))
+    result = checkpoints.catalogue()['checkpoints'][0]
+    assert result['playback_available'] is False
+    with pytest.raises(ValueError):
+        checkpoints.recording_path(result['path'])

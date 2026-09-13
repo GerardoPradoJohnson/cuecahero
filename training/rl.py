@@ -94,6 +94,43 @@ class ReinforcementReadoutTrainer:
         self.last_rates = np.zeros(4, dtype=np.float64)
         self.held_actions = np.zeros(4, dtype=bool)
 
+    @staticmethod
+    def visual_features(observation, policy):
+        """Extract the small causal color grid stored with a general-game policy."""
+        rgb = observation.rgb
+        top, bottom = policy.get('pixel_rows', [272, 340])
+        rows = int(policy.get('rows', 8))
+        columns = int(policy.get('columns', 4))
+        crop = rgb[int(top):int(bottom), :, :].astype(np.float64) / 255.
+        result = []
+        for column in range(columns):
+            x0 = round(column * crop.shape[1] / columns)
+            x1 = round((column + 1) * crop.shape[1] / columns)
+            for row in range(rows):
+                y0 = round(row * crop.shape[0] / rows)
+                y1 = round((row + 1) * crop.shape[0] / rows)
+                cell = crop[y0:y1, x0:x1]
+                chroma = cell.max(axis=2) - cell.min(axis=2)
+                result.extend((float(chroma.mean()), float(np.quantile(chroma, .9))))
+        return np.asarray(result, dtype=np.float64)
+
+    def visual_step(self, observation):
+        policy = self.template.get('visual_policy')
+        if not policy:
+            raise ValueError('Checkpoint has no realtime visual policy')
+        raw = self.visual_features(observation, policy)
+        mean = np.asarray(policy['mean'], dtype=np.float64)
+        scale = np.asarray(policy['scale'], dtype=np.float64)
+        weights = np.asarray(policy['weights'], dtype=np.float64)
+        bias = np.asarray(policy['bias'], dtype=np.float64)
+        logits = ((raw - mean) / scale) @ weights + bias
+        rates = 1. / (1. + np.exp(-np.clip(logits, -30, 30)))
+        threshold = float(policy.get('threshold', self.threshold))
+        release = float(policy.get('release', self.release))
+        self.held_actions = (rates >= threshold) | (self.held_actions & (rates >= release))
+        self.last_rates = rates.copy()
+        return Action(tuple(float(value) for value in self.held_actions))
+
     def extract_features(self, activity):
         """Update causal exponential filter and return normalized lagged features."""
         alpha = 1.0 - math.exp(-activity.duration_ms / self.tau_ms)
